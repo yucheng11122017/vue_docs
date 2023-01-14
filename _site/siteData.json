@@ -16,6 +16,43 @@
       "headingKeywords": {}
     },
     {
+      "src": "docs/typescript/composition-api.md",
+      "title": "",
+      "headings": {
+        "typescript-with-composition-api": "TypeScript with Composition API",
+        "typing-component-props": "Typing Component Props",
+        "using-script-setup": "Using &lt;script setup&gt;",
+        "props-default-values": "Props Default Values",
+        "without-script-setup": "Without &lt;script setup&gt;",
+        "complex-prop-types": "Complex prop types",
+        "typing-component-emits": "Typing Component Emits",
+        "typing-ref": "Typing ref()",
+        "typing-reactive": "Typing reactive()",
+        "typing-computed": "Typing computed()",
+        "typing-event-handlers": "Typing Event Handlers",
+        "typing-provide-inject": "Typing Provide / Inject",
+        "typing-template-refs": "Typing Template Refs",
+        "typing-component-template-refs": "Typing Component Template Refs"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/typescript/options-api.md",
+      "title": "",
+      "headings": {
+        "typescript-with-options-api": "TypeScript with Options API",
+        "typing-component-props": "Typing Component Props",
+        "caveats": "Caveats",
+        "typing-component-emits": "Typing Component Emits",
+        "typing-computed-properties": "Typing Computed Properties",
+        "typing-event-handlers": "Typing Event Handlers",
+        "augmenting-global-properties": "Augmenting Global Properties",
+        "type-augmentation-placement": "Type Augmentation Placement",
+        "augmenting-custom-options": "Augmenting Custom Options"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "docs/typescript/overview.md",
       "title": "",
       "headings": {

@@ -4,6 +4,8 @@ A type system like TypeScript can detect many common errors via static analysis 
 
 Vue is written in TypeScript itself and provides first-class TypeScript support. All official Vue packages come with bundled type declarations that should work out-of-the-box.
 
+***
+
 ## Project Setup
 
 [`create-vue`](https://github.com/vuejs/create-vue), the official project scaffolding tool, offers the options to scaffold a [Vite](https://vitejs.dev/)-powered, TypeScript-ready Vue project.
@@ -24,9 +26,9 @@ With a Vite-based setup, the dev server and the bundler are transpilation-only a
 
   - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) is the official VSCode extension that provides TypeScript support inside Vue SFCs, along with many other great features.
 
-    :::tip
-    Volar replaces [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur), our previous official VSCode extension for Vue 2. If you have Vetur currently installed, make sure to disable it in Vue 3 projects.
-    :::
+    <box type="info">
+      Volar replaces [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur), our previous official VSCode extension for Vue 2. If you have Vetur currently installed, make sure to disable it in Vue 3 projects.
+    </box>
 
   - [TypeScript Vue Plugin](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) is also needed to get type support for `*.vue` imports in TS files.
 
@@ -79,6 +81,8 @@ In webpack-based setups such as Vue CLI, it is common to perform type checking a
 
 If you are currently using Vue 3 + TypeScript via Vue CLI, we strongly recommend migrating over to Vite. We are also working on CLI options to enable transpile-only TS support, so that you can switch to `vue-tsc` for type checking.
 
+***
+
 ## General Usage Notes
 
 ### `defineComponent()`
@@ -128,9 +132,9 @@ See also:
 - [Note on webpack Treeshaking](/api/general.html#note-on-webpack-treeshaking)
 - [type tests for `defineComponent`](https://github.com/vuejs/core/blob/main/test-dts/defineComponent.test-d.tsx)
 
-:::tip
-`defineComponent()` also enables type inference for components defined in plain JavaScript.
-:::
+<box type="info">
+  `defineComponent()` also enables type inference for components defined in plain JavaScript.
+</box>
 
 ### Usage in Single-File Components
 
@@ -201,8 +205,10 @@ let x: string | number = 1
 ```
 
 <box type='info'>
-If using Vue CLI or a webpack-based setup, TypeScript in template expressions requires `vue-loader@^16.8.0`.
+  If using Vue CLI or a webpack-based setup, TypeScript in template expressions requires `vue-loader@^16.8.0`.
 </box>
+
+***
 
 ## API-Specific Recipes
 

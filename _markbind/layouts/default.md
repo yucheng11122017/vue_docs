@@ -34,6 +34,9 @@
 * Best Practices
 * TypeScript :expanded:
   * [Overview]({{baseUrl}}/docs/typescript/overview.html)
+  * [TS with Composition API]({{baseUrl}}/docs/typescript/composition-api.html)
+  * [TS with Options API]({{baseUrl}}/docs/typescript/options-api.html)
+
 * Extra Topics
       </site-nav>
     </div>

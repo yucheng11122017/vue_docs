@@ -25,7 +25,7 @@
     {
       "glob": [
                 "docs/essentials/application.md",
-                "docs/typescript/overview.md"
+                "docs/typescript/*.md"
               ]
     }
   ],
