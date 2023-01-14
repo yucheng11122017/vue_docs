@@ -39,6 +39,18 @@
       "headingKeywords": {}
     },
     {
+      "src": "docs/scaling-up/state-management.md",
+      "title": "",
+      "headings": {
+        "state-management": "State Management",
+        "what-is-state-management": "What is State Management?",
+        "simple-state-management-with-reactivity-api": "Simple State Management with Reactivity API",
+        "ssr-considerations": "SSR Considerations",
+        "pinia": "Pinia"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "docs/scaling-up/tooling.md",
       "title": "",
       "headings": {

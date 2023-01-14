@@ -34,6 +34,7 @@
   * [Single-file Components]({{baseUrl}}/docs/scaling-up/sfc.html)
   * [Tooling]({{baseUrl}}/docs/scaling-up/tooling.html)
   * [Routing]({{baseUrl}}/docs/scaling-up/routing.html)
+  * [State Management]({{baseUrl}}/docs/scaling-up/state-management.html)
 * Best Practices
 * TypeScript
 * Extra Topics
