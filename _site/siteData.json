@@ -51,6 +51,34 @@
       "headingKeywords": {}
     },
     {
+      "src": "docs/scaling-up/testing.md",
+      "title": "",
+      "headings": {
+        "testing": "Testing",
+        "why-test": "Why Test?",
+        "when-to-test": "When to Test",
+        "testing-types": "Testing Types",
+        "overview": "Overview",
+        "unit-testing": "Unit Testing",
+        "composables": "Composables",
+        "unit-testing-components": "Unit Testing Components",
+        "recommendation": "Recommendation",
+        "other-options": "Other Options",
+        "component-testing": "Component Testing",
+        "recommendation-2": "Recommendation",
+        "mounting-libraries": "Mounting Libraries",
+        "other-options-2": "Other Options",
+        "e2e-testing": "E2E Testing",
+        "choosing-an-e2e-testing-solution": "Choosing an E2E Testing Solution",
+        "recommendation-3": "Recommendation",
+        "other-options-3": "Other Options",
+        "recipes": "Recipes",
+        "adding-vitest-to-a-project": "Adding Vitest to a Project",
+        "testing-composables": "Testing Composables"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "docs/scaling-up/tooling.md",
       "title": "",
       "headings": {

@@ -35,6 +35,8 @@
   * [Tooling]({{baseUrl}}/docs/scaling-up/tooling.html)
   * [Routing]({{baseUrl}}/docs/scaling-up/routing.html)
   * [State Management]({{baseUrl}}/docs/scaling-up/state-management.html)
+  * [Testing]({{baseUrl}}/docs/scaling-up/testing.html)
+
 * Best Practices
 * TypeScript
 * Extra Topics
