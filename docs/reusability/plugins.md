@@ -57,7 +57,7 @@ export default {
 We want to create a translation function. This function will receive a dot-delimited `key` string, which we will use to look up the translated string in the user-provided options. This is the intended usage in templates:
 
 ```vue-html
-<h1>{ { $translate('greetings.hello') } }</h1>
+<h1>{{ '{{' }} $translate('greetings.hello') {{ '}}' }}</h1>
 ```
 
 Since this function should be globally available in all templates, we will make it so by attaching it to `app.config.globalProperties` in our plugin:
