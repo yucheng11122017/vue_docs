@@ -16,6 +16,17 @@
       "headingKeywords": {}
     },
     {
+      "src": "docs/scaling-up/routing.md",
+      "title": "",
+      "headings": {
+        "routing": "Routing",
+        "client-side-vs-server-side-routing": "Client-Side vs. Server-Side Routing",
+        "official-router": "Official Router",
+        "simple-routing-from-scratch": "Simple Routing from Scratch"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "index.md",
       "title": "Landing Page",
       "headings": {

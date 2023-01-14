@@ -23,7 +23,9 @@
       "title": "Landing Page"
     },
     {
-      "glob": ["docs/essentials/application.md"]
+      "glob": ["docs/essentials/application.md",
+                "docs/scaling-up/routing.md"
+              ]
     }
   ],
   "deploy": {

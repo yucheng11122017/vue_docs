@@ -31,6 +31,7 @@
 * Reusability
 * Built-in Components
 * Scaling Up
+  * [Routing]({{baseUrl}}/docs/scaling-up/routing.html)
 * Best Practices
 * TypeScript
 * Extra Topics
