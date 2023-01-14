@@ -16,6 +16,25 @@
       "headingKeywords": {}
     },
     {
+      "src": "docs/typescript/overview.md",
+      "title": "",
+      "headings": {
+        "using-vue-with-typescript": "Using Vue with TypeScript",
+        "project-setup": "Project Setup",
+        "overview": "Overview",
+        "ide-support": "IDE Support",
+        "configuring-tsconfig-json": "Configuring tsconfig.json",
+        "volar-takeover-mode": "Volar Takeover Mode",
+        "note-on-vue-cli-and-ts-loader": "Note on Vue CLI and ts-loader",
+        "general-usage-notes": "General Usage Notes",
+        "definecomponent": "defineComponent()",
+        "usage-in-single-file-components": "Usage in Single-File Components",
+        "typescript-in-templates": "TypeScript in Templates",
+        "api-specific-recipes": "API-Specific Recipes"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "index.md",
       "title": "Landing Page",
       "headings": {

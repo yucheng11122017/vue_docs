@@ -32,7 +32,8 @@
 * Built-in Components
 * Scaling Up
 * Best Practices
-* TypeScript
+* TypeScript :expanded:
+  * [Overview]({{baseUrl}}/docs/typescript/overview.html)
 * Extra Topics
       </site-nav>
     </div>
