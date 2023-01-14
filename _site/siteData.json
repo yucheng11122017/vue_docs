@@ -39,6 +39,34 @@
       "headingKeywords": {}
     },
     {
+      "src": "docs/scaling-up/ssr.md",
+      "title": "",
+      "headings": {
+        "server-side-rendering-ssr": "Server-Side Rendering (SSR)",
+        "overview": "Overview",
+        "what-is-ssr": "What is SSR?",
+        "why-ssr": "Why SSR?",
+        "ssr-vs-ssg": "SSR vs. SSG",
+        "basic-tutorial": "Basic Tutorial",
+        "rendering-an-app": "Rendering an App",
+        "client-hydration": "Client Hydration",
+        "code-structure": "Code Structure",
+        "higher-level-solutions": "Higher Level Solutions",
+        "nuxt": "Nuxt",
+        "quasa": "Quasa",
+        "vite-ssr": "Vite SSR",
+        "writing-ssr-friendly-code": "Writing SSR-friendly Code",
+        "reactivity-on-the-server": "Reactivity on the Server",
+        "component-lifecycle-hooks": "Component Lifecycle Hooks",
+        "access-to-platform-specific-apis": "Access to Platform-Specific APIs",
+        "cross-request-state-pollution": "Cross-Request State Pollution",
+        "hydration-mismatch": "Hydration Mismatch",
+        "custom-directives": "Custom Directives",
+        "teleports": "Teleports"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "docs/scaling-up/state-management.md",
       "title": "",
       "headings": {

@@ -36,7 +36,7 @@
   * [Routing]({{baseUrl}}/docs/scaling-up/routing.html)
   * [State Management]({{baseUrl}}/docs/scaling-up/state-management.html)
   * [Testing]({{baseUrl}}/docs/scaling-up/testing.html)
-
+  * [Server-Side Rendering (SSR)]({{baseUrl}}/docs/scaling-up/ssr.html)
 * Best Practices
 * TypeScript
 * Extra Topics
