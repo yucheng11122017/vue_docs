@@ -27,6 +27,18 @@
       "headingKeywords": {}
     },
     {
+      "src": "docs/scaling-up/sfc.md",
+      "title": "",
+      "headings": {
+        "single-file-components": "Single-File Components",
+        "introduction": "Introduction",
+        "why-sfc": "Why SFC",
+        "how-it-works": "How It Works",
+        "what-about-separation-of-concerns": "What About Separation of Concerns?"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "index.md",
       "title": "Landing Page",
       "headings": {
