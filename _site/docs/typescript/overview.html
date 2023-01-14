@@ -77,7 +77,7 @@
 </span><span>
 </span><span>&lt;template&gt;
 </span><span>  &lt;!-- type checking and auto-completion enabled --&gt;
-</span><span>  { count.toFixed(2) }
+</span><span>  { { count.toFixed(2) } }
 </span><span>&lt;/template&gt;
 </span></code></pre><p><code class="hljs inline no-lang">lang=&quot;ts&quot;</code> can also be used with <code class="hljs inline no-lang">&lt;script setup&gt;</code>:</p> <pre><code class="hljs"><span>&lt;script setup lang=&quot;ts&quot;&gt;
 </span><span>// TypeScript enabled
@@ -88,7 +88,7 @@
 </span><span>
 </span><span>&lt;template&gt;
 </span><span>  &lt;!-- type checking and auto-completion enabled --&gt;
-</span><span>  { count.toFixed(2) }
+</span><span>  { { count.toFixed(2) } }
 </span><span>&lt;/template&gt;
 </span></code></pre><h3 id="typescript-in-templates"><span id="typescript-in-templates" class="anchor"></span>TypeScript in Templates<a href="#typescript-in-templates" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>The <code class="hljs inline no-lang">&lt;template&gt;</code> also supports TypeScript in binding expressions when <code class="hljs inline no-lang">&lt;script lang=&quot;ts&quot;&gt;</code> or <code class="hljs inline no-lang">&lt;script setup lang=&quot;ts&quot;&gt;</code> is used. This is useful in cases where you need to perform type casting in template expressions.</p> <p>Here's a contrived example:</p> <pre><code class="hljs"><span>&lt;script setup lang=&quot;ts&quot;&gt;
 </span><span>let x: string | number = 1
@@ -96,14 +96,14 @@
 </span><span>
 </span><span>&lt;template&gt;
 </span><span>  &lt;!-- error because x could be a string --&gt;
-</span><span>  { x.toFixed(2) }
+</span><span>  { { x.toFixed(2) } }
 </span><span>&lt;/template&gt;
 </span></code></pre><p>This can be worked around with an inline type cast:</p> <pre><code 6="" class="hljs"><span>&lt;script setup lang=&quot;ts&quot;&gt;
 </span><span>let x: string | number = 1
 </span><span>&lt;/script&gt;
 </span><span>
 </span><span>&lt;template&gt;
-</span><span>  { (x as number).toFixed(2) }
+</span><span>  { { (x as number).toFixed(2) } }
 </span><span>&lt;/template&gt;
 </span></code></pre><div class="alert box-container alert-info" data-v-7d17494f><!----> <div class="header-and-body" data-v-7d17494f><!----> <div class="box-body-wrapper" data-v-7d17494f><div class="icon-wrapper" data-v-7d17494f><i class="fas fa-info" data-v-7d17494f></i></div> <!----> <div class="contents" data-v-7d17494f>
   If using Vue CLI or a webpack-based setup, TypeScript in template expressions requires `vue-loader@^16.8.0`.
