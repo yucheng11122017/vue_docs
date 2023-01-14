@@ -32,6 +32,7 @@
   * [Template Syntax]({{baseUrl}}/docs/essentials/template-syntax.html)
 * Components In-Depth
 * Reusability
+  * [Composables]({{baseUrl}}/docs/reusability/composables.html)
 * Built-in Components
 * Scaling Up
 * Best Practices
