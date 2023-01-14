@@ -41,7 +41,7 @@ onMounted(() => window.addEventListener('mousemove', update))
 onUnmounted(() => window.removeEventListener('mousemove', update))
 </script>
 
-<template>Mouse position is at: {{ x }}, {{ y }}</template>
+<template>Mouse position is at: {{ '{{ x }}, {{ y }}' }}</template>
 ```
 
 But what if we want to reuse the same logic in multiple components? We can extract the logic into an external file, as a composable function:
@@ -81,7 +81,7 @@ import { useMouse } from './mouse.js'
 const { x, y } = useMouse()
 </script>
 
-<template>Mouse position is at: {{ x }}, {{ y }}</template>
+<template>Mouse position is at: {{ '{{ x }}, {{ y }}' }}</template>
 ```
 
 <div class="demo">
@@ -272,7 +272,7 @@ console.log(mouse.x)
 ```
 
 ```vue-html
-Mouse position is at: {{ mouse.x }}, {{ mouse.y }}
+Mouse position is at: {{ '{{ mouse.x }}, {{ mouse.y }}' }}
 ```
 
 ### Side Effects
