@@ -23,10 +23,13 @@
       "title": "Landing Page"
     },
     {
-      "glob": ["docs/essentials/application.md"]
+      "glob": ["docs/essentials/application.md", "docs/introduction.md"]
     }
   ],
   "deploy": {
     "message": "Site Update."
-  }
+  },
+  "plugins": [
+    "codeBlockCopyButtons"
+  ]
 }
