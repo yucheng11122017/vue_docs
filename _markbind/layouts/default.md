@@ -34,6 +34,7 @@
 * Reusability :expanded:
   * [Composables]({{baseUrl}}/docs/reusability/composables.html)
   * [Custom Directives]({{baseUrl}}/docs/reusability/custom-directives.md)
+  * [Plugins]({{baseUrl}}/docs/reusability/plugins.md)
 * Built-in Components
 * Scaling Up
 * Best Practices
