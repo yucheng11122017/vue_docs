@@ -39,6 +39,31 @@
       "headingKeywords": {}
     },
     {
+      "src": "docs/scaling-up/tooling.md",
+      "title": "",
+      "headings": {
+        "tooling": "Tooling",
+        "try-it-online": "Try It Online",
+        "project-scaffolding": "Project Scaffolding",
+        "vite": "Vite",
+        "vue-cli": "Vue CLI",
+        "note-on-in-browser-template-compilation": "Note on In-Browser Template Compilation",
+        "ide-support": "IDE Support",
+        "browser-devtools": "Browser Devtools",
+        "typescript": "TypeScript",
+        "testing": "Testing",
+        "linting": "Linting",
+        "formatting": "Formatting",
+        "sfc-custom-block-integrations": "SFC Custom Block Integrations",
+        "lower-level-packages": "Lower-Level Packages",
+        "vue-compiler-sfc": "@vue/compiler-sfc",
+        "vitejs-plugin-vue": "@vitejs/plugin-vue",
+        "vue-loader": "vue-loader",
+        "other-online-playgrounds": "Other Online Playgrounds"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "index.md",
       "title": "Landing Page",
       "headings": {

@@ -25,7 +25,8 @@
     {
       "glob": ["docs/essentials/application.md",
                 "docs/scaling-up/routing.md",
-                "docs/scaling-up/sfc.md"
+                "docs/scaling-up/sfc.md",
+                "docs/scaling-up/tooling.md"
 
               ]
     }

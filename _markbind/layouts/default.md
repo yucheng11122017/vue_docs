@@ -32,6 +32,7 @@
 * Built-in Components
 * Scaling Up
   * [Single-file Components]({{baseUrl}}/docs/scaling-up/sfc.html)
+  * [Tooling]({{baseUrl}}/docs/scaling-up/tooling.html)
   * [Routing]({{baseUrl}}/docs/scaling-up/routing.html)
 * Best Practices
 * TypeScript
