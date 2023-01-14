@@ -31,8 +31,9 @@
   * [Creating an Application]({{baseUrl}}/docs/essentials/application.html)
   * [Template Syntax]({{baseUrl}}/docs/essentials/template-syntax.html)
 * Components In-Depth
-* Reusability
+* Reusability :expanded:
   * [Composables]({{baseUrl}}/docs/reusability/composables.html)
+  * [Custom Directives]({{baseUrl}}/docs/reusability/custom-directives.md)
 * Built-in Components
 * Scaling Up
 * Best Practices

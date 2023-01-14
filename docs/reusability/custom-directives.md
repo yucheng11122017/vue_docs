@@ -1,4 +1,4 @@
-# Custom Directives {#custom-directives}
+# Custom Directives
 
 <script setup>
 const vFocus = {
@@ -8,7 +8,9 @@ const vFocus = {
 }
 </script>
 
-## Introduction {#introduction}
+***
+
+## Introduction
 
 In addition to the default set of directives shipped in core (like `v-model` or `v-show`), Vue also allows you to register your own custom directives.
 
@@ -99,11 +101,13 @@ app.directive('focus', {
 })
 ```
 
-:::tip
-Custom directives should only be used when the desired functionality can only be achieved via direct DOM manipulation. Prefer declarative templating using built-in directives such as `v-bind` when possible because they are more efficient and server-rendering friendly.
-:::
+<box type="info">
+  Custom directives should only be used when the desired functionality can only be achieved via direct DOM manipulation. Prefer declarative templating using built-in directives such as `v-bind` when possible because they are more efficient and server-rendering friendly.
+</box>
 
-## Directive Hooks {#directive-hooks}
+***
+
+## Directive Hooks
 
 A directive definition object can provide several hook functions (all optional):
 
@@ -131,7 +135,7 @@ const myDirective = {
 }
 ```
 
-### Hook Arguments {#hook-arguments}
+### Hook Arguments
 
 Directive hooks are passed these arguments:
 
@@ -174,11 +178,13 @@ Similar to built-in directives, custom directive arguments can be dynamic. For e
 
 Here the directive argument will be reactively updated based on `arg` property in our component state.
 
-:::tip Note
-Apart from `el`, you should treat these arguments as read-only and never modify them. If you need to share information across hooks, it is recommended to do so through element's [dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset).
-:::
+<box type="info"> Note<br/>
+  Apart from `el`, you should treat these arguments as read-only and never modify them. If you need to share information across hooks, it is recommended to do so through element's [dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset).
+</box>
 
-## Function Shorthand {#function-shorthand}
+***
+
+## Function Shorthand
 
 It's common for a custom directive to have the same behavior for `mounted` and `updated`, with no need for the other hooks. In such cases we can define the directive as a function:
 
@@ -193,7 +199,9 @@ app.directive('color', (el, binding) => {
 })
 ```
 
-## Object Literals {#object-literals}
+***
+
+## Object Literals
 
 If your directive needs multiple values, you can also pass in a JavaScript object literal. Remember, directives can take any valid JavaScript expression.
 
@@ -208,7 +216,9 @@ app.directive('demo', (el, binding) => {
 })
 ```
 
-## Usage on Components {#usage-on-components}
+***
+
+## Usage on Components
 
 When used on components, custom directives will always apply to a component's root node, similar to [Fallthrough Attributes](/guide/components/attrs.html).
 
