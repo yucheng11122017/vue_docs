@@ -4,9 +4,10 @@
 
 <header sticky>
   <navbar type="dark">
-    <!-- <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">Your Logo</a> -->
-    <li><a href="{{baseUrl}}/docs/quick-start.html" class="nav-link">Quick Start</a></li>
-    <dropdown header="Essentials" class="nav-link">
+    <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand"><img src="{{baseUrl}}/images/vue_logo.png" width="100"/></a>
+    <li><a href="{{baseUrl}}/index.html" class="nav-link">HOME</a></li>
+    <li><a href="{{baseUrl}}/docs/quick-start.html" class="nav-link">QUICK START</a></li>
+    <dropdown header="ESSENTIALS" class="nav-link">
       <li><a href="{{baseUrl}}/docs/essentials/application.html" class="dropdown-item">Creating an Application</a></li>
       <li><a href="{{baseUrl}}/docs/essentials/template-syntax.html" class="dropdown-item">Template Syntax</a></li>
       <li><a href="{{baseUrl}}/docs/essentials/reactivity-fundamentals.html" class="dropdown-item">Reactivity Fundamentals</a></li>
@@ -21,7 +22,7 @@
       <li><a href="{{baseUrl}}/docs/essentials/template-refs.html" class="dropdown-item">Template Refs</a></li>
       <li><a href="{{baseUrl}}/docs/essentials/component-basics.html" class="dropdown-item">Components Basics</a></li>
     </dropdown>
-    <dropdown header="Components In-Depth" class="nav-link">
+    <dropdown header="COMPONENTS" class="nav-link">
       <li><a href="{{baseUrl}}/docs/components/registration.html" class="dropdown-item">Registration</a></li>
       <li><a href="{{baseUrl}}/docs/components/props.html" class="dropdown-item">Props</a></li>
       <li><a href="{{baseUrl}}/docs/components/events.html" class="dropdown-item">Events</a></li>
@@ -30,32 +31,11 @@
       <li><a href="{{baseUrl}}/docs/components/slots.html" class="dropdown-item">Slots</a></li>
       <li><a href="{{baseUrl}}/docs/components/provide-inject.html" class="dropdown-item">Provide / inject</a></li>
       <li><a href="{{baseUrl}}/docs/components/async.html" class="dropdown-item">Async Components</a></li>
-    </dropdown>
-    <dropdown header="Built-in Components" class="nav-link">
       <li><a href="{{baseUrl}}/docs/built-ins/transition.html" class="dropdown-item">Transition</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/transition-group.html" class="dropdown-item">TransitionGroup</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/keep-alive.html" class="dropdown-item">KeepAlive</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/teleport.html" class="dropdown-item">Teleport</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/suspense.html" class="dropdown-item">Suspense</a></li>
-    </dropdown>
-    <dropdown header="Scaling Up" class="nav-link">
-      <li><a href="{{baseUrl}}/docs/scaling-up/sfc.html" class="dropdown-item">Single-File Components</a></li>
-      <li><a href="{{baseUrl}}/docs/scaling-up/tooling.html" class="dropdown-item">Tooling</a></li>
-      <li><a href="{{baseUrl}}/docs/scaling-up/routing.html" class="dropdown-item">Routing</a></li>
-      <li><a href="{{baseUrl}}/docs/scaling-up/state-management.html" class="dropdown-item">State Management</a></li>
-      <li><a href="{{baseUrl}}/docs/scaling-up/testing.html" class="dropdown-item">Testing</a></li>
-      <li><a href="{{baseUrl}}/docs/scaling-up/ssr.html" class="dropdown-item">Server-Side Rendering (SSR)</a></li>
-    </dropdown>
-    <dropdown header="Best practises" class="nav-link">
-      <li><a href="{{baseUrl}}/docs/best-practices/production-deployment.html" class="dropdown-item">Production Deployment</a></li>
-      <li><a href="{{baseUrl}}/docs/best-practices/performance.html" class="dropdown-item">Performance</a></li>
-      <li><a href="{{baseUrl}}/docs/best-practices/accessibility.html" class="dropdown-item">Accessibility</a></li>
-      <li><a href="{{baseUrl}}/docs/best-practices/security.html" class="dropdown-item">Security</a></li>
-    </dropdown>
-    <dropdown header="TypeScript" class="nav-link">
-      <li><a href="{{baseUrl}}/docs/typescript/overview.html" class="dropdown-item">Overview</a></li>
-      <li><a href="{{baseUrl}}/docs/typescript/composition-api.html" class="dropdown-item">TS with Composition API</a></li>
-      <li><a href="{{baseUrl}}/docs/typescript/options-api.html" class="dropdown-item">TS with Options API</a></li>
     </dropdown>
     <li slot="right">
       <form class="navbar-form">
