@@ -6,7 +6,9 @@ const { x, y } = useMouse()
 </script>
 
 <box type="info">
+
   This section assumes basic knowledge of Composition API. If you have been learning Vue with Options API only, you can set the API Preference to Composition API (using the toggle at the top of the left sidebar) and re-read the [Reactivity Fundamentals](/guide/essentials/reactivity-fundamentals.html) and [Lifecycle Hooks](/guide/essentials/lifecycle.html) chapters.
+
 </box>
 
 ***
@@ -129,7 +131,9 @@ export function useMouse() {
 ```
 
 <box type="info">
+
   Each component instance calling `useMouse()` will create its own copies of `x` and `y` state so they won't interfere with one another. If you want to manage shared state between components, read the [State Management](/guide/scaling-up/state-management.html) chapter.
+  
 </box>
 
 ***
