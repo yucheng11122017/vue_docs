@@ -26,6 +26,7 @@
       <li><a href="{{baseUrl}}/docs/built-ins/teleport.html" class="dropdown-item">Teleport</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/suspense.html" class="dropdown-item">Suspense</a></li>
     </dropdown>
+<<<<<<< HEAD
     <dropdown header="Extra Topics" class="nav-link">
       <li><a href="{{baseUrl}}/docs/extras/ways-of-using-vue.html" class="dropdown-item">Ways of using Vue</a></li>
       <li><a href="{{baseUrl}}/docs/extras/composition-api-faq.html" class="dropdown-item">Composition API FAQ</a></li>
@@ -35,6 +36,13 @@
       <li><a href="{{baseUrl}}/docs/extras/web-components.html" class="dropdown-item">Vue and Web components</a></li>
       <li><a href="{{baseUrl}}/docs/extras/animation.html" class="dropdown-item">Animation Techniques</a></li>
       <li><a href="{{baseUrl}}/docs/extras/reactivity-transform.html" class="dropdown-item">Reactivity Transform</a></li>
+=======
+    <dropdown header="Best practises" class="nav-link">
+      <li><a href="{{baseUrl}}/docs/best-practices/production-deployment.html" class="dropdown-item">Production Deployment</a></li>
+      <li><a href="{{baseUrl}}/docs/best-practices/performance.html" class="dropdown-item">Performance</a></li>
+      <li><a href="{{baseUrl}}/docs/best-practices/accessibility.html" class="dropdown-item">Accessibility</a></li>
+      <li><a href="{{baseUrl}}/docs/best-practices/security.html" class="dropdown-item">Security</a></li>
+>>>>>>> 473d14335b50a8d8d2ed962afbba21a01abdecd7
     </dropdown>
     <li slot="right">
       <form class="navbar-form">
@@ -75,8 +83,13 @@
   * [Teleport]({{baseUrl}}/docs/built-ins/teleport.html)
   * [Suspense]({{baseUrl}}/docs/built-ins/suspense.html)
 * Scaling Up
-* Best Practices
-  * [Production Deployment]({{baseUrl}}/docs/extras/ways-of-using-vue.html)
+* Best Practices :expanded:
+  * [Production Deployment]({{baseUrl}}/docs/best-practices/production-deployment.html)
+  * [Performance]({{baseUrl}}/docs/best-practices/performance.html)
+  * [Accessibility]({{baseUrl}}/docs/best-practices/accessibility.html)
+  * [Security]({{baseUrl}}/docs/best-practices/security.html)
+* Extra topics :expanded:
+  * [Ways of using Vue]({{baseUrl}}/docs/extras/ways-of-using-vue.html)
   * [Composition API FAQ]({{baseUrl}}/docs/extras/composition-api-faq.html)
   * [Reactivity in Depth]({{baseUrl}}/docs/extras/reactivity-in-depth.html)
   * [Rendering Mechanism]({{baseUrl}}/docs/extras/rendering-mechanism.html)
