@@ -32,18 +32,6 @@
       <li><a href="{{baseUrl}}/docs/components/provide-inject.html" class="dropdown-item">Provide / inject</a></li>
       <li><a href="{{baseUrl}}/docs/components/async.html" class="dropdown-item">Async Components</a></li>
     </dropdown>
-    <dropdown header="Reusability" class="nav-link">
-      <li><a href="{{baseUrl}}/docs/reusability/composables.html" class="dropdown-item">Composables</a></li>
-      <li><a href="{{baseUrl}}/docs/reusability/custom-directives.html" class="dropdown-item">Custom Directives</a></li>
-      <li><a href="{{baseUrl}}/docs/reusability/plugins.html" class="dropdown-item">Plugins</a></li>
-    </dropdown>
-    <dropdown header="Built-in Components" class="nav-link">
-      <li><a href="{{baseUrl}}/docs/built-ins/transition.html" class="dropdown-item">Transition</a></li>
-      <li><a href="{{baseUrl}}/docs/built-ins/transition-group.html" class="dropdown-item">TransitionGroup</a></li>
-      <li><a href="{{baseUrl}}/docs/built-ins/keep-alive.html" class="dropdown-item">KeepAlive</a></li>
-      <li><a href="{{baseUrl}}/docs/built-ins/teleport.html" class="dropdown-item">Teleport</a></li>
-      <li><a href="{{baseUrl}}/docs/built-ins/suspense.html" class="dropdown-item">Suspense</a></li>
-    </dropdown>
     <li slot="right">
       <form class="navbar-form">
         <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
@@ -112,7 +100,15 @@
   * [Overview]({{baseUrl}}/docs/typescript/overview.html)
   * [TS with Composition API]({{baseUrl}}/docs/typescript/composition-api.html)
   * [TS with Options API]({{baseUrl}}/docs/typescript/options-api.html)
-* Extra Topics
+* Extra topics :expanded:
+  * [Ways of using Vue]({{baseUrl}}/docs/extras/ways-of-using-vue.html)
+  * [Composition API FAQ]({{baseUrl}}/docs/extras/composition-api-faq.html)
+  * [Reactivity in Depth]({{baseUrl}}/docs/extras/reactivity-in-depth.html)
+  * [Rendering Mechanism]({{baseUrl}}/docs/extras/rendering-mechanism.html)
+  * [Render Functions & JSX]({{baseUrl}}/docs/extras/render-function.html)
+  * [Vue and Web Components]({{baseUrl}}/docs/extras/web-components.html)
+  * [Animation Techniques]({{baseUrl}}/docs/extras/animation.html)
+  * [Reactivity Transform]({{baseUrl}}/docs/extras/reactivity-transform.html)
       </site-nav>
     </div>
   </nav>

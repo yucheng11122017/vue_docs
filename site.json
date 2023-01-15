@@ -32,7 +32,8 @@
                 "docs/components/*.md",
                 "docs/built-ins/*.md",
                 "docs/best-practices/*.md",
-                "docs/reusability/*.md"
+                "docs/reusability/*.md",
+                "docs/extras/*.md"
               ]
     }
   ],
