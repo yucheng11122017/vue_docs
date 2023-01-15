@@ -32,6 +32,11 @@
       <li><a href="{{baseUrl}}/docs/best-practices/accessibility.html" class="dropdown-item">Accessibility</a></li>
       <li><a href="{{baseUrl}}/docs/best-practices/security.html" class="dropdown-item">Security</a></li>
     </dropdown>
+    <dropdown header="TypeScript" class="nav-link">
+      <li><a href="{{baseUrl}}/docs/typescript/overview.html" class="dropdown-item">Overview</a></li>
+      <li><a href="{{baseUrl}}/docs/typescript/composition-api.html" class="dropdown-item">TS with Composition API</a></li>
+      <li><a href="{{baseUrl}}/docs/typescript/options-api.html" class="dropdown-item">TS with Options API</a></li>
+    </dropdown>
     <li slot="right">
       <form class="navbar-form">
         <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
@@ -54,7 +59,7 @@
 * Essentials :expanded:
   * [Creating an Application]({{baseUrl}}/docs/essentials/application.html)
   * [Template Syntax]({{baseUrl}}/docs/essentials/template-syntax.html)
-* Components In-Depth
+* Components In-Depth :expanded:
   * [Registration]({{baseUrl}}/docs/components/registration.html)
   * [Props]({{baseUrl}}/docs/components/props.html)
   * [Events]({{baseUrl}}/docs/components/events.html)
@@ -64,7 +69,7 @@
   * [Provide / inject]({{baseUrl}}/docs/components/provide-inject.html)
   * [Async Components]({{baseUrl}}/docs/components/async.html)
 * Reusability
-* Built-in Components
+* Built-in Components :expanded:
   * [Transition]({{baseUrl}}/docs/built-ins/transition.html)
   * [TransitionGroup]({{baseUrl}}/docs/built-ins/transition-group.html)
   * [KeepAlive]({{baseUrl}}/docs/built-ins/keep-alive.html)
@@ -76,7 +81,10 @@
   * [Performance]({{baseUrl}}/docs/best-practices/performance.html)
   * [Accessibility]({{baseUrl}}/docs/best-practices/accessibility.html)
   * [Security]({{baseUrl}}/docs/best-practices/security.html)
-* TypeScript
+* TypeScript :expanded:
+  * [Overview]({{baseUrl}}/docs/typescript/overview.html)
+  * [TS with Composition API]({{baseUrl}}/docs/typescript/composition-api.html)
+  * [TS with Options API]({{baseUrl}}/docs/typescript/options-api.html)
 * Extra Topics
       </site-nav>
     </div>

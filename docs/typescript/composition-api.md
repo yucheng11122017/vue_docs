@@ -1,10 +1,12 @@
-# TypeScript with Composition API {#typescript-with-composition-api}
+# TypeScript with Composition API
 
 > This page assumes you've already read the overview on [Using Vue with TypeScript](./overview).
 
-## Typing Component Props {#typing-component-props}
+***
 
-### Using `<script setup>` {#using-script-setup}
+## Typing Component Props
+
+### Using `<script setup>`
 
 When using `<script setup>`, the `defineProps()` macro supports inferring the props types based on its argument:
 
@@ -50,7 +52,7 @@ const props = defineProps<Props>()
 </script>
 ```
 
-#### Syntax Limitations {#syntax-limitations}
+#### Syntax Limitations
 
 In order to generate the correct runtime code, the generic argument for `defineProps()` must be one of the following:
 
@@ -79,7 +81,7 @@ defineProps<Props>()
 
 This is because Vue components are compiled in isolation and the compiler currently does not crawl imported files in order to analyze the source type. This limitation could be removed in a future release.
 
-### Props Default Values {#props-default-values}
+### Props Default Values
 
 When using type-based declaration, we lose the ability to declare default values for the props. This can be resolved by the `withDefaults` compiler macro:
 
@@ -114,7 +116,7 @@ const { name, count = 100 } = defineProps<Props>()
 
 This behavior currently requires [explicit opt-in](/guide/extras/reactivity-transform.html#explicit-opt-in).
 
-### Without `<script setup>` {#without-script-setup}
+### Without `<script setup>`
 
 If not using `<script setup>`, it is necessary to use `defineComponent()` to enable props type inference. The type of the props object passed to `setup()` is inferred from the `props` option.
 
@@ -174,7 +176,9 @@ export default defineComponent({
 
 The `props` option is more commonly used with the Options API, so you'll find more detailed examples in the guide to [TypeScript with Options API](/guide/typescript/options-api.html#typing-component-props). The techniques shown in those examples also apply to runtime declarations using `defineProps()`.
 
-## Typing Component Emits {#typing-component-emits}
+***
+
+## Typing Component Emits
 
 In `<script setup>`, the `emit` function can also be typed using either runtime declaration OR type declaration:
 
@@ -206,7 +210,9 @@ export default defineComponent({
 })
 ```
 
-## Typing `ref()` {#typing-ref}
+***
+
+## Typing `ref()`
 
 Refs infer the type from the initial value:
 
@@ -247,7 +253,9 @@ If you specify a generic type argument but omit the initial value, the resulting
 const n = ref<number>()
 ```
 
-## Typing `reactive()` {#typing-reactive}
+***
+
+## Typing `reactive()`
 
 `reactive()` also implicitly infers the type from its argument:
 
@@ -271,11 +279,13 @@ interface Book {
 const book: Book = reactive({ title: 'Vue 3 Guide' })
 ```
 
-:::tip
+<box type="info">
 It's not recommended to use the generic argument of `reactive()` because the returned type, which handles nested ref unwrapping, is different from the generic argument type.
-:::
+</box>
 
-## Typing `computed()` {#typing-computed}
+***
+
+## Typing `computed()`
 
 `computed()` infers its type based on the getter's return value:
 
@@ -299,7 +309,9 @@ const double = computed<number>(() => {
 })
 ```
 
-## Typing Event Handlers {#typing-event-handlers}
+***
+
+## Typing Event Handlers
 
 When dealing with native DOM events, it might be useful to type the argument we pass to the handler correctly. Let's take a look at this example:
 
@@ -324,7 +336,9 @@ function handleChange(event: Event) {
 }
 ```
 
-## Typing Provide / Inject {#typing-provide-inject}
+***
+
+## Typing Provide / Inject
 
 Provide and inject are usually performed in separate components. To properly type injected values, Vue provides an `InjectionKey` interface, which is a generic type that extends `Symbol`. It can be used to sync the type of the injected value between the provider and the consumer:
 
@@ -361,7 +375,9 @@ If you are sure that the value is always provided, you can also force cast the v
 const foo = inject('foo') as string
 ```
 
-## Typing Template Refs {#typing-template-refs}
+***
+
+## Typing Template Refs
 
 Template refs should be created with an explicit generic type argument and an initial value of `null`:
 
@@ -383,7 +399,9 @@ onMounted(() => {
 
 Note that for strict type safety, it is necessary to use optional chaining or type guards when accessing `el.value`. This is because the initial ref value is `null` until the component is mounted, and it can also be set to `null` if the referenced element is unmounted by `v-if`.
 
-## Typing Component Template Refs {#typing-component-template-refs}
+***
+
+## Typing Component Template Refs
 
 Sometimes you might need to annotate a template ref for a child component in order to call its public method. For example, we have a `MyModal` child component with a method that opens the modal:
 
