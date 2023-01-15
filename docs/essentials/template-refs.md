@@ -1,4 +1,4 @@
-# Template Refs {#template-refs}
+# Template Refs
 
 While Vue's declarative rendering model abstracts away most of the direct DOM operations for you, there may still be cases where we need direct access to the underlying DOM elements. To achieve this, we can use the special `ref` attribute:
 
@@ -8,7 +8,7 @@ While Vue's declarative rendering model abstracts away most of the direct DOM op
 
 `ref` is a special attribute, similar to the `key` attribute discussed in the `v-for` chapter. It allows us to obtain a direct reference to a specific DOM element or child component instance after it's mounted. This may be useful when you want to, for example, programmatically focus an input on component mount, or initialize a 3rd party library on an element.
 
-## Accessing the Refs {#accessing-the-refs}
+## Accessing the Refs
 
 <div class="composition-api">
 
@@ -87,7 +87,7 @@ See also: [Typing Template Refs](/guide/typescript/composition-api.html#typing-t
 
 </div>
 
-## Refs inside `v-for` {#refs-inside-v-for}
+## Refs inside `v-for`
 
 > Requires v3.2.25 or above
 
@@ -111,7 +111,7 @@ onMounted(() => console.log(itemRefs.value))
 <template>
   <ul>
     <li v-for="item in list" ref="itemRefs">
-      {{ item }}
+      {{ '{{' }} item {{ '}}' }}
     </li>
   </ul>
 </template>
@@ -143,7 +143,7 @@ export default {
 <template>
   <ul>
     <li v-for="item in list" ref="items">
-      {{ item }}
+      {{ '{{' }} item {{ '}}' }}
     </li>
   </ul>
 </template>
@@ -155,7 +155,7 @@ export default {
 
 It should be noted that the ref array does **not** guarantee the same order as the source array.
 
-## Function Refs {#function-refs}
+## Function Refs
 
 Instead of a string key, the `ref` attribute can also be bound to a function, which will be called on each component update and gives you full flexibility on where to store the element reference. The function receives the element reference as the first argument:
 
@@ -165,7 +165,7 @@ Instead of a string key, the `ref` attribute can also be bound to a function, wh
 
 Note we are using a dynamic `:ref` binding so we can pass it a function instead of a ref name string. When the element is unmounted, the argument will be `null`. You can, of course, use a method instead of an inline function.
 
-## Ref on Component {#ref-on-component}
+## Ref on Component
 
 > This section assumes knowledge of [Components](/guide/essentials/component-basics). Feel free to skip it and come back later.
 

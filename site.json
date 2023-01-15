@@ -26,8 +26,7 @@
       "glob": [
                 "docs/introduction.md",
                 "docs/quick-start.md",
-                "docs/essentials/application.md",
-                "docs/essentials/template-syntax.md",
+                "docs/essentials/*.md",
                 "docs/scaling-up/*.md",
                 "docs/typescript/*.md",
                 "docs/components/*.md",
