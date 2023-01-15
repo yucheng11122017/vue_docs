@@ -1,4 +1,4 @@
-# List Rendering {#list-rendering}
+# List Rendering
 
 <div class="options-api">
   <VueSchoolLink href="https://vueschool.io/lessons/list-rendering-in-vue-3" title="Free Vue.js List Rendering Lesson"/>
@@ -8,7 +8,7 @@
   <VueSchoolLink href="https://vueschool.io/lessons/vue-fundamentals-capi-list-rendering-in-vue" title="Free Vue.js List Rendering Lesson"/>
 </div>
 
-## `v-for` {#v-for}
+## `v-for`
 
 We can use the `v-for` directive to render a list of items based on an array. The `v-for` directive requires a special syntax in the form of `item in items`, where `items` is the source data array and `item` is an **alias** for the array element being iterated on:
 
@@ -34,7 +34,7 @@ data() {
 
 ```vue-html
 <li v-for="item in items">
-  {{ item.message }}
+  {{ '{{' }} item.message {{ '}}' }}
 </li>
 ```
 
@@ -63,7 +63,7 @@ data() {
 
 ```vue-html
 <li v-for="(item, index) in items">
-  {{ parentMessage }} - {{ index }} - {{ item.message }}
+  {{ '{{' }} parentMessage {{ '}}' }} - {{ '{{' }} index {{ '}}' }} - {{ '{{' }} item.message {{ '}}' }}
 </li>
 ```
 
@@ -73,7 +73,7 @@ const items = [{ message: 'Foo' }, { message: 'Bar' }]
 </script>
 <div class="demo">
   <li v-for="(item, index) in items">
-    {{ parentMessage }} - {{ index }} - {{ item.message }}
+    {{ '{{' }} parentMessage {{ '}}' }} - {{ '{{' }} index {{ '}}' }} - {{ '{{' }} item.message {{ '}}' }}
   </li>
 </div>
 
@@ -107,12 +107,12 @@ Notice how the `v-for` value matches the function signature of the `forEach` cal
 
 ```vue-html
 <li v-for="{ message } in items">
-  {{ message }}
+  {{ '{{' }} message {{ '}}' }}
 </li>
 
 <!-- with index alias -->
 <li v-for="({ message }, index) in items">
-  {{ message }} {{ index }}
+  {{ '{{' }} message {{ '}}' }} {{ '{{' }} index {{ '}}' }}
 </li>
 ```
 
@@ -121,7 +121,7 @@ For nested `v-for`, scoping also works similar to nested functions. Each `v-for`
 ```vue-html
 <li v-for="item in items">
   <span v-for="childItem in item.children">
-    {{ item.message }} {{ childItem }}
+    {{ '{{' }} item.message {{ '}}' }} {{ '{{' }} childItem {{ '}}' }}
   </span>
 </li>
 ```
@@ -132,7 +132,7 @@ You can also use `of` as the delimiter instead of `in`, so that it is closer to 
 <div v-for="item of items"></div>
 ```
 
-## `v-for` with an Object {#v-for-with-an-object}
+## `v-for` with an Object
 
 You can also use `v-for` to iterate through the properties of an object. The iteration order will be based on the result of calling `Object.keys()` on the object:
 
@@ -166,7 +166,7 @@ data() {
 ```vue-html
 <ul>
   <li v-for="value in myObject">
-    {{ value }}
+    {{ '{{' }} value {{ '}}' }}
   </li>
 </ul>
 ```
@@ -175,7 +175,7 @@ You can also provide a second alias for the property's name (a.k.a. key):
 
 ```vue-html
 <li v-for="(value, key) in myObject">
-  {{ key }}: {{ value }}
+  {{ '{{' }} key {{ '}}' }}: {{ '{{' }} value {{ '}}' }}
 </li>
 ```
 
@@ -183,7 +183,7 @@ And another for the index:
 
 ```vue-html
 <li v-for="(value, key, index) in myObject">
-  {{ index }}. {{ key }}: {{ value }}
+  {{ '{{' }} index {{ '}}' }}. {{ '{{' }} key {{ '}}' }}: {{ '{{' }} value {{ '}}' }}
 </li>
 ```
 
@@ -198,30 +198,30 @@ And another for the index:
 
 </div>
 
-## `v-for` with a Range {#v-for-with-a-range}
+## `v-for` with a Range 
 
 `v-for` can also take an integer. In this case it will repeat the template that many times, based on a range of `1...n`.
 
 ```vue-html
-<span v-for="n in 10">{{ n }}</span>
+<span v-for="n in 10">{{ '{{' }} n {{ '}}' }}</span>
 ```
 
 Note here `n` starts with an initial value of `1` instead of `0`.
 
-## `v-for` on `<template>` {#v-for-on-template}
+## `v-for` on `<template>`
 
 Similar to template `v-if`, you can also use a `<template>` tag with `v-for` to render a block of multiple elements. For example:
 
 ```vue-html
 <ul>
   <template v-for="item in items">
-    <li>{{ item.msg }}</li>
+    <li>{{ '{{' }} item.msg {{ '}}' }}</li>
     <li class="divider" role="presentation"></li>
   </template>
 </ul>
 ```
 
-## `v-for` with `v-if` {#v-for-with-v-if}
+## `v-for` with `v-if`
 
 :::warning Note
 It's **not** recommended to use `v-if` and `v-for` on the same element due to implicit precedence. Refer to [style guide](/style-guide/rules-essential.html#avoid-v-if-with-v-for) for details.
@@ -235,7 +235,7 @@ This will throw an error because property "todo"
 is not defined on instance.
 -->
 <li v-for="todo in todos" v-if="!todo.isComplete">
-  {{ todo.name }}
+  {{ '{{' }} todo.name {{ '}}' }}
 </li>
 ```
 
@@ -244,12 +244,12 @@ This can be fixed by moving `v-for` to a wrapping `<template>` tag (which is als
 ```vue-html
 <template v-for="todo in todos">
   <li v-if="!todo.isComplete">
-    {{ todo.name }}
+    {{ '{{' }} todo.name {{ '}}' }}
   </li>
 </template>
 ```
 
-## Maintaining State with `key` {#maintaining-state-with-key}
+## Maintaining State with `key`
 
 When Vue is updating a list of elements rendered with `v-for`, by default it uses an "in-place patch" strategy. If the order of the data items has changed, instead of moving the DOM elements to match the order of the items, Vue will patch each element in-place and make sure it reflects what should be rendered at that particular index.
 
@@ -267,7 +267,7 @@ When using `<template v-for>`, the `key` should be placed on the `<template>` co
 
 ```vue-html
 <template v-for="todo in todos" :key="todo.name">
-  <li>{{ todo.name }}</li>
+  <li>{{ '{{' }} todo.name {{ '}}' }}</li>
 </template>
 ```
 
@@ -279,7 +279,7 @@ When using `<template v-for>`, the `key` should be placed on the `<template>` co
 
 The `key` binding expects primitive values - i.e. strings and numbers. Do not use objects as `v-for` keys. For detailed usage of the `key` attribute, please see the [`key` API documentation](/api/built-in-special-attributes.html#key).
 
-## `v-for` with a Component {#v-for-with-a-component}
+## `v-for` with a Component
 
 > This section assumes knowledge of [Components](/guide/essentials/component-basics). Feel free to skip it and come back later.
 
@@ -313,9 +313,9 @@ Check out [this example of a simple todo list](https://sfc.vuejs.org/#eyJBcHAudn
 
 </div>
 
-## Array Change Detection {#array-change-detection}
+## Array Change Detection
 
-### Mutation Methods {#mutation-methods}
+### Mutation Methods
 
 Vue is able to detect when a reactive array's mutation methods are called and trigger necessary updates. These mutation methods are:
 
@@ -327,7 +327,7 @@ Vue is able to detect when a reactive array's mutation methods are called and tr
 - `sort()`
 - `reverse()`
 
-### Replacing an Array {#replacing-an-array}
+### Replacing an Array
 
 Mutation methods, as the name suggests, mutate the original array they are called on. In comparison, there are also non-mutating methods, e.g. `filter()`, `concat()` and `slice()`, which do not mutate the original array but **always return a new array**. When working with non-mutating methods, we should replace the old array with the new one:
 
@@ -349,7 +349,7 @@ this.items = this.items.filter((item) => item.message.match(/Foo/))
 
 You might think this will cause Vue to throw away the existing DOM and re-render the entire list - luckily, that is not the case. Vue implements some smart heuristics to maximize DOM element reuse, so replacing an array with another array containing overlapping objects is a very efficient operation.
 
-## Displaying Filtered/Sorted Results {#displaying-filtered-sorted-results}
+## Displaying Filtered/Sorted Results
 
 Sometimes we want to display a filtered or sorted version of an array without actually mutating or resetting the original data. In this case, you can create a computed property that returns the filtered or sorted array.
 
@@ -384,7 +384,7 @@ computed: {
 </div>
 
 ```vue-html
-<li v-for="n in evenNumbers">{{ n }}</li>
+<li v-for="n in evenNumbers">{{ '{{' }} n {{ '}}' }}</li>
 ```
 
 In situations where computed properties are not feasible (e.g. inside nested `v-for` loops), you can use a method:
@@ -422,7 +422,7 @@ methods: {
 
 ```vue-html
 <ul v-for="numbers in sets">
-  <li v-for="n in even(numbers)">{{ n }}</li>
+  <li v-for="n in even(numbers)">{{ '{{' }} n {{ '}}' }}</li>
 </ul>
 ```
 

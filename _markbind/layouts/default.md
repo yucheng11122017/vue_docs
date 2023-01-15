@@ -5,9 +5,21 @@
 <header sticky>
   <navbar type="dark">
     <!-- <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">Your Logo</a> -->
+    <li><a href="{{baseUrl}}/docs/quick-start.html" class="nav-link">Quick Start</a></li>
     <dropdown header="Essentials" class="nav-link">
       <li><a href="{{baseUrl}}/docs/essentials/application.html" class="dropdown-item">Creating an Application</a></li>
       <li><a href="{{baseUrl}}/docs/essentials/template-syntax.html" class="dropdown-item">Template Syntax</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/reactivity-fundamentals.html" class="dropdown-item">Reactivity Fundamentals</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/computed.html" class="dropdown-item">Computed Properties</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/class-and-style.html" class="dropdown-item">Class and Style Bindings</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/conditional.html" class="dropdown-item">Conditional Rendering</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/list.html" class="dropdown-item">List Rendering</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/event-handling.html" class="dropdown-item">Event Handling</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/forms.html" class="dropdown-item">Form Input Bindings</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/lifecycle.html" class="dropdown-item">Lifecycle Hooks</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/watchers.html" class="dropdown-item">Watchers</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/template-refs.html" class="dropdown-item">Template Refs</a></li>
+      <li><a href="{{baseUrl}}/docs/essentials/component-basics.html" class="dropdown-item">Components Basics</a></li>
     </dropdown>
     <dropdown header="Components In-Depth" class="nav-link">
       <li><a href="{{baseUrl}}/docs/components/registration.html" class="dropdown-item">Registration</a></li>
@@ -72,6 +84,17 @@
 * Essentials :expanded:
   * [Creating an Application]({{baseUrl}}/docs/essentials/application.html)
   * [Template Syntax]({{baseUrl}}/docs/essentials/template-syntax.html)
+  * [Reactivity Fundamentals]({{baseUrl}}/docs/essentials/reactivity-fundamentals.html)
+  * [Computed Properties]({{baseUrl}}/docs/essentials/computed.html)
+  * [Class and Style Bindings]({{baseUrl}}/docs/essentials/class-and-style.html)
+  * [Conditional Rendering]({{baseUrl}}/docs/essentials/conditional.html)
+  * [List Rendering]({{baseUrl}}/docs/essentials/list.html)
+  * [Event Handling]({{baseUrl}}/docs/essentials/event-handling.html)
+  * [Form Input Bindings]({{baseUrl}}/docs/essentials/forms.html)
+  * [Lifecycle Hooks]({{baseUrl}}/docs/essentials/lifecycle.html)
+  * [Watchers]({{baseUrl}}/docs/essentials/watchers.html)
+  * [Template Refs]({{baseUrl}}/docs/essentials/template-refs.html)
+  * [Components Basics]({{baseUrl}}/docs/essentials/component-basics.html)
 * Components In-Depth :expanded:
   * [Registration]({{baseUrl}}/docs/components/registration.html)
   * [Props]({{baseUrl}}/docs/components/props.html)
