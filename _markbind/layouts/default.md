@@ -33,7 +33,6 @@
       <li><a href="{{baseUrl}}/docs/scaling-up/state-management.html" class="dropdown-item">State Management</a></li>
       <li><a href="{{baseUrl}}/docs/scaling-up/testing.html" class="dropdown-item">Testing</a></li>
       <li><a href="{{baseUrl}}/docs/scaling-up/ssr.html" class="dropdown-item">Server-Side Rendering (SSR)</a></li>
-
     </dropdown>
     <li slot="right">
       <form class="navbar-form">
