@@ -160,12 +160,20 @@ const tweened = reactive({
   number: 0
 })
 
+watch(number, (n) => {
+  gsap.to(tweened, { duration: 0.5, number: Number(n) || 0 })
+})
+```
+
+```vue
+Type a number: <input v-model.number="number" />
+<p>{{ "{{" }} tweened.number.toFixed(0) {{ "}}" }}</p>
 ```
 
 </div>
 <div class="options-api">
 
-```js
+```javascript
 import gsap from 'gsap'
 
 export default {
@@ -175,12 +183,17 @@ export default {
       tweened: 0
     }
   },
-  watch: {
+  watch: { 
     number(n) {
       gsap.to(this, { duration: 0.5, tweened: Number(n) || 0 })
     }
   }
 }
+```
+
+```vue
+  Type a number: <input v-model.number="number" />
+  <p>{{ "{{" }} tweened.toFixed(0) {{ "}}" }}</p>
 ```
 
 </div>
