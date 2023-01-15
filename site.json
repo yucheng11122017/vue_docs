@@ -31,7 +31,8 @@
                 "docs/typescript/*.md",
                 "docs/components/*.md",
                 "docs/built-ins/*.md",
-                "docs/best-practices/*.md"
+                "docs/best-practices/*.md",
+                "docs/reusability/*.md"
               ]
     }
   ],

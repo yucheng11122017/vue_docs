@@ -31,6 +31,13 @@
       <li><a href="{{baseUrl}}/docs/components/slots.html" class="dropdown-item">Slots</a></li>
       <li><a href="{{baseUrl}}/docs/components/provide-inject.html" class="dropdown-item">Provide / inject</a></li>
       <li><a href="{{baseUrl}}/docs/components/async.html" class="dropdown-item">Async Components</a></li>
+    </dropdown>
+    <dropdown header="Reusability" class="nav-link">
+      <li><a href="{{baseUrl}}/docs/reusability/composables.html" class="dropdown-item">Composables</a></li>
+      <li><a href="{{baseUrl}}/docs/reusability/custom-directives.html" class="dropdown-item">Custom Directives</a></li>
+      <li><a href="{{baseUrl}}/docs/reusability/plugins.html" class="dropdown-item">Plugins</a></li>
+    </dropdown>
+    <dropdown header="Built-in Components" class="nav-link">
       <li><a href="{{baseUrl}}/docs/built-ins/transition.html" class="dropdown-item">Transition</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/transition-group.html" class="dropdown-item">TransitionGroup</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/keep-alive.html" class="dropdown-item">KeepAlive</a></li>
@@ -79,7 +86,10 @@
   * [Slots]({{baseUrl}}/docs/components/slots.html)
   * [Provide / inject]({{baseUrl}}/docs/components/provide-inject.html)
   * [Async Components]({{baseUrl}}/docs/components/async.html)
-* Reusability
+* Reusability :expanded:
+  * [Composables]({{baseUrl}}/docs/reusability/composables.html)
+  * [Custom Directives]({{baseUrl}}/docs/reusability/custom-directives.md)
+  * [Plugins]({{baseUrl}}/docs/reusability/plugins.md)
 * Built-in Components :expanded:
   * [Transition]({{baseUrl}}/docs/built-ins/transition.html)
   * [TransitionGroup]({{baseUrl}}/docs/built-ins/transition-group.html)
