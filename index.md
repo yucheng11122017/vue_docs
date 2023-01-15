@@ -4,6 +4,6 @@
   pageNavTitle: "Chapters of This Page"
 </frontmatter>
 
-# Vue.js - The Progressive JavaScript Framework
+# Vue.js
 
-An approachable, performant and versatile framework for building web user interfaces. 
+<img src="{{baseUrl}}/images/vue_intro.png" width="100%"/>
