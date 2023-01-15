@@ -24,14 +24,23 @@
     },
     {
       "glob": [
-        "docs/quick-start.md", 
-        "docs/essentials/application.md", 
-        "docs/essentials/template-syntax.md",
-        "docs/reusability/*.md"
-      ]
+                "docs/introduction.md",
+                "docs/quick-start.md",
+                "docs/essentials/application.md",
+                "docs/essentials/template-syntax.md",
+                "docs/scaling-up/*.md",
+                "docs/typescript/*.md",
+                "docs/components/*.md",
+                "docs/built-ins/*.md",
+                "docs/best-practices/*.md",
+                "docs/reusability/*.md"
+              ]
     }
   ],
   "deploy": {
     "message": "Site Update."
-  }
+  },
+  "plugins": [
+    "codeBlockCopyButtons"
+  ]
 }
