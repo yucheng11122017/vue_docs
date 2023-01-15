@@ -127,7 +127,7 @@ Users can navigate an application through headings. Having descriptive headings 
 | form            | role="form"          | Collection of form-associated elements                                                                           |
 | section         | role="region"        | Content that is relevant and that users will likely want to navigate to. Label must be provided for this element |
 
-<box type="tip">
+<box type="tip" header="Tip">
 
 It is recommended to use landmark HTML elements with redundant landmark role attributes in order to maximize compatibility with legacy [browsers that don’t support HTML5 semantic elements](https://caniuse.com/#feat=html5semantic).
 </box>
