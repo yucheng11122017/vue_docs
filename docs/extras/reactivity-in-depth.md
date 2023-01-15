@@ -1,6 +1,3 @@
----
-outline: deep
----
 
 <script setup>
 import SpreadSheet from './demos/SpreadSheet.vue'

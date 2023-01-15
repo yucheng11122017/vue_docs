@@ -26,6 +26,16 @@
       <li><a href="{{baseUrl}}/docs/built-ins/teleport.html" class="dropdown-item">Teleport</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/suspense.html" class="dropdown-item">Suspense</a></li>
     </dropdown>
+    <dropdown header="Extra Topics" class="nav-link">
+      <li><a href="{{baseUrl}}/docs/extras/ways-of-using-vue.html" class="dropdown-item">Ways of using Vue</a></li>
+      <li><a href="{{baseUrl}}/docs/extras/composition-api-faq.html" class="dropdown-item">Composition API FAQ</a></li>
+      <li><a href="{{baseUrl}}/docs/extras/reactivity-in-depth.html" class="dropdown-item">Reactivity in Depth</a></li>
+      <li><a href="{{baseUrl}}/docs/extras/rendering-mechanism.html" class="dropdown-item">Rendering Mechanism</a></li>
+      <li><a href="{{baseUrl}}/docs/extras/render-function.html" class="dropdown-item">Render Functions & JSX</a></li>
+      <li><a href="{{baseUrl}}/docs/extras/web-components.html" class="dropdown-item">Vue and Web components</a></li>
+      <li><a href="{{baseUrl}}/docs/extras/animation.html" class="dropdown-item">Animation Techniques</a></li>
+      <li><a href="{{baseUrl}}/docs/extras/reactivity-transform.html" class="dropdown-item">Reactivity Transform</a></li>
+    </dropdown>
     <li slot="right">
       <form class="navbar-form">
         <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>

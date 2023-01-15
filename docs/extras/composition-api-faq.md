@@ -1,6 +1,3 @@
----
-outline: deep
----
 
 # Composition API FAQ 
 

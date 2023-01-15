@@ -1,6 +1,4 @@
----
-outline: deep
----
+
 
 # Render Functions & JSX 
 
