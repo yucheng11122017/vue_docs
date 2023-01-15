@@ -1,4 +1,4 @@
-# Computed Properties {#computed-properties}
+# Computed Properties
 
 <div class="options-api">
   <VueSchoolLink href="https://vueschool.io/lessons/computed-properties-in-vue-3" title="Free Vue.js Computed Properties Lesson"/>
@@ -8,7 +8,7 @@
   <VueSchoolLink href="https://vueschool.io/lessons/vue-fundamentals-capi-computed-properties-in-vue-with-the-composition-api" title="Free Vue.js Computed Properties Lesson"/>
 </div>
 
-## Basic Example {#basic-example}
+## Basic Example
 
 In-template expressions are very convenient, but they are meant for simple operations. Putting too much logic in your templates can make them bloated and hard to maintain. For example, if we have an object with a nested array:
 
@@ -51,7 +51,7 @@ And we want to display different messages depending on if `author` already has s
 
 ```vue-html
 <p>Has published books:</p>
-<span>{{ author.books.length > 0 ? 'Yes' : 'No' }}</span>
+<span>{{ '{{' }} author.books.length > 0 ? 'Yes' : 'No' {{ '}}' }}</span>
 ```
 
 At this point, the template is getting a bit cluttered. We have to look at it for a second before realizing that it performs a calculation depending on `author.books`. More importantly, we probably don't want to repeat ourselves if we need to include this calculation in the template more than once.
@@ -86,7 +86,7 @@ export default {
 
 ```vue-html
 <p>Has published books:</p>
-<span>{{ publishedBooksMessage }}</span>
+<span>{{ '{{' }} publishedBooksMessage {{ '}}' }}</span>
 ```
 
 [Try it in the Playground](https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdD5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgZGF0YSgpIHtcbiAgICByZXR1cm4ge1xuICAgICAgYXV0aG9yOiB7XG4gICAgICAgIG5hbWU6ICdKb2huIERvZScsXG4gICAgICAgIGJvb2tzOiBbXG4gICAgICAgICAgJ1Z1ZSAyIC0gQWR2YW5jZWQgR3VpZGUnLFxuICAgICAgICAgICdWdWUgMyAtIEJhc2ljIEd1aWRlJyxcbiAgICAgICAgICAnVnVlIDQgLSBUaGUgTXlzdGVyeSdcbiAgICAgICAgXVxuICAgICAgfVxuICAgIH1cbiAgfSxcbiAgY29tcHV0ZWQ6IHtcbiAgICBwdWJsaXNoZWRCb29rc01lc3NhZ2UoKSB7XG4gICAgICByZXR1cm4gdGhpcy5hdXRob3IuYm9va3MubGVuZ3RoID4gMCA/ICdZZXMnIDogJ05vJ1xuICAgIH1cbiAgfVxufVxuPC9zY3JpcHQ+XG5cbjx0ZW1wbGF0ZT5cbiAgPHA+SGFzIHB1Ymxpc2hlZCBib29rczo8L3A+XG4gIDxzcGFuPnt7IGF1dGhvci5ib29rcy5sZW5ndGggPiAwID8gJ1llcycgOiAnTm8nIH19PC9zcGFuPlxuPC90ZW1wbGF0ZT4iLCJpbXBvcnQtbWFwLmpzb24iOiJ7XG4gIFwiaW1wb3J0c1wiOiB7XG4gICAgXCJ2dWVcIjogXCJodHRwczovL3NmYy52dWVqcy5vcmcvdnVlLnJ1bnRpbWUuZXNtLWJyb3dzZXIuanNcIlxuICB9XG59In0=)
@@ -124,7 +124,7 @@ const publishedBooksMessage = computed(() => {
 
 <template>
   <p>Has published books:</p>
-  <span>{{ publishedBooksMessage }}</span>
+  <span>{{ '{{' }} publishedBooksMessage {{ '}}' }}</span>
 </template>
 ```
 
@@ -138,12 +138,12 @@ See also: [Typing Computed](/guide/typescript/composition-api.html#typing-comput
 
 </div>
 
-## Computed Caching vs. Methods {#computed-caching-vs-methods}
+## Computed Caching vs. Methods
 
 You may have noticed we can achieve the same result by invoking a method in the expression:
 
 ```vue-html
-<p>{{ calculateBooksMessage() }}</p>
+<p>{{ '{{' }} calculateBooksMessage() {{ '}}' }}</p>
 ```
 
 <div class="options-api">
@@ -198,7 +198,7 @@ In comparison, a method invocation will **always** run the function whenever a r
 
 Why do we need caching? Imagine we have an expensive computed property `list`, which requires looping through a huge array and doing a lot of computations. Then we may have other computed properties that in turn depend on `list`. Without caching, we would be executing `list`’s getter many more times than necessary! In cases where you do not want caching, use a method call instead.
 
-## Writable Computed {#writable-computed}
+## Writable Computed
 
 Computed properties are by default getter-only. If you attempt to assign a new value to a computed property, you will receive a runtime warning. In the rare cases where you need a "writable" computed property, you can create one by providing both a getter and a setter:
 
@@ -259,12 +259,12 @@ Now when you run `fullName.value = 'John Doe'`, the setter will be invoked and `
 
 </div>
 
-## Best Practices {#best-practices}
+## Best Practices 
 
-### Getters should be side-effect free {#getters-should-be-side-effect-free}
+### Getters should be side-effect free
 
 It is important to remember that computed getter functions should only perform pure computation and be free of side effects. For example, **don't make async requests or mutate the DOM inside a computed getter!** Think of a computed property as declaratively describing how to derive a value based on other values - its only responsibility should be computing and returning that value. Later in the guide we will discuss how we can perform side effects in reaction to state changes with [watchers](./watchers).
 
-### Avoid mutating computed value {#avoid-mutating-computed-value}
+### Avoid mutating computed value
 
 The returned value from a computed property is derived state. Think of it as a temporary snapshot - every time the source state changes, a new snapshot is created. It does not make sense to mutate a snapshot, so a computed return value should be treated as read-only and never be mutated - instead, update the source state it depends on to trigger new computations.

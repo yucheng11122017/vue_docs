@@ -1,6 +1,9 @@
-﻿# Plugins
+﻿
+# Plugins
 
-## Introduction {#introduction}
+***
+
+## Introduction
 
 Plugins are self-contained code that usually add app-level functionality to Vue. This is how we install a plugin:
 
@@ -34,7 +37,9 @@ There is no strictly defined scope for a plugin, but common scenarios where plug
 
 4. A library that needs to perform some combination of the above (e.g. [vue-router](https://github.com/vuejs/vue-router-next)).
 
-## Writing a Plugin {#writing-a-plugin}
+***
+
+## Writing a Plugin
 
 In order to better understand how to create your own Vue.js plugins, we will create a very simplified version of a plugin that displays `i18n` (short for [Internationalization](https://en.wikipedia.org/wiki/Internationalization_and_localization)) strings.
 
@@ -52,7 +57,7 @@ export default {
 We want to create a translation function. This function will receive a dot-delimited `key` string, which we will use to look up the translated string in the user-provided options. This is the intended usage in templates:
 
 ```vue-html
-<h1>{{ $translate('greetings.hello') }}</h1>
+<h1>{{ '{{' }} $translate('greetings.hello') {{ '}}' }}</h1>
 ```
 
 Since this function should be globally available in all templates, we will make it so by attaching it to `app.config.globalProperties` in our plugin:
@@ -91,11 +96,11 @@ Now, our initial expression `$translate('greetings.hello')` will be replaced by 
 
 See also: [Augmenting Global Properties](/guide/typescript/options-api.html#augmenting-global-properties) <sup class="vt-badge ts" />
 
-:::tip
-Use global properties scarcely, since it can quickly become confusing if too many global properties injected by different plugins are used throughout an app.
-:::
+<box type="info">
+  Use global properties scarcely, since it can quickly become confusing if too many global properties injected by different plugins are used throughout an app.
+</box>
 
-### Provide / Inject with Plugins {#provide-inject-with-plugins}
+### Provide / Inject with Plugins
 
 Plugins also allow us to use `inject` to provide a function or attribute to the plugin's users. For example, we can allow the application to have access to the `options` parameter to be able to use the translations object.
 

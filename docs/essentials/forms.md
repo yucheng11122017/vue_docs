@@ -13,7 +13,7 @@ const selected = ref('')
 const multiSelected = ref([])
 </script>
 
-# Form Input Bindings {#form-input-bindings}
+# Form Input Bindings
 
 <div class="options-api">
   <VueSchoolLink href="https://vueschool.io/lessons/user-inputs-vue-devtools-in-vue-3" title="Free Lesson on User Inputs with Vue.js"/>
@@ -47,17 +47,17 @@ In addition, `v-model` can be used on inputs of different types, `<textarea>`, a
 `v-model` will ignore the initial `value`, `checked` or `selected` attributes found on any form elements. It will always treat the current bound JavaScript state as the source of truth. You should declare the initial value on the JavaScript side, using <span class="options-api">the `data` option</span><span class="composition-api">reactivity APIs</span>.
 :::
 
-## Basic Usage {#basic-usage}
+## Basic Usage
 
-### Text {#text}
+### Text
 
 ```vue-html
-<p>Message is: {{ message }}</p>
+<p>Message is: {{ '{{' }} message {{ '}}' }}</p>
 <input v-model="message" placeholder="edit me" />
 ```
 
 <div class="demo">
-  <p>Message is: {{ message }}</p>
+  <p>Message is: {{ '{{' }} message {{ '}}' }}</p>
   <input v-model="message" placeholder="edit me" />
 </div>
 
@@ -77,17 +77,17 @@ In addition, `v-model` can be used on inputs of different types, `<textarea>`, a
 For languages that require an [IME](https://en.wikipedia.org/wiki/Input_method) (Chinese, Japanese, Korean etc.), you'll notice that `v-model` doesn't get updated during IME composition. If you want to respond to these updates as well, use your own `input` event listener and `value` binding instead of using `v-model`.
 :::
 
-### Multiline text {#multiline-text}
+### Multiline text
 
 ```vue-html
 <span>Multiline message is:</span>
-<p style="white-space: pre-line;">{{ message }}</p>
+<p style="white-space: pre-line;">{{ '{{' }} message {{ '}}' }}</p>
 <textarea v-model="message" placeholder="add multiple lines"></textarea>
 ```
 
 <div class="demo">
   <span>Multiline message is:</span>
-  <p style="white-space: pre-line;">{{ multilineText }}</p>
+  <p style="white-space: pre-line;">{{ '{{' }} multilineText {{ '}}' }}</p>
   <textarea v-model="multilineText" placeholder="add multiple lines"></textarea>
 </div>
 
@@ -106,24 +106,24 @@ Note that interpolation inside `<textarea>` won't work. Use `v-model` instead.
 
 ```vue-html
 <!-- bad -->
-<textarea>{{ text }}</textarea>
+<textarea>{{ '{{' }} text {{ '}}' }}</textarea>
 
 <!-- good -->
 <textarea v-model="text"></textarea>
 ```
 
-### Checkbox {#checkbox}
+### Checkbox
 
 Single checkbox, boolean value:
 
 ```vue-html
 <input type="checkbox" id="checkbox" v-model="checked" />
-<label for="checkbox">{{ checked }}</label>
+<label for="checkbox">{{ '{{' }} checked {{ '}}' }}</label>
 ```
 
 <div class="demo">
   <input type="checkbox" id="checkbox-demo" v-model="checked" />
-  <label for="checkbox-demo">{{ checked }}</label>
+  <label for="checkbox-demo">{{ '{{' }} checked {{ '}}' }}</label>
 </div>
 
 <div class="composition-api">
@@ -161,7 +161,7 @@ export default {
 </div>
 
 ```vue-html
-<div>Checked names: {{ checkedNames }}</div>
+<div>Checked names: {{ '{{' }} checkedNames {{ '}}' }}</div>
 
 <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
 <label for="jack">Jack</label>
@@ -174,7 +174,7 @@ export default {
 ```
 
 <div class="demo">
-  <div>Checked names: {{ checkedNames }}</div>
+  <div>Checked names: {{ '{{' }} checkedNames {{ '}}' }}</div>
 
   <input type="checkbox" id="demo-jack" value="Jack" v-model="checkedNames">
   <label for="demo-jack">Jack</label>
@@ -199,10 +199,10 @@ In this case, the `checkedNames` array will always contain the values from the c
 
 </div>
 
-### Radio {#radio}
+### Radio
 
 ```vue-html
-<div>Picked: {{ picked }}</div>
+<div>Picked: {{ '{{' }} picked {{ '}}' }}</div>
 
 <input type="radio" id="one" value="One" v-model="picked" />
 <label for="one">One</label>
@@ -212,7 +212,7 @@ In this case, the `checkedNames` array will always contain the values from the c
 ```
 
 <div class="demo">
-  <div>Picked: {{ picked }}</div>
+  <div>Picked: {{ '{{' }} picked {{ '}}' }}</div>
 
   <input type="radio" id="one" value="One" v-model="picked" />
   <label for="one">One</label>
@@ -232,12 +232,12 @@ In this case, the `checkedNames` array will always contain the values from the c
 
 </div>
 
-### Select {#select}
+### Select
 
 Single select:
 
 ```vue-html
-<div>Selected: {{ selected }}</div>
+<div>Selected: {{ '{{' }} selected {{ '}}' }}</div>
 
 <select v-model="selected">
   <option disabled value="">Please select one</option>
@@ -248,7 +248,7 @@ Single select:
 ```
 
 <div class="demo">
-  <div>Selected: {{ selected }}</div>
+  <div>Selected: {{ '{{' }} selected {{ '}}' }}</div>
   <select v-model="selected">
     <option disabled value="">Please select one</option>
     <option>A</option>
@@ -275,7 +275,7 @@ If the initial value of your `v-model` expression does not match any of the opti
 Multiple select (bound to array):
 
 ```vue-html
-<div>Selected: {{ selected }}</div>
+<div>Selected: {{ '{{' }} selected {{ '}}' }}</div>
 
 <select v-model="selected" multiple>
   <option>A</option>
@@ -285,7 +285,7 @@ Multiple select (bound to array):
 ```
 
 <div class="demo">
-  <div>Selected: {{ multiSelected }}</div>
+  <div>Selected: {{ '{{' }} multiSelected {{ '}}' }}</div>
 
   <select v-model="multiSelected" multiple>
     <option>A</option>
@@ -342,11 +342,11 @@ export default {
 ```vue-html
 <select v-model="selected">
   <option v-for="option in options" :value="option.value">
-    {{ option.text }}
+    {{ '{{' }} option.text {{ '}}' }}
   </option>
 </select>
 
-<div>Selected: {{ selected }}</div>
+<div>Selected: {{ '{{' }} selected {{ '}}' }}</div>
 ```
 
 <div class="composition-api">
@@ -360,7 +360,7 @@ export default {
 
 </div>
 
-## Value Bindings {#value-bindings}
+## Value Bindings
 
 For radio, checkbox and select options, the `v-model` binding values are usually static strings (or booleans for checkbox):
 
@@ -412,7 +412,7 @@ The `true-value` and `false-value` attributes don't affect the input's `value` a
 
 `pick` will be set to the value of `first` when the first radio input is checked, and set to the value of `second` when the second one is checked.
 
-### Select Options {#select-options}
+### Select Options
 
 ```vue-html
 <select v-model="selected">
@@ -423,9 +423,9 @@ The `true-value` and `false-value` attributes don't affect the input's `value` a
 
 `v-model` supports value bindings of non-string values as well! In the above example, when the option is selected, `selected` will be set to the object literal value of `{ number: 123 }`.
 
-## Modifiers {#modifiers}
+## Modifiers
 
-### `.lazy` {#lazy}
+### `.lazy`
 
 By default, `v-model` syncs the input with the data after each `input` event (with the exception of IME composition as [stated above](#vmodel-ime-tip)). You can add the `lazy` modifier to instead sync after `change` events:
 
@@ -434,7 +434,7 @@ By default, `v-model` syncs the input with the data after each `input` event (wi
 <input v-model.lazy="msg" />
 ```
 
-### `.number` {#number}
+### `.number`
 
 If you want user input to be automatically typecast as a number, you can add the `number` modifier to your `v-model` managed inputs:
 
@@ -446,7 +446,7 @@ If the value cannot be parsed with `parseFloat()`, then the original value is us
 
 The `number` modifier is applied automatically if the input has `type="number"`.
 
-### `.trim` {#trim}
+### `.trim`
 
 If you want whitespace from user input to be trimmed automatically, you can add the `trim` modifier to your `v-model`-managed inputs:
 
@@ -454,7 +454,7 @@ If you want whitespace from user input to be trimmed automatically, you can add 
 <input v-model.trim="msg" />
 ```
 
-## `v-model` with Components {#v-model-with-components}
+## `v-model` with Components
 
 > If you're not yet familiar with Vue's components, you can skip this for now.
 

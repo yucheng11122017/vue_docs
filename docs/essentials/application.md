@@ -104,7 +104,7 @@ This makes the `TodoDeleteButton` available for use anywhere in our app. We will
 Make sure to apply all app configurations before mounting the app!
 
 ## Multiple application instances
-{{baseUrl}}/contents/topic2.html
+
 ```js
 const app1 = createApp({
   /* ... */
