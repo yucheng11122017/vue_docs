@@ -26,6 +26,11 @@
       <li><a href="{{baseUrl}}/docs/built-ins/teleport.html" class="dropdown-item">Teleport</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/suspense.html" class="dropdown-item">Suspense</a></li>
     </dropdown>
+    <dropdown header="TypeScript" class="nav-link">
+      <li><a href="{{baseUrl}}/docs/typescript/overview.html" class="dropdown-item">Overview</a></li>
+      <li><a href="{{baseUrl}}/docs/typescript/composition-api.html" class="dropdown-item">TS with Composition API</a></li>
+      <li><a href="{{baseUrl}}/docs/typescript/options-api.html" class="dropdown-item">TS with Options API</a></li>
+    </dropdown>
     <li slot="right">
       <form class="navbar-form">
         <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
