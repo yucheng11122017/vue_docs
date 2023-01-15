@@ -5,6 +5,10 @@
 <header sticky>
   <navbar type="dark">
     <!-- <a slot="brand" href="{{baseUrl}}/index.html" title="Home" class="navbar-brand">Your Logo</a> -->
+    <dropdown header="Getting Started" class="nav-link">
+      <li><a href="{{baseUrl}}/docs/introduction.html" class="dropdown-item">Introduction</a></li>
+      <li><a href="{{baseUrl}}/docs/quick-start.html" class="dropdown-item">Quick Start</a></li>
+    </dropdown>
     <dropdown header="Essentials" class="nav-link">
       <li><a href="{{baseUrl}}/docs/essentials/application.html" class="dropdown-item">Creating an Application</a></li>
       <li><a href="{{baseUrl}}/docs/essentials/template-syntax.html" class="dropdown-item">Template Syntax</a></li>
