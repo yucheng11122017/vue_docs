@@ -66,7 +66,10 @@
   * [Suspense]({{baseUrl}}/docs/built-ins/suspense.html)
 * Scaling Up
 * Best Practices
+  * [Production Deployment]({{baseUrl}}/docs/best-practices/production-deployment.html)
+  * [Performance]({{baseUrl}}/docs/best-practices/performance.html)
   * [Accessibility]({{baseUrl}}/docs/best-practices/accessibility.html)
+  * [Security]({{baseUrl}}/docs/best-practices/security.html)
 * TypeScript
 * Extra Topics
       </site-nav>
