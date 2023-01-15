@@ -26,6 +26,14 @@
       <li><a href="{{baseUrl}}/docs/built-ins/teleport.html" class="dropdown-item">Teleport</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/suspense.html" class="dropdown-item">Suspense</a></li>
     </dropdown>
+    <dropdown header="Scaling Up" class="nav-link">
+      <li><a href="{{baseUrl}}/docs/scaling-up/sfc.html" class="dropdown-item">Single-File Components</a></li>
+      <li><a href="{{baseUrl}}/docs/scaling-up/tooling.html" class="dropdown-item">Tooling</a></li>
+      <li><a href="{{baseUrl}}/docs/scaling-up/routing.html" class="dropdown-item">Routing</a></li>
+      <li><a href="{{baseUrl}}/docs/scaling-up/state-management.html" class="dropdown-item">State Management</a></li>
+      <li><a href="{{baseUrl}}/docs/scaling-up/testing.html" class="dropdown-item">Testing</a></li>
+      <li><a href="{{baseUrl}}/docs/scaling-up/ssr.html" class="dropdown-item">Server-Side Rendering (SSR)</a></li>
+    </dropdown>
     <dropdown header="Best practises" class="nav-link">
       <li><a href="{{baseUrl}}/docs/best-practices/production-deployment.html" class="dropdown-item">Production Deployment</a></li>
       <li><a href="{{baseUrl}}/docs/best-practices/performance.html" class="dropdown-item">Performance</a></li>
@@ -75,7 +83,13 @@
   * [KeepAlive]({{baseUrl}}/docs/built-ins/keep-alive.html)
   * [Teleport]({{baseUrl}}/docs/built-ins/teleport.html)
   * [Suspense]({{baseUrl}}/docs/built-ins/suspense.html)
-* Scaling Up
+* Scaling Up :expanded:
+  * [Single-file Components]({{baseUrl}}/docs/scaling-up/sfc.html)
+  * [Tooling]({{baseUrl}}/docs/scaling-up/tooling.html)
+  * [Routing]({{baseUrl}}/docs/scaling-up/routing.html)
+  * [State Management]({{baseUrl}}/docs/scaling-up/state-management.html)
+  * [Testing]({{baseUrl}}/docs/scaling-up/testing.html)
+  * [Server-Side Rendering (SSR)]({{baseUrl}}/docs/scaling-up/ssr.html)
 * Best Practices :expanded:
   * [Production Deployment]({{baseUrl}}/docs/best-practices/production-deployment.html)
   * [Performance]({{baseUrl}}/docs/best-practices/performance.html)
