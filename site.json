@@ -24,14 +24,20 @@
     },
     {
       "glob": [
+                "docs/introduction.md",
                 "docs/quick-start.md",
                 "docs/essentials/application.md",
                 "docs/essentials/template-syntax.md",
-                "docs/typescript/*.md"
+                "docs/typescript/*.md",
+                "docs/components/*.md",
+                "docs/built-ins/*.md"
               ]
     }
   ],
   "deploy": {
     "message": "Site Update."
-  }
+  },
+  "plugins": [
+    "codeBlockCopyButtons"
+  ]
 }
