@@ -26,6 +26,12 @@
       <li><a href="{{baseUrl}}/docs/built-ins/teleport.html" class="dropdown-item">Teleport</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/suspense.html" class="dropdown-item">Suspense</a></li>
     </dropdown>
+    <dropdown header="Best practises" class="nav-link">
+      <li><a href="{{baseUrl}}/docs/best-practices/production-deployment.html" class="dropdown-item">Production Deployment</a></li>
+      <li><a href="{{baseUrl}}/docs/best-practices/performance.html" class="dropdown-item">Performance</a></li>
+      <li><a href="{{baseUrl}}/docs/best-practices/accessibility.html" class="dropdown-item">Accessibility</a></li>
+      <li><a href="{{baseUrl}}/docs/best-practices/security.html" class="dropdown-item">Security</a></li>
+    </dropdown>
     <li slot="right">
       <form class="navbar-form">
         <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
@@ -65,7 +71,7 @@
   * [Teleport]({{baseUrl}}/docs/built-ins/teleport.html)
   * [Suspense]({{baseUrl}}/docs/built-ins/suspense.html)
 * Scaling Up
-* Best Practices
+* Best Practices :expanded:
   * [Production Deployment]({{baseUrl}}/docs/best-practices/production-deployment.html)
   * [Performance]({{baseUrl}}/docs/best-practices/performance.html)
   * [Accessibility]({{baseUrl}}/docs/best-practices/accessibility.html)
