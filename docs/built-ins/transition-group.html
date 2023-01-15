@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 4.0.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="../../markbind/css/octicons.css">
+    <link rel="stylesheet" href="../../markbind/material-icons/material-icons.css">
+    <link rel="stylesheet" href="../../markbind/css/codeblock-dark.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
+    <script src="../../markbind/js/vue.min.js"></script>
+    <script src="../../markbind/js/markbind.min.js"></script>
+    <script src="transition-group.page-vue-render.js"></script>
+    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="/plugins/markbind-plugin-tree/markbind-plugin-tree.css">
+    
+  <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<script>
+  const baseUrl = ''
+</script>
+<body >
+<div id="app" data-server-rendered="true"><header sticky=""><div data-v-15113a2f><nav class="navbar navbar-expand-md d-print-none navbar-dark bg-dark" data-v-15113a2f><div class="container-fluid" data-v-15113a2f><div class="navbar-left" data-v-15113a2f></div> <div class="navbar-default" data-v-15113a2f><ul class="navbar-nav me-auto mt-2 mt-lg-0" data-v-15113a2f><li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Essentials</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/essentials/application.html" class="dropdown-item" data-v-2e98b3f0>Creating an Application</a></li> <li data-v-2e98b3f0><a href="/docs/essentials/template-syntax.html" class="dropdown-item" data-v-2e98b3f0>Template Syntax</a></li></ul></li> <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Components In-Depth</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/components/registration.html" class="dropdown-item" data-v-2e98b3f0>Registration</a></li> <li data-v-2e98b3f0><a href="/docs/components/props.html" class="dropdown-item" data-v-2e98b3f0>Props</a></li> <li data-v-2e98b3f0><a href="/docs/components/events.html" class="dropdown-item" data-v-2e98b3f0>Events</a></li> <li data-v-2e98b3f0><a href="/docs/components/v-model.html" class="dropdown-item" data-v-2e98b3f0>Component v-model</a></li> <li data-v-2e98b3f0><a href="/docs/components/attrs.html" class="dropdown-item" data-v-2e98b3f0>Fallthrough Attributes</a></li> <li data-v-2e98b3f0><a href="/docs/components/slots.html" class="dropdown-item" data-v-2e98b3f0>Slots</a></li> <li data-v-2e98b3f0><a href="/docs/components/provide-inject.html" class="dropdown-item" data-v-2e98b3f0>Provide / inject</a></li> <li data-v-2e98b3f0><a href="/docs/components/async.html" class="dropdown-item" data-v-2e98b3f0>Async Components</a></li></ul></li> <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Built-in Components</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/built-ins/transition.html" class="dropdown-item" data-v-2e98b3f0>Transition</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/transition-group.html" class="dropdown-item" data-v-2e98b3f0>TransitionGroup</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/keep-alive.html" class="dropdown-item" data-v-2e98b3f0>KeepAlive</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/teleport.html" class="dropdown-item" data-v-2e98b3f0>Teleport</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/suspense.html" class="dropdown-item" data-v-2e98b3f0>Suspense</a></li></ul></li>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Extra Topics</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/extras/ways-of-using-vue.html" class="dropdown-item" data-v-2e98b3f0>Ways of using Vue</a></li> <li data-v-2e98b3f0><a href="/docs/extras/composition-api-faq.html" class="dropdown-item" data-v-2e98b3f0>Composition API FAQ</a></li> <li data-v-2e98b3f0><a href="/docs/extras/reactivity-in-depth.html" class="dropdown-item" data-v-2e98b3f0>Reactivity in Depth</a></li> <li data-v-2e98b3f0><a href="/docs/extras/rendering-mechanism.html" class="dropdown-item" data-v-2e98b3f0>Rendering Mechanism</a></li> <li data-v-2e98b3f0><a href="/docs/extras/render-function.html" class="dropdown-item" data-v-2e98b3f0>Render Functions &amp; JSX</a></li> <li data-v-2e98b3f0><a href="/docs/extras/web-components.html" class="dropdown-item" data-v-2e98b3f0>Vue and Web components</a></li> <li data-v-2e98b3f0><a href="/docs/extras/animation.html" class="dropdown-item" data-v-2e98b3f0>Animation Techniques</a></li> <li data-v-2e98b3f0><a href="/docs/extras/reactivity-transform.html" class="dropdown-item" data-v-2e98b3f0>Reactivity Transform</a></li>
+=======
+    <li class="nav-link dropdown-submenu dropend" data-v-3d2bfc10 data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-item submenu-toggle" data-v-3d2bfc10>Best practises</a> <ul class="dropdown-menu" data-v-3d2bfc10> <li data-v-3d2bfc10><a href="/docs/best-practices/production-deployment.html" class="dropdown-item" data-v-3d2bfc10>Production Deployment</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/performance.html" class="dropdown-item" data-v-3d2bfc10>Performance</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/accessibility.html" class="dropdown-item" data-v-3d2bfc10>Accessibility</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/security.html" class="dropdown-item" data-v-3d2bfc10>Security</a></li>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 473d14335b50a8d8d2ed962afbba21a01abdecd7
+    </ul></li></ul></li></ul></div> <!----></div></nav> <div class="lower-navbar-container" style="display:none;" data-v-15113a2f><!----> <!----></div></div></header> <div id="flex-body"><nav id="site-nav" data-v-e8c82f88><div class="site-nav-top" data-v-e8c82f88><div class="fw-bold mb-2" style="font-size:1.25rem;" data-v-e8c82f88>Template</div></div> <div class="nav-component slim-scroll" data-v-e8c82f88><div class="site-nav-root"><ul class="site-nav-list site-nav-list-root" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Getting Started 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/introduction.html" data-v-e8c82f88>Introduction</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/quick-start.html" data-v-e8c82f88>Quick Start</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Essentials 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/essentials/application.html" data-v-e8c82f88>Creating an Application</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/essentials/template-syntax.html" data-v-e8c82f88>Template Syntax</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Components In-Depth
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/registration.html" data-v-e8c82f88>Registration</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/props.html" data-v-e8c82f88>Props</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/events.html" data-v-e8c82f88>Events</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/v-model.html" data-v-e8c82f88>Component v-model</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/attrs.html" data-v-e8c82f88>Fallthrough Attributes</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/slots.html" data-v-e8c82f88>Slots</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/provide-inject.html" data-v-e8c82f88>Provide / inject</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/async.html" data-v-e8c82f88>Async Components</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Reusability</li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Built-in Components
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/transition.html" data-v-e8c82f88>Transition</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/transition-group.html" data-v-e8c82f88>TransitionGroup</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/keep-alive.html" data-v-e8c82f88>KeepAlive</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/teleport.html" data-v-e8c82f88>Teleport</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/suspense.html" data-v-e8c82f88>Suspense</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Scaling Up</li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Best Practices 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/production-deployment.html" data-v-e8c82f88>Production Deployment</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/performance.html" data-v-e8c82f88>Performance</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/accessibility.html" data-v-e8c82f88>Accessibility</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/security.html" data-v-e8c82f88>Security</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Extra topics 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/ways-of-using-vue.html" data-v-e8c82f88>Ways of using Vue</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/composition-api-faq.html" data-v-e8c82f88>Composition API FAQ</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/reactivity-in-depth.html" data-v-e8c82f88>Reactivity in Depth</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/rendering-mechanism.html" data-v-e8c82f88>Rendering Mechanism</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/render-function.html" data-v-e8c82f88>Render Functions &amp; JSX</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/web-components.html" data-v-e8c82f88>Vue and Web Components</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/animation.html" data-v-e8c82f88>Animation Techniques</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/reactivity-transform.html" data-v-e8c82f88>Reactivity Transform</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>TypeScript</li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Extra Topics</li> <!----></ul></div></div> <!----></nav> <div id="content-wrapper"><h1 id="transitiongroup"><span id="transitiongroup" class="anchor"></span>TransitionGroup<a href="#transitiongroup" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h1> <p><code class="hljs inline no-lang">&lt;TransitionGroup&gt;</code> is a built-in component designed for animating the insertion, removal, and order change of elements or components that are rendered in a list.</p> <h2 id="differences-from-transition"><span id="differences-from-transition" class="anchor"></span>Differences from <code class="hljs inline no-lang">&lt;Transition&gt;</code><a href="#differences-from-transition" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p><code class="hljs inline no-lang">&lt;TransitionGroup&gt;</code> supports the same props, CSS transition classes, and JavaScript hook listeners as <code class="hljs inline no-lang">&lt;Transition&gt;</code>, with the following differences:</p> <ul><li><p>By default, it doesn't render a wrapper element. But you can specify an element to be rendered with the <code class="hljs inline no-lang">tag</code> prop.</p></li> <li><p><a href="/docs/built-ins/transition.html#transition-modes">Transition modes</a> are not available, because we are no longer alternating between mutually exclusive elements.</p></li> <li><p>Elements inside are <strong>always required</strong> to have a unique <code class="hljs inline no-lang">key</code> attribute.</p></li> <li><p>CSS transition classes will be applied to individual elements in the list, <strong>not</strong> to the group / container itself.</p></li></ul> <p>:::tip
+When used in <a href="/docs/essentials/component-basics.html#dom-template-parsing-caveats">DOM templates</a>, it should be referenced as <code class="hljs inline no-lang">&lt;transition-group&gt;</code>.
+:::</p> <h2 id="enter-leave-transitions"><span id="enter-leave-transitions" class="anchor"></span>Enter / Leave Transitions<a href="#enter-leave-transitions" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>Here is an example of applying enter / leave transitions to a <code class="hljs inline no-lang">v-for</code> list using <code class="hljs inline no-lang">&lt;TransitionGroup&gt;</code>:</p> <pre><code class="hljs"><span>&lt;TransitionGroup name=&quot;list&quot; tag=&quot;ul&quot;&gt;
+</span><span>  &lt;li v-for=&quot;item in items&quot; :key=&quot;item&quot;&gt;
+</span><span>    
+</span><span>  &lt;/li&gt;
+</span><span>&lt;/TransitionGroup&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><pre><code class="hljs css"><span><span class="hljs-selector-class">.list-enter-active</span>,
+</span><span><span class="hljs-selector-class">.list-leave-active</span> {
+</span><span>  <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease;
+</span><span>}
+</span><span><span class="hljs-selector-class">.list-enter-from</span>,
+</span><span><span class="hljs-selector-class">.list-leave-to</span> {
+</span><span>  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+</span><span>  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(<span class="hljs-number">30px</span>);
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><listbasic></listbasic> <h2 id="move-transitions"><span id="move-transitions" class="anchor"></span>Move Transitions<a href="#move-transitions" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>The above demo has some obvious flaws: when an item is inserted or removed, its surrounding items instantly &quot;jump&quot; into place instead of moving smoothly. We can fix this by adding a few additional CSS rules:</p> <pre><code class="line-numbers hljs css"><span class="highlighted"><span class="hljs-selector-class">.list-move</span>, <span class="hljs-comment">/* apply transition to moving elements */</span>
+</span><span><span class="hljs-selector-class">.list-enter-active</span>,
+</span><span><span class="hljs-selector-class">.list-leave-active</span> {
+</span><span>  <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.5s</span> ease;
+</span><span>}
+</span><span>
+</span><span><span class="hljs-selector-class">.list-enter-from</span>,
+</span><span><span class="hljs-selector-class">.list-leave-to</span> {
+</span><span>  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+</span><span>  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(<span class="hljs-number">30px</span>);
+</span><span>}
+</span><span>
+</span><span><span class="highlighted"><span class="hljs-comment">/* ensure leaving items are taken out of layout flow so that moving</span></span>
+</span><span><span class="highlighted"><span class="hljs-comment">   animations can be calculated correctly. */</span></span>
+</span><span><span class="highlighted"><span class="hljs-selector-class">.list-leave-active</span> {</span>
+</span><span>  <span class="highlighted"><span class="hljs-attribute">position</span>: absolute;</span>
+</span><span><span class="highlighted">}</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Now it looks much better - even animating smoothly when the whole list is shuffled:</p> <listmove></listmove> <p><a href="/examples/#list-transition">Full Example</a></p> <h2 id="staggering-list-transitions"><span id="staggering-list-transitions" class="anchor"></span>Staggering List Transitions<a href="#staggering-list-transitions" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>By communicating with JavaScript transitions through data attributes, it's also possible to stagger transitions in a list. First, we render the index of an item as a data attribute on the DOM element:</p> <pre><code class="line-numbers hljs"><span>&lt;TransitionGroup
+</span><span>  tag=&quot;ul&quot;
+</span><span>  :css=&quot;false&quot;
+</span><span>  @before-enter=&quot;onBeforeEnter&quot;
+</span><span>  @enter=&quot;onEnter&quot;
+</span><span>  @leave=&quot;onLeave&quot;
+</span><span>&gt;
+</span><span>  &lt;li
+</span><span>    v-for=&quot;(item, index) in computedList&quot;
+</span><span>    :key=&quot;item.msg&quot;
+</span><span>    <span class="highlighted">:data-index=&quot;index&quot;</span>
+</span><span>  &gt;
+</span><span>    
+</span><span>  &lt;/li&gt;
+</span><span>&lt;/TransitionGroup&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Then, in JavaScript hooks, we animate the element with a delay based on the data attribute. This example is using the <a href="https://greensock.com/">GreenSock library</a> to perform the animation:</p> <pre><code class="line-numbers hljs js"><span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onEnter</span>(<span class="hljs-params">el, done</span>) </span>{
+</span><span>  gsap.to(el, {
+</span><span>    <span class="hljs-attr">opacity</span>: <span class="hljs-number">1</span>,
+</span><span>    <span class="hljs-attr">height</span>: <span class="hljs-string">'1.6em'</span>,
+</span><span>    <span class="highlighted"><span class="hljs-attr">delay</span>: el.dataset.index * <span class="hljs-number">0.15</span>,</span>
+</span><span>    <span class="hljs-attr">onComplete</span>: done
+</span><span>  })
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><liststagger></liststagger> <div class="composition-api"><p><a href="https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdCBzZXR1cD5cbmltcG9ydCB7IHJlZiwgY29tcHV0ZWQgfSBmcm9tICd2dWUnXG5pbXBvcnQgZ3NhcCBmcm9tICdnc2FwJ1xuXG5jb25zdCBsaXN0ID0gW1xuICB7IG1zZzogJ0JydWNlIExlZScgfSxcbiAgeyBtc2c6ICdKYWNraWUgQ2hhbicgfSxcbiAgeyBtc2c6ICdDaHVjayBOb3JyaXMnIH0sXG4gIHsgbXNnOiAnSmV0IExpJyB9LFxuICB7IG1zZzogJ0t1bmcgRnVyeScgfVxuXVxuXG5jb25zdCBxdWVyeSA9IHJlZignJylcblxuY29uc3QgY29tcHV0ZWRMaXN0ID0gY29tcHV0ZWQoKCkgPT4ge1xuICByZXR1cm4gbGlzdC5maWx0ZXIoKGl0ZW0pID0+IGl0ZW0ubXNnLnRvTG93ZXJDYXNlKCkuaW5jbHVkZXMocXVlcnkudmFsdWUpKVxufSlcblxuZnVuY3Rpb24gb25CZWZvcmVFbnRlcihlbCkge1xuICBlbC5zdHlsZS5vcGFjaXR5ID0gMFxuICBlbC5zdHlsZS5oZWlnaHQgPSAwXG59XG5cbmZ1bmN0aW9uIG9uRW50ZXIoZWwsIGRvbmUpIHtcbiAgZ3NhcC50byhlbCwge1xuICAgIG9wYWNpdHk6IDEsXG4gICAgaGVpZ2h0OiAnMS42ZW0nLFxuICAgIGRlbGF5OiBlbC5kYXRhc2V0LmluZGV4ICogMC4xNSxcbiAgICBvbkNvbXBsZXRlOiBkb25lXG4gIH0pXG59XG5cbmZ1bmN0aW9uIG9uTGVhdmUoZWwsIGRvbmUpIHtcbiAgZ3NhcC50byhlbCwge1xuICAgIG9wYWNpdHk6IDAsXG4gICAgaGVpZ2h0OiAwLFxuICAgIGRlbGF5OiBlbC5kYXRhc2V0LmluZGV4ICogMC4xNSxcbiAgICBvbkNvbXBsZXRlOiBkb25lXG4gIH0pXG59XG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8aW5wdXQgdi1tb2RlbD1cInF1ZXJ5XCIgLz5cbiAgPFRyYW5zaXRpb25Hcm91cFxuICAgIHRhZz1cInVsXCJcbiAgICA6Y3NzPVwiZmFsc2VcIlxuICAgIEBiZWZvcmUtZW50ZXI9XCJvbkJlZm9yZUVudGVyXCJcbiAgICBAZW50ZXI9XCJvbkVudGVyXCJcbiAgICBAbGVhdmU9XCJvbkxlYXZlXCJcbiAgPlxuICAgIDxsaVxuICAgICAgdi1mb3I9XCIoaXRlbSwgaW5kZXgpIGluIGNvbXB1dGVkTGlzdFwiXG4gICAgICA6a2V5PVwiaXRlbS5tc2dcIlxuICAgICAgOmRhdGEtaW5kZXg9XCJpbmRleFwiXG4gICAgPlxuICAgICAge3sgaXRlbS5tc2cgfX1cbiAgICA8L2xpPlxuICA8L1RyYW5zaXRpb25Hcm91cD5cbjwvdGVtcGxhdGU+XG4iLCJpbXBvcnQtbWFwLmpzb24iOiJ7XG4gIFwiaW1wb3J0c1wiOiB7XG4gICAgXCJnc2FwXCI6IFwiaHR0cHM6Ly91bnBrZy5jb20vZ3NhcD9tb2R1bGVcIixcbiAgICBcInZ1ZVwiOiBcImh0dHBzOi8vc2ZjLnZ1ZWpzLm9yZy92dWUucnVudGltZS5lc20tYnJvd3Nlci5qc1wiXG4gIH1cbn0ifQ==">Full Example in the Playground</a></p></div> <div class="options-api"><p><a href="https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdD5cbmltcG9ydCBnc2FwIGZyb20gJ2dzYXAnXG5cbmNvbnN0IGxpc3QgPSBbXG4gIHsgbXNnOiAnQnJ1Y2UgTGVlJyB9LFxuICB7IG1zZzogJ0phY2tpZSBDaGFuJyB9LFxuICB7IG1zZzogJ0NodWNrIE5vcnJpcycgfSxcbiAgeyBtc2c6ICdKZXQgTGknIH0sXG4gIHsgbXNnOiAnS3VuZyBGdXJ5JyB9XG5dXG5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgZGF0YSgpIHtcbiAgICByZXR1cm4ge1xuICAgICAgcXVlcnk6ICcnXG4gICAgfVxuICB9LFxuICBjb21wdXRlZDoge1xuICAgIGNvbXB1dGVkTGlzdCgpIHtcbiAgICAgIHJldHVybiBsaXN0LmZpbHRlcigoaXRlbSkgPT4gaXRlbS5tc2cudG9Mb3dlckNhc2UoKS5pbmNsdWRlcyh0aGlzLnF1ZXJ5KSlcbiAgICB9XG4gIH0sXG4gIG1ldGhvZHM6IHtcbiAgICBvbkJlZm9yZUVudGVyKGVsKSB7XG4gICAgICBlbC5zdHlsZS5vcGFjaXR5ID0gMFxuICAgICAgZWwuc3R5bGUuaGVpZ2h0ID0gMFxuICAgIH0sXG4gICAgb25FbnRlcihlbCwgZG9uZSkge1xuICAgICAgZ3NhcC50byhlbCwge1xuICAgICAgICBvcGFjaXR5OiAxLFxuICAgICAgICBoZWlnaHQ6ICcxLjZlbScsXG4gICAgICAgIGRlbGF5OiBlbC5kYXRhc2V0LmluZGV4ICogMC4xNSxcbiAgICAgICAgb25Db21wbGV0ZTogZG9uZVxuICAgICAgfSlcbiAgICB9LFxuICAgIG9uTGVhdmUoZWwsIGRvbmUpIHtcbiAgICAgIGdzYXAudG8oZWwsIHtcbiAgICAgICAgb3BhY2l0eTogMCxcbiAgICAgICAgaGVpZ2h0OiAwLFxuICAgICAgICBkZWxheTogZWwuZGF0YXNldC5pbmRleCAqIDAuMTUsXG4gICAgICAgIG9uQ29tcGxldGU6IGRvbmVcbiAgICAgIH0pXG4gICAgfVxuICB9XG59XG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8aW5wdXQgdi1tb2RlbD1cInF1ZXJ5XCIgLz5cbiAgPFRyYW5zaXRpb25Hcm91cFxuICAgIHRhZz1cInVsXCJcbiAgICA6Y3NzPVwiZmFsc2VcIlxuICAgIEBiZWZvcmUtZW50ZXI9XCJvbkJlZm9yZUVudGVyXCJcbiAgICBAZW50ZXI9XCJvbkVudGVyXCJcbiAgICBAbGVhdmU9XCJvbkxlYXZlXCJcbiAgPlxuICAgIDxsaVxuICAgICAgdi1mb3I9XCIoaXRlbSwgaW5kZXgpIGluIGNvbXB1dGVkTGlzdFwiXG4gICAgICA6a2V5PVwiaXRlbS5tc2dcIlxuICAgICAgOmRhdGEtaW5kZXg9XCJpbmRleFwiXG4gICAgPlxuICAgICAge3sgaXRlbS5tc2cgfX1cbiAgICA8L2xpPlxuICA8L1RyYW5zaXRpb25Hcm91cD5cbjwvdGVtcGxhdGU+XG4iLCJpbXBvcnQtbWFwLmpzb24iOiJ7XG4gIFwiaW1wb3J0c1wiOiB7XG4gICAgXCJnc2FwXCI6IFwiaHR0cHM6Ly91bnBrZy5jb20vZ3NhcD9tb2R1bGVcIixcbiAgICBcInZ1ZVwiOiBcImh0dHBzOi8vc2ZjLnZ1ZWpzLm9yZy92dWUucnVudGltZS5lc20tYnJvd3Nlci5qc1wiXG4gIH1cbn0ifQ==">Full Example in the Playground</a></p></div> <hr> <p><strong>Related</strong></p> <ul><li><a href="/api/built-in-components.html#transitiongroup"><code class="hljs inline no-lang">&lt;TransitionGroup&gt;</code> API reference</a></li></ul> <i id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true" class="fa fa-arrow-circle-up fa-lg d-print-none"></i></div> <nav id="page-nav" data-v-e8c82f88><div class="nav-component slim-scroll" data-v-e8c82f88></div> <!----></nav></div> <footer><div class="text-center"><small>[Generated by <a href="https://markbind.org/">MarkBind 4.0.2</a>]</small></div></footer></div>
+</body><script setup>
+import ListBasic from './transition-demos/ListBasic.vue'
+import ListMove from './transition-demos/ListMove.vue'
+import ListStagger from './transition-demos/ListStagger.vue'
+</script><script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script>
+  MarkBind.setupWithSearch()
+</script>
+    <script>
+    function copyCodeBlock(element) {
+        const pre = element.parentElement.parentElement;
+        const codeElement = pre.querySelector('code');
+
+        // create dummy text element to select() the text field
+        const textElement = document.createElement('textarea');
+        textElement.value = codeElement.textContent;
+        document.body.appendChild(textElement);
+        textElement.select();
+
+        document.execCommand('copy');
+        document.body.removeChild(textElement);
+    }
+    </script>
+</html>

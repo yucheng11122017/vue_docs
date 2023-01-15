@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 4.0.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="../../markbind/css/octicons.css">
+    <link rel="stylesheet" href="../../markbind/material-icons/material-icons.css">
+    <link rel="stylesheet" href="../../markbind/css/codeblock-dark.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
+    <script src="../../markbind/js/vue.min.js"></script>
+    <script src="../../markbind/js/markbind.min.js"></script>
+    <script src="accessibility.page-vue-render.js"></script>
+    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="/plugins/markbind-plugin-tree/markbind-plugin-tree.css">
+    
+  <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<script>
+  const baseUrl = ''
+</script>
+<body >
+<div id="app" data-server-rendered="true"><header sticky=""><div data-v-15113a2f><nav class="navbar navbar-expand-md d-print-none navbar-dark bg-dark" data-v-15113a2f><div class="container-fluid" data-v-15113a2f><div class="navbar-left" data-v-15113a2f></div> <div class="navbar-default" data-v-15113a2f><ul class="navbar-nav me-auto mt-2 mt-lg-0" data-v-15113a2f><li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Essentials</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/essentials/application.html" class="dropdown-item" data-v-2e98b3f0>Creating an Application</a></li> <li data-v-2e98b3f0><a href="/docs/essentials/template-syntax.html" class="dropdown-item" data-v-2e98b3f0>Template Syntax</a></li></ul></li> <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Components In-Depth</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/components/registration.html" class="dropdown-item" data-v-2e98b3f0>Registration</a></li> <li data-v-2e98b3f0><a href="/docs/components/props.html" class="dropdown-item" data-v-2e98b3f0>Props</a></li> <li data-v-2e98b3f0><a href="/docs/components/events.html" class="dropdown-item" data-v-2e98b3f0>Events</a></li> <li data-v-2e98b3f0><a href="/docs/components/v-model.html" class="dropdown-item" data-v-2e98b3f0>Component v-model</a></li> <li data-v-2e98b3f0><a href="/docs/components/attrs.html" class="dropdown-item" data-v-2e98b3f0>Fallthrough Attributes</a></li> <li data-v-2e98b3f0><a href="/docs/components/slots.html" class="dropdown-item" data-v-2e98b3f0>Slots</a></li> <li data-v-2e98b3f0><a href="/docs/components/provide-inject.html" class="dropdown-item" data-v-2e98b3f0>Provide / inject</a></li> <li data-v-2e98b3f0><a href="/docs/components/async.html" class="dropdown-item" data-v-2e98b3f0>Async Components</a></li></ul></li> <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Built-in Components</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/built-ins/transition.html" class="dropdown-item" data-v-2e98b3f0>Transition</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/transition-group.html" class="dropdown-item" data-v-2e98b3f0>TransitionGroup</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/keep-alive.html" class="dropdown-item" data-v-2e98b3f0>KeepAlive</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/teleport.html" class="dropdown-item" data-v-2e98b3f0>Teleport</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/suspense.html" class="dropdown-item" data-v-2e98b3f0>Suspense</a></li></ul></li>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Extra Topics</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/extras/ways-of-using-vue.html" class="dropdown-item" data-v-2e98b3f0>Ways of using Vue</a></li> <li data-v-2e98b3f0><a href="/docs/extras/composition-api-faq.html" class="dropdown-item" data-v-2e98b3f0>Composition API FAQ</a></li> <li data-v-2e98b3f0><a href="/docs/extras/reactivity-in-depth.html" class="dropdown-item" data-v-2e98b3f0>Reactivity in Depth</a></li> <li data-v-2e98b3f0><a href="/docs/extras/rendering-mechanism.html" class="dropdown-item" data-v-2e98b3f0>Rendering Mechanism</a></li> <li data-v-2e98b3f0><a href="/docs/extras/render-function.html" class="dropdown-item" data-v-2e98b3f0>Render Functions &amp; JSX</a></li> <li data-v-2e98b3f0><a href="/docs/extras/web-components.html" class="dropdown-item" data-v-2e98b3f0>Vue and Web components</a></li> <li data-v-2e98b3f0><a href="/docs/extras/animation.html" class="dropdown-item" data-v-2e98b3f0>Animation Techniques</a></li> <li data-v-2e98b3f0><a href="/docs/extras/reactivity-transform.html" class="dropdown-item" data-v-2e98b3f0>Reactivity Transform</a></li>
+=======
+    <li class="nav-link dropdown-submenu dropend" data-v-3d2bfc10 data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-item submenu-toggle" data-v-3d2bfc10>Best practises</a> <ul class="dropdown-menu" data-v-3d2bfc10> <li data-v-3d2bfc10><a href="/docs/best-practices/production-deployment.html" class="dropdown-item" data-v-3d2bfc10>Production Deployment</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/performance.html" class="dropdown-item" data-v-3d2bfc10>Performance</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/accessibility.html" class="dropdown-item" data-v-3d2bfc10>Accessibility</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/security.html" class="dropdown-item" data-v-3d2bfc10>Security</a></li>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 473d14335b50a8d8d2ed962afbba21a01abdecd7
+    </ul></li></ul></li></ul></div> <!----></div></nav> <div class="lower-navbar-container" style="display:none;" data-v-15113a2f><!----> <!----></div></div></header> <div id="flex-body"><nav id="site-nav" data-v-e8c82f88><div class="site-nav-top" data-v-e8c82f88><div class="fw-bold mb-2" style="font-size:1.25rem;" data-v-e8c82f88>Template</div></div> <div class="nav-component slim-scroll" data-v-e8c82f88><div class="site-nav-root"><ul class="site-nav-list site-nav-list-root" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Getting Started 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/introduction.html" data-v-e8c82f88>Introduction</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/quick-start.html" data-v-e8c82f88>Quick Start</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Essentials 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/essentials/application.html" data-v-e8c82f88>Creating an Application</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/essentials/template-syntax.html" data-v-e8c82f88>Template Syntax</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Components In-Depth
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/registration.html" data-v-e8c82f88>Registration</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/props.html" data-v-e8c82f88>Props</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/events.html" data-v-e8c82f88>Events</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/v-model.html" data-v-e8c82f88>Component v-model</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/attrs.html" data-v-e8c82f88>Fallthrough Attributes</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/slots.html" data-v-e8c82f88>Slots</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/provide-inject.html" data-v-e8c82f88>Provide / inject</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/async.html" data-v-e8c82f88>Async Components</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Reusability</li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Built-in Components
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/transition.html" data-v-e8c82f88>Transition</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/transition-group.html" data-v-e8c82f88>TransitionGroup</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/keep-alive.html" data-v-e8c82f88>KeepAlive</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/teleport.html" data-v-e8c82f88>Teleport</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/suspense.html" data-v-e8c82f88>Suspense</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Scaling Up</li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Best Practices 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/production-deployment.html" data-v-e8c82f88>Production Deployment</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/performance.html" data-v-e8c82f88>Performance</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/accessibility.html" data-v-e8c82f88>Accessibility</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/security.html" data-v-e8c82f88>Security</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Extra topics 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/ways-of-using-vue.html" data-v-e8c82f88>Ways of using Vue</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/composition-api-faq.html" data-v-e8c82f88>Composition API FAQ</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/reactivity-in-depth.html" data-v-e8c82f88>Reactivity in Depth</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/rendering-mechanism.html" data-v-e8c82f88>Rendering Mechanism</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/render-function.html" data-v-e8c82f88>Render Functions &amp; JSX</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/web-components.html" data-v-e8c82f88>Vue and Web Components</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/animation.html" data-v-e8c82f88>Animation Techniques</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/reactivity-transform.html" data-v-e8c82f88>Reactivity Transform</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>TypeScript</li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Extra Topics</li> <!----></ul></div></div> <!----></nav> <div id="content-wrapper"><h1 id="accessibility"><span id="accessibility" class="anchor"></span>Accessibility<a href="#accessibility" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h1> <p>Web accessibility (also known as a11y) refers to the practice of creating websites that can be used by anyone — be that a person with a disability, a slow connection, outdated or broken hardware or simply someone in an unfavorable environment. For example, adding subtitles to a video would help both your deaf and hard-of-hearing users and your users who are in a loud environment and can't hear their phone. Similarly, making sure your text isn't too low contrast will help both your low-vision users and your users who are trying to use their phone in bright sunlight.</p> <p>Ready to start but aren’t sure where?</p> <p>Checkout the <a href="https://www.w3.org/WAI/planning-and-managing/">Planning and managing web accessibility guide</a> provided by <a href="https://www.w3.org/">World Wide Web Consortium (W3C)</a></p> <h2 id="skip-link"><span id="skip-link" class="anchor"></span>Skip link<a href="#skip-link" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>You should add a link at the top of each page that goes directly to the main content area so users can skip content that is repeated on multiple Web pages.</p> <p>Typically this is done on the top of <code class="hljs inline no-lang">App.vue</code> as it will be the first focusable element on all your pages:</p> <pre><code class="hljs html"><span><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;skip-links&quot;</span>&gt;</span>
+</span><span>  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+</span><span>    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#main&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;skipLink&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;skip-link&quot;</span>&gt;</span>Skip to main content<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</span><span>  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</span><span><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>To hide the link unless it is focused, you can add the following style:</p> <pre><code class="hljs css"><span><span class="hljs-selector-class">.skip-link</span> {
+</span><span>  <span class="hljs-attribute">white-space</span>: nowrap;
+</span><span>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">1em</span> auto;
+</span><span>  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+</span><span>  <span class="hljs-attribute">position</span>: fixed;
+</span><span>  <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+</span><span>  <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">72px</span>;
+</span><span>  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+</span><span>}
+</span><span><span class="hljs-selector-class">.skip-link</span><span class="hljs-selector-pseudo">:focus</span> {
+</span><span>  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+</span><span>  <span class="hljs-attribute">background-color</span>: white;
+</span><span>  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.5em</span>;
+</span><span>  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Once a user changes route, bring focus back to the skip link. This can be achieved by calling focus on the skip link's template ref (assuming usage of <code class="hljs inline no-lang">vue-router</code>):</p> <div class="options-api"><pre><code class="hljs"><span>&lt;script&gt;
+</span><span>export default {
+</span><span>  watch: {
+</span><span>    $route() {
+</span><span>      this.$refs.skipLink.focus()
+</span><span>    }
+</span><span>  }
+</span><span>}
+</span><span>&lt;/script&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="composition-api"><pre><code class="hljs"><span>&lt;script setup&gt;
+</span><span>import { ref, watch } from 'vue'
+</span><span>import { useRoute } from 'vue-router'
+</span><span>
+</span><span>const route = useRoute()
+</span><span>const skipLink = ref()
+</span><span>
+</span><span>watch(
+</span><span>  () =&gt; route.path,
+</span><span>  () =&gt; {
+</span><span>    skipLink.value.focus()
+</span><span>  }
+</span><span>)
+</span><span>&lt;/script&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <p><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G1.html">Read documentation on skip link to main content</a></p> <h2 id="content-structure"><span id="content-structure" class="anchor"></span>Content Structure<a href="#content-structure" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>One of the most important pieces of accessibility is making sure that design can support accessible implementation. Design should consider not only color contrast, font selection, text sizing, and language, but also how the content is structured in the application.</p> <h3 id="headings"><span id="headings" class="anchor"></span>Headings<a href="#headings" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>Users can navigate an application through headings. Having descriptive headings for every section of your application makes it easier for users to predict the content of each section. When it comes to headings, there are a couple of recommended accessibility practices:</p> <ul><li>Nest headings in their ranking order: <code class="hljs inline no-lang">&lt;h1&gt;</code> - <code class="hljs inline no-lang">&lt;h6&gt;</code></li> <li>Don’t skip headings within a section</li> <li>Use actual heading tags instead of styling text to give the visual appearance of headings</li></ul> <p><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html">Read more about headings</a></p> <pre><code class="hljs"><span>&lt;main role=&quot;main&quot; aria-labelledby=&quot;main-title&quot;&gt;
+</span><span>  &lt;h1 id=&quot;main-title&quot;&gt;Main title&lt;/h1&gt;
+</span><span>  &lt;section aria-labelledby=&quot;section-title&quot;&gt;
+</span><span>    &lt;h2 id=&quot;section-title&quot;&gt; Section Title &lt;/h2&gt;
+</span><span>    &lt;h3&gt;Section Subtitle&lt;/h3&gt;
+</span><span>    &lt;!-- Content --&gt;
+</span><span>  &lt;/section&gt;
+</span><span>  &lt;section aria-labelledby=&quot;section-title&quot;&gt;
+</span><span>    &lt;h2 id=&quot;section-title&quot;&gt; Section Title &lt;/h2&gt;
+</span><span>    &lt;h3&gt;Section Subtitle&lt;/h3&gt;
+</span><span>    &lt;!-- Content --&gt;
+</span><span>    &lt;h3&gt;Section Subtitle&lt;/h3&gt;
+</span><span>    &lt;!-- Content --&gt;
+</span><span>  &lt;/section&gt;
+</span><span>&lt;/main&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h3 id="landmarks"><span id="landmarks" class="anchor"></span>Landmarks<a href="#landmarks" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/landmark_role">Landmarks</a> provide programmatic access to sections within an application. Users who rely on assistive technology can navigate to each section of the application and skip over content. You can use <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles">ARIA roles</a> to help you achieve this.</p> <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead><tr><th>HTML</th> <th>ARIA Role</th> <th>Landmark Purpose</th></tr></thead> <tbody><tr><td>header</td> <td>role=&quot;banner&quot;</td> <td>Prime heading: title of the page</td></tr> <tr><td>nav</td> <td>role=&quot;navigation&quot;</td> <td>Collection of links suitable for use when navigating the document or related documents</td></tr> <tr><td>main</td> <td>role=&quot;main&quot;</td> <td>The main or central content of the document.</td></tr> <tr><td>footer</td> <td>role=&quot;contentinfo&quot;</td> <td>Information about the parent document: footnotes/copyrights/links to privacy statement</td></tr> <tr><td>aside</td> <td>role=&quot;complementary&quot;</td> <td>Supports the main content, yet is separated and meaningful on its own content</td></tr> <tr><td><em>Not available</em></td> <td>role=&quot;search&quot;</td> <td>This section contains the search functionality for the application</td></tr> <tr><td>form</td> <td>role=&quot;form&quot;</td> <td>Collection of form-associated elements</td></tr> <tr><td>section</td> <td>role=&quot;region&quot;</td> <td>Content that is relevant and that users will likely want to navigate to. Label must be provided for this element</td></tr></tbody></table></div><div class="alert box-container alert-success" data-v-7d17494f><!----> <div class="header-and-body" data-v-7d17494f><div class="box-header-wrapper" data-v-7d17494f><div class="icon-wrapper" data-v-7d17494f><i class="fas fa-lightbulb" data-v-7d17494f></i></div> <div class="box-header" data-v-7d17494f><p data-v-7d17494f>Tip</p></div> <!----></div> <div class="box-body-wrapper box-body-wrapper-with-heading" data-v-7d17494f><!----> <!----> <div class="contents" data-v-7d17494f> <p data-v-7d17494f>It is recommended to use landmark HTML elements with redundant landmark role attributes in order to maximize compatibility with legacy <a href="https://caniuse.com/#feat=html5semantic" data-v-7d17494f>browsers that don’t support HTML5 semantic elements</a>.</p></div> <!----></div></div></div> <p><a href="https://www.w3.org/TR/wai-aria-1.2/#landmark_roles">Read more about landmarks</a></p> <h2 id="semantic-forms"><span id="semantic-forms" class="anchor"></span>Semantic Forms<a href="#semantic-forms" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>When creating a form, you can use the following elements: <code class="hljs inline no-lang">&lt;form&gt;</code>, <code class="hljs inline no-lang">&lt;label&gt;</code>, <code class="hljs inline no-lang">&lt;input&gt;</code>, <code class="hljs inline no-lang">&lt;textarea&gt;</code>, and <code class="hljs inline no-lang">&lt;button&gt;</code></p> <p>Labels are typically placed on top or to the left of the form fields:</p> <pre><code class="hljs html"><span><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;/dataCollectionLocation&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string">&quot;on&quot;</span>&gt;</span>
+</span><span>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;item in formItems&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;item.id&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-item&quot;</span>&gt;</span>
+</span><span>    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">:for</span>=<span class="hljs-string">&quot;item.id&quot;</span>&gt;</span>: <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+</span><span>    <span class="hljs-tag">&lt;<span class="hljs-name">input</span></span>
+</span><span><span class="hljs-tag">      <span class="hljs-attr">:type</span>=<span class="hljs-string">&quot;item.type&quot;</span></span>
+</span><span><span class="hljs-tag">      <span class="hljs-attr">:id</span>=<span class="hljs-string">&quot;item.id&quot;</span></span>
+</span><span><span class="hljs-tag">      <span class="hljs-attr">:name</span>=<span class="hljs-string">&quot;item.id&quot;</span></span>
+</span><span><span class="hljs-tag">      <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;item.value&quot;</span></span>
+</span><span><span class="hljs-tag">    /&gt;</span>
+</span><span>  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</span><span>  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</span><span><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre> <p>Notice how you can include <code class="hljs inline no-lang">autocomplete='on'</code> on the form element and it will apply to all inputs in your form. You can also set different <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete">values for autocomplete attribute</a> for each input.</p> <h3 id="labels"><span id="labels" class="anchor"></span>Labels<a href="#labels" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>Provide labels to describe the purpose of all form control; linking <code class="hljs inline no-lang">for</code> and <code class="hljs inline no-lang">id</code>:</p> <pre><code class="hljs"><span>&lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+</span><span>&lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; v-model=&quot;name&quot; /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre> <p>If you inspect this element in your chrome developer tools and open the Accessibility tab inside the Elements tab, you will see how the input gets its name from the label:</p> <p><a href="/docs/best-practices/images/AccessibleLabelChromeDevTools.png" target="_self"><img src="/docs/best-practices/images/AccessibleLabelChromeDevTools.png" alt="" class="img-fluid"></a></p> <div class="alert box-container alert-warning" data-v-7d17494f><!----> <div class="header-and-body" data-v-7d17494f><!----> <div class="box-body-wrapper" data-v-7d17494f><div class="icon-wrapper" data-v-7d17494f><i class="fas fa-exclamation" data-v-7d17494f></i></div> <!----> <div class="contents" data-v-7d17494f><p data-v-7d17494f>Though you might have seen labels wrapping the input fields like this:</p> <pre data-v-7d17494f><code class="hljs" data-v-7d17494f><span data-v-7d17494f>&lt;label&gt;
+</span><span data-v-7d17494f>  Name:
+</span><span data-v-7d17494f>  &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; v-model=&quot;name&quot; /&gt;
+</span><span data-v-7d17494f>&lt;/label&gt;
+</span></code><div class="function-btn-container" data-v-7d17494f><button onclick="copyCodeBlock(this)" class="function-btn" data-v-7d17494f>
+    <div class="function-btn-body" data-v-7d17494f>
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1" data-v-7d17494f>
+    <g id="surface1" data-v-7d17494f>
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 " data-v-7d17494f></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p data-v-7d17494f>Explicitly setting the labels with a matching id is better supported by assistive technology.</p></div> <!----></div></div></div> <h4 id="aria-label"><span id="aria-label" class="anchor"></span><code class="hljs inline no-lang">aria-label</code><a href="#aria-label" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <p>You can also give the input an accessible name with <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label"><code class="hljs inline no-lang">aria-label</code></a>.</p> <pre><code class="hljs"><span>&lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+</span><span>&lt;input
+</span><span>  type=&quot;text&quot;
+</span><span>  name=&quot;name&quot;
+</span><span>  id=&quot;name&quot;
+</span><span>  v-model=&quot;name&quot;
+</span><span>  :aria-label=&quot;nameLabel&quot;
+</span><span>/&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre> <p>Feel free to inspect this element in Chrome DevTools to see how the accessible name has changed:</p> <p><a href="/docs/best-practices/images/AccessibleARIAlabelDevTools.png" target="_self"><img src="/docs/best-practices/images/AccessibleARIAlabelDevTools.png" alt="" class="img-fluid"></a></p> <h4 id="aria-labelledby"><span id="aria-labelledby" class="anchor"></span><code class="hljs inline no-lang">aria-labelledby</code><a href="#aria-labelledby" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <p>Using <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby"><code class="hljs inline no-lang">aria-labelledby</code></a> is similar to <code class="hljs inline no-lang">aria-label</code> except it is used if the label text is visible on screen. It is paired to other elements by their <code class="hljs inline no-lang">id</code> and you can link multiple <code class="hljs inline no-lang">id</code>s:</p> <pre><code class="hljs"><span>&lt;form
+</span><span>  class=&quot;demo&quot;
+</span><span>  action=&quot;/dataCollectionLocation&quot;
+</span><span>  method=&quot;post&quot;
+</span><span>  autocomplete=&quot;on&quot;
+</span><span>&gt;
+</span><span>  &lt;h1 id=&quot;billing&quot;&gt;Billing&lt;/h1&gt;
+</span><span>  &lt;div class=&quot;form-item&quot;&gt;
+</span><span>    &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+</span><span>    &lt;input
+</span><span>      type=&quot;text&quot;
+</span><span>      name=&quot;name&quot;
+</span><span>      id=&quot;name&quot;
+</span><span>      v-model=&quot;name&quot;
+</span><span>      aria-labelledby=&quot;billing name&quot;
+</span><span>    /&gt;
+</span><span>  &lt;/div&gt;
+</span><span>  &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+</span><span>&lt;/form&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre> <p><a href="/docs/best-practices/images/AccessibleARIAlabelledbyDevTools.png" target="_self"><img src="/docs/best-practices/images/AccessibleARIAlabelledbyDevTools.png" alt="" class="img-fluid"></a></p> <h4 id="aria-describedby"><span id="aria-describedby" class="anchor"></span><code class="hljs inline no-lang">aria-describedby</code><a href="#aria-describedby" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <p><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby">aria-describedby</a> is used the same way as <code class="hljs inline no-lang">aria-labelledby</code> except provides a description with additional information that the user might need. This can be used to describe the criteria for any input:</p> <pre><code class="hljs"><span>&lt;form
+</span><span>  class=&quot;demo&quot;
+</span><span>  action=&quot;/dataCollectionLocation&quot;
+</span><span>  method=&quot;post&quot;
+</span><span>  autocomplete=&quot;on&quot;
+</span><span>&gt;
+</span><span>  &lt;h1 id=&quot;billing&quot;&gt;Billing&lt;/h1&gt;
+</span><span>  &lt;div class=&quot;form-item&quot;&gt;
+</span><span>    &lt;label for=&quot;name&quot;&gt;Full Name:&lt;/label&gt;
+</span><span>    &lt;input
+</span><span>      type=&quot;text&quot;
+</span><span>      name=&quot;name&quot;
+</span><span>      id=&quot;name&quot;
+</span><span>      v-model=&quot;name&quot;
+</span><span>      aria-labelledby=&quot;billing name&quot;
+</span><span>      aria-describedby=&quot;nameDescription&quot;
+</span><span>    /&gt;
+</span><span>    &lt;p id=&quot;nameDescription&quot;&gt;Please provide first and last name.&lt;/p&gt;
+</span><span>  &lt;/div&gt;
+</span><span>  &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+</span><span>&lt;/form&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre> <p>You can see the description by inspecting Chrome DevTools:</p> <p><a href="/docs/best-practices/images/AccessibleARIAdescribedby.png" target="_self"><img src="/docs/best-practices/images/AccessibleARIAdescribedby.png" alt="" class="img-fluid"></a></p> <h3 id="placeholder"><span id="placeholder" class="anchor"></span>Placeholder<a href="#placeholder" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>Avoid using placeholders as they can confuse many users.</p> <p>One of the issues with placeholders is that they don't meet the <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">color contrast criteria</a> by default; fixing the color contrast makes the placeholder look like pre-populated data in the input fields. Looking at the following example, you can see that the Last Name placeholder which meets the color contrast criteria looks like pre-populated data:</p> <p><a href="/docs/best-practices/images/AccessiblePlaceholder.png" target="_self"><img src="/docs/best-practices/images/AccessiblePlaceholder.png" alt="" class="img-fluid"></a></p> <pre><code class="hljs"><span>&lt;form
+</span><span>  class=&quot;demo&quot;
+</span><span>  action=&quot;/dataCollectionLocation&quot;
+</span><span>  method=&quot;post&quot;
+</span><span>  autocomplete=&quot;on&quot;
+</span><span>&gt;
+</span><span>  &lt;div v-for=&quot;item in formItems&quot; :key=&quot;item.id&quot; class=&quot;form-item&quot;&gt;
+</span><span>    &lt;label :for=&quot;item.id&quot;&gt;: &lt;/label&gt;
+</span><span>    &lt;input
+</span><span>      type=&quot;text&quot;
+</span><span>      :id=&quot;item.id&quot;
+</span><span>      :name=&quot;item.id&quot;
+</span><span>      v-model=&quot;item.value&quot;
+</span><span>      :placeholder=&quot;item.placeholder&quot;
+</span><span>    /&gt;
+</span><span>  &lt;/div&gt;
+</span><span>  &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+</span><span>&lt;/form&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><pre><code class="hljs css"><span><span class="hljs-comment">/* https://www.w3schools.com/howto/howto_css_placeholder.asp */</span>
+</span><span>
+</span><span><span class="hljs-selector-id">#lastName</span><span class="hljs-selector-pseudo">::placeholder</span> {
+</span><span>  <span class="hljs-comment">/* Chrome, Firefox, Opera, Safari 10.1+ */</span>
+</span><span>  <span class="hljs-attribute">color</span>: black;
+</span><span>  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>; <span class="hljs-comment">/* Firefox */</span>
+</span><span>}
+</span><span>
+</span><span><span class="hljs-selector-id">#lastName</span>:-ms-input-placeholder {
+</span><span>  /* Internet Explorer <span class="hljs-number">10</span>-<span class="hljs-number">11</span> */
+</span><span>  color: black;
+</span><span>}
+</span><span>
+</span><span><span class="hljs-selector-id">#lastName</span>::-ms-input-placeholder {
+</span><span>  /* Microsoft Edge */
+</span><span>  color: black;
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>It is best to provide all the information the user needs to fill out forms outside any inputs.</p> <h3 id="instructions"><span id="instructions" class="anchor"></span>Instructions<a href="#instructions" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>When adding instructions for your input fields, make sure to link it correctly to the input.
+You can provide additional instructions and bind multiple ids inside an <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby"><code class="hljs inline no-lang">aria-labelledby</code></a>. This allows for more flexible design.</p> <pre><code class="hljs"><span>&lt;fieldset&gt;
+</span><span>  &lt;legend&gt;Using aria-labelledby&lt;/legend&gt;
+</span><span>  &lt;label id=&quot;date-label&quot; for=&quot;date&quot;&gt;Current Date:&lt;/label&gt;
+</span><span>  &lt;input
+</span><span>    type=&quot;date&quot;
+</span><span>    name=&quot;date&quot;
+</span><span>    id=&quot;date&quot;
+</span><span>    aria-labelledby=&quot;date-label date-instructions&quot;
+</span><span>  /&gt;
+</span><span>  &lt;p id=&quot;date-instructions&quot;&gt;MM/DD/YYYY&lt;/p&gt;
+</span><span>&lt;/fieldset&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Alternatively, you can attach the instructions to the input with <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby"><code class="hljs inline no-lang">aria-describedby</code></a>:</p> <pre><code class="hljs"><span>&lt;fieldset&gt;
+</span><span>  &lt;legend&gt;Using aria-describedby&lt;/legend&gt;
+</span><span>  &lt;label id=&quot;dob&quot; for=&quot;dob&quot;&gt;Date of Birth:&lt;/label&gt;
+</span><span>  &lt;input type=&quot;date&quot; name=&quot;dob&quot; id=&quot;dob&quot; aria-describedby=&quot;dob-instructions&quot; /&gt;
+</span><span>  &lt;p id=&quot;dob-instructions&quot;&gt;MM/DD/YYYY&lt;/p&gt;
+</span><span>&lt;/fieldset&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre> <h3 id="hiding-content"><span id="hiding-content" class="anchor"></span>Hiding Content<a href="#hiding-content" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>Usually it is not recommended to visually hide labels, even if the input has an accessible name. However, if the functionality of the input can be understood with surrounding content, then we can hide the visual label.</p> <p>Let's look at this search field:</p> <pre><code class="hljs"><span>&lt;form role=&quot;search&quot;&gt;
+</span><span>  &lt;label for=&quot;search&quot; class=&quot;hidden-visually&quot;&gt;Search: &lt;/label&gt;
+</span><span>  &lt;input type=&quot;text&quot; name=&quot;search&quot; id=&quot;search&quot; v-model=&quot;search&quot; /&gt;
+</span><span>  &lt;button type=&quot;submit&quot;&gt;Search&lt;/button&gt;
+</span><span>&lt;/form&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>We can do this because the search button will help visual users identify the purpose of the input field.</p> <p>We can use CSS to visually hide elements but keep them available for assistive technology:</p> <pre><code class="hljs css"><span><span class="hljs-selector-class">.hidden-visually</span> {
+</span><span>  <span class="hljs-attribute">position</span>: absolute;
+</span><span>  <span class="hljs-attribute">overflow</span>: hidden;
+</span><span>  <span class="hljs-attribute">white-space</span>: nowrap;
+</span><span>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+</span><span>  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+</span><span>  <span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>;
+</span><span>  <span class="hljs-attribute">width</span>: <span class="hljs-number">1px</span>;
+</span><span>  <span class="hljs-attribute">clip</span>: <span class="hljs-built_in">rect</span>(<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>);
+</span><span>  <span class="hljs-attribute">clip-path</span>: <span class="hljs-built_in">inset</span>(<span class="hljs-number">100%</span>);
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre> <h4 id="aria-hidden-and-quot-true-and-quot"><span id="aria-hidden-and-quot-true-and-quot" class="anchor"></span><code class="hljs inline no-lang">aria-hidden=&quot;true&quot;</code><a href="#aria-hidden-and-quot-true-and-quot" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <p>Adding <code class="hljs inline no-lang">aria-hidden=&quot;true&quot;</code> will hide the element from assistive technology but leave it visually available for other users. Do not use it on focusable elements, purely on decorative, duplicated or offscreen content.</p> <pre><code class="hljs"><span>&lt;p&gt;This is not hidden from screen readers.&lt;/p&gt;
+</span><span>&lt;p aria-hidden=&quot;true&quot;&gt;This is hidden from screen readers.&lt;/p&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h3 id="buttons"><span id="buttons" class="anchor"></span>Buttons<a href="#buttons" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>When using buttons inside a form, you must set the type to prevent submitting the form.
+You can also use an input to create buttons:</p> <pre><code class="hljs"><span>&lt;form action=&quot;/dataCollectionLocation&quot; method=&quot;post&quot; autocomplete=&quot;on&quot;&gt;
+</span><span>  &lt;!-- Buttons --&gt;
+</span><span>  &lt;button type=&quot;button&quot;&gt;Cancel&lt;/button&gt;
+</span><span>  &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+</span><span>
+</span><span>  &lt;!-- Input buttons --&gt;
+</span><span>  &lt;input type=&quot;button&quot; value=&quot;Cancel&quot; /&gt;
+</span><span>  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+</span><span>&lt;/form&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre> <h3 id="functional-images"><span id="functional-images" class="anchor"></span>Functional Images<a href="#functional-images" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>You can use this technique to create functional images.</p> <ul><li><p>Input fields</p> <ul><li>These images will act as a submit type button on forms</li></ul> <pre><code class="hljs"><span>&lt;form role=&quot;search&quot;&gt;
+</span><span>  &lt;label for=&quot;search&quot; class=&quot;hidden-visually&quot;&gt;Search: &lt;/label&gt;
+</span><span>  &lt;input type=&quot;text&quot; name=&quot;search&quot; id=&quot;search&quot; v-model=&quot;search&quot; /&gt;
+</span><span>  &lt;input
+</span><span>    type=&quot;image&quot;
+</span><span>    class=&quot;btnImg&quot;
+</span><span>    src=&quot;https://img.icons8.com/search&quot;
+</span><span>    alt=&quot;Search&quot;
+</span><span>  /&gt;
+</span><span>&lt;/form&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></li> <li><p>Icons</p></li></ul> <pre><code class="hljs"><span>&lt;form role=&quot;search&quot;&gt;
+</span><span>  &lt;label for=&quot;searchIcon&quot; class=&quot;hidden-visually&quot;&gt;Search: &lt;/label&gt;
+</span><span>  &lt;input type=&quot;text&quot; name=&quot;searchIcon&quot; id=&quot;searchIcon&quot; v-model=&quot;searchIcon&quot; /&gt;
+</span><span>  &lt;button type=&quot;submit&quot;&gt;
+</span><span>    &lt;i class=&quot;fas fa-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+</span><span>    &lt;span class=&quot;hidden-visually&quot;&gt;Search&lt;/span&gt;
+</span><span>  &lt;/button&gt;
+</span><span>&lt;/form&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre> <h2 id="standards"><span id="standards" class="anchor"></span>Standards<a href="#standards" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>The World Wide Web Consortium (W3C) Web Accessibility Initiative (WAI) develops web accessibility standards for the different components:</p> <ul><li><a href="https://www.w3.org/WAI/standards-guidelines/uaag/">User Agent Accessibility Guidelines (UAAG)</a> <ul><li>web browsers and media players, including some aspects of assistive technologies</li></ul></li> <li><a href="https://www.w3.org/WAI/standards-guidelines/atag/">Authoring Tool Accessibility Guidelines (ATAG)</a> <ul><li>authoring tools</li></ul></li> <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a> <ul><li>web content - used by developers, authoring tools, and accessibility evaluation tools</li></ul></li></ul> <h3 id="web-content-accessibility-guidelines-wcag"><span id="web-content-accessibility-guidelines-wcag" class="anchor"></span>Web Content Accessibility Guidelines (WCAG)<a href="#web-content-accessibility-guidelines-wcag" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a> extends on <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a> and allows implementation of new technologies by addressing changes to the web. The W3C encourages use of the most current version of WCAG when developing or updating Web accessibility policies.</p> <h4 id="wcag-2-1-four-main-guiding-principles-abbreviated-as-pour"><span id="wcag-2-1-four-main-guiding-principles-abbreviated-as-pour" class="anchor"></span>WCAG 2.1 Four Main Guiding Principles (abbreviated as POUR):<a href="#wcag-2-1-four-main-guiding-principles-abbreviated-as-pour" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <ul><li><a href="https://www.w3.org/TR/WCAG21/#perceivable">Perceivable</a> <ul><li>Users must be able to perceive the information being presented</li></ul></li> <li><a href="https://www.w3.org/TR/WCAG21/#operable">Operable</a> <ul><li>Interface forms, controls, and navigation are operable</li></ul></li> <li><a href="https://www.w3.org/TR/WCAG21/#understandable">Understandable</a> <ul><li>Information and the operation of user interface must be understandable to all users</li></ul></li> <li><a href="https://www.w3.org/TR/WCAG21/#robust">Robust</a> <ul><li>Users must be able to access the content as technologies advance</li></ul></li></ul> <h4 id="web-accessibility-initiative-accessible-rich-internet-applications-wai-aria"><span id="web-accessibility-initiative-accessible-rich-internet-applications-wai-aria" class="anchor"></span>Web Accessibility Initiative – Accessible Rich Internet Applications (WAI-ARIA)<a href="#web-accessibility-initiative-accessible-rich-internet-applications-wai-aria" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <p>W3C's WAI-ARIA provides guidance on how to build dynamic content and advanced user interface controls.</p> <ul><li><a href="https://www.w3.org/TR/wai-aria-1.2/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a></li> <li><a href="https://www.w3.org/TR/wai-aria-practices-1.2/">WAI-ARIA Authoring Practices 1.2</a></li></ul> <h2 id="resources"><span id="resources" class="anchor"></span>Resources<a href="#resources" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <h3 id="documentation"><span id="documentation" class="anchor"></span>Documentation<a href="#documentation" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <ul><li><a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a></li> <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a></li> <li><a href="https://www.w3.org/TR/wai-aria-1.2/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a></li> <li><a href="https://www.w3.org/TR/wai-aria-practices-1.2/">WAI-ARIA Authoring Practices 1.2</a></li></ul> <h3 id="assistive-technologies"><span id="assistive-technologies" class="anchor"></span>Assistive Technologies<a href="#assistive-technologies" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <ul><li>Screen Readers
+<ul><li><a href="https://www.nvaccess.org/download/">NVDA</a></li> <li><a href="https://www.apple.com/accessibility/mac/vision/">VoiceOver</a></li> <li><a href="https://www.freedomscientific.com/products/software/jaws/?utm_term=jaws%20screen%20reader&amp;utm_source=adwords&amp;utm_campaign=All+Products&amp;utm_medium=ppc&amp;hsa_tgt=kwd-394361346638&amp;hsa_cam=200218713&amp;hsa_ad=296201131673&amp;hsa_kw=jaws%20screen%20reader&amp;hsa_grp=52663682111&amp;hsa_net=adwords&amp;hsa_mt=e&amp;hsa_src=g&amp;hsa_acc=1684996396&amp;hsa_ver=3&amp;gclid=Cj0KCQjwnv71BRCOARIsAIkxW9HXKQ6kKNQD0q8a_1TXSJXnIuUyb65KJeTWmtS6BH96-5he9dsNq6oaAh6UEALw_wcB">JAWS</a></li> <li><a href="https://chrome.google.com/webstore/detail/chromevox-classic-extensi/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en">ChromeVox</a></li></ul></li> <li>Zooming Tools
+<ul><li><a href="https://www.freedomscientific.com/products/software/magic/">MAGic</a></li> <li><a href="https://www.zoomtext.com/">ZoomText</a></li> <li><a href="https://support.microsoft.com/en-us/help/11542/windows-use-magnifier-to-make-things-easier-to-see">Magnifier</a></li></ul></li></ul> <h3 id="testing"><span id="testing" class="anchor"></span>Testing<a href="#testing" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <ul><li>Automated Tools
+<ul><li><a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse</a></li> <li><a href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh">WAVE</a></li> <li><a href="https://chrome.google.com/webstore/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce?hl=en-US">ARC Toolkit</a></li></ul></li> <li>Color Tools
+<ul><li><a href="https://webaim.org/resources/contrastchecker/">WebAim Color Contrast</a></li> <li><a href="https://webaim.org/resources/linkcontrastchecker">WebAim Link Color Contrast</a></li></ul></li> <li>Other Helpful Tools
+<ul><li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en%E2%80%A6">HeadingMap</a></li> <li><a href="https://colororacle.org">Color Oracle</a></li> <li><a href="https://chrome.google.com/webstore/detail/focus-indicator/heeoeadndnhebmfebjccbhmccmaoedlf?hl=en-US%E2%80%A6">Focus Indicator</a></li> <li><a href="https://chrome.google.com/webstore/detail/nerdefocus/lpfiljldhgjecfepfljnbjnbjfhennpd?hl=en-US%E2%80%A6">NerdeFocus</a></li> <li><a href="https://chrome.google.com/webstore/detail/visual-aria/lhbmajchkkmakajkjenkchhnhbadmhmk?hl=en-US">Visual Aria</a></li> <li><a href="https://chrome.google.com/webstore/detail/silktide-website-accessib/okcpiimdfkpkjcbihbmhppldhiebhhaf?hl=en-US">Silktide Website Accessibility Simulator</a></li></ul></li></ul> <h3 id="users"><span id="users" class="anchor"></span>Users<a href="#users" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>The World Health Organization estimates that 15% of the world's population has some form of disability, 2-4% of them severely so. That is an estimated 1 billion people worldwide; making people with disabilities the largest minority group in the world.</p> <p>There are a huge range of disabilities, which can be divided roughly into four categories:</p> <ul><li><em><a href="https://webaim.org/articles/visual/">Visual</a></em> - These users can benefit from the use of screen readers, screen magnification, controlling screen contrast, or braille display.</li> <li><em><a href="https://webaim.org/articles/auditory/">Auditory</a></em> - These users can benefit from captioning, transcripts or sign language video.</li> <li><em><a href="https://webaim.org/articles/motor/">Motor</a></em> - These users can benefit from a range of <a href="https://webaim.org/articles/motor/assistive">assistive technologies for motor impairments</a>: voice recognition software, eye tracking, single-switch access, head wand, sip and puff switch, oversized trackball mouse, adaptive keyboard or other assistive technologies.</li> <li><em><a href="https://webaim.org/articles/cognitive/">Cognitive</a></em> - These users can benefit from supplemental media, structural organization of content, clear and simple writing.</li></ul> <p>Check out the following links from WebAim to understand from users:</p> <ul><li><a href="https://www.w3.org/WAI/perspective-videos/">Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone</a></li> <li><a href="https://www.w3.org/WAI/people-use-web/user-stories/">Stories of Web Users</a></li></ul> <i id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true" class="fa fa-arrow-circle-up fa-lg d-print-none"></i></div> <nav id="page-nav" data-v-e8c82f88><div class="nav-component slim-scroll" data-v-e8c82f88></div> <!----></nav></div> <footer><div class="text-center"><small>[Generated by <a href="https://markbind.org/">MarkBind 4.0.2</a>]</small></div></footer></div>
+</body><script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script>
+  MarkBind.setupWithSearch()
+</script>
+    <script>
+    function copyCodeBlock(element) {
+        const pre = element.parentElement.parentElement;
+        const codeElement = pre.querySelector('code');
+
+        // create dummy text element to select() the text field
+        const textElement = document.createElement('textarea');
+        textElement.value = codeElement.textContent;
+        document.body.appendChild(textElement);
+        textElement.select();
+
+        document.execCommand('copy');
+        document.body.removeChild(textElement);
+    }
+    </script>
+</html>

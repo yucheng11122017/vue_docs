@@ -1,0 +1,483 @@
+{
+  "enableSearch": true,
+  "pages": [
+    {
+      "src": "docs/best-practices/accessibility.md",
+      "title": "",
+      "headings": {
+        "accessibility": "Accessibility",
+        "skip-link": "Skip link",
+        "content-structure": "Content Structure",
+        "headings": "Headings",
+        "landmarks": "Landmarks",
+        "semantic-forms": "Semantic Forms",
+        "labels": "Labels",
+        "placeholder": "Placeholder",
+        "instructions": "Instructions",
+        "hiding-content": "Hiding Content",
+        "buttons": "Buttons",
+        "functional-images": "Functional Images",
+        "standards": "Standards",
+        "web-content-accessibility-guidelines-wcag": "Web Content Accessibility Guidelines (WCAG)",
+        "resources": "Resources",
+        "documentation": "Documentation",
+        "assistive-technologies": "Assistive Technologies",
+        "testing": "Testing",
+        "users": "Users"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/best-practices/performance.md",
+      "title": "",
+      "headings": {
+        "performance": "Performance",
+        "overview": "Overview",
+        "profiling-options": "Profiling Options",
+        "page-load-optimizations": "Page Load Optimizations",
+        "choosing-the-right-architecture": "Choosing the Right Architecture",
+        "bundle-size-and-tree-shaking": "Bundle Size and Tree-shaking",
+        "code-splitting": "Code Splitting",
+        "update-optimizations": "Update Optimizations",
+        "props-stability": "Props Stability",
+        "v-once": "v-once",
+        "v-memo": "v-memo",
+        "general-optimizations": "General Optimizations",
+        "virtualize-large-lists": "Virtualize Large Lists",
+        "reduce-reactivity-overhead-for-large-immutable-structures": "Reduce Reactivity Overhead for Large Immutable Structures",
+        "avoid-unnecessary-component-abstractions": "Avoid Unnecessary Component Abstractions"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/best-practices/production-deployment.md",
+      "title": "",
+      "headings": {
+        "production-deployment": "Production Deployment",
+        "development-vs-production": "Development vs. Production",
+        "without-build-tools": "Without Build Tools",
+        "with-build-tools": "With Build Tools",
+        "tracking-runtime-errors": "Tracking Runtime Errors"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/best-practices/security.md",
+      "title": "",
+      "headings": {
+        "security": "Security",
+        "reporting-vulnerabilities": "Reporting Vulnerabilities",
+        "rule-no-1-never-use-non-trusted-templates": "Rule No.1: Never Use Non-trusted Templates",
+        "what-vue-does-to-protect-you": "What Vue Does to Protect You",
+        "html-content": "HTML content",
+        "attribute-bindings": "Attribute bindings",
+        "potential-dangers": "Potential Dangers",
+        "html-injection": "HTML Injection",
+        "url-injection": "URL Injection",
+        "style-injection": "Style Injection",
+        "javascript-injection": "JavaScript Injection",
+        "best-practices": "Best Practices",
+        "backend-coordination": "Backend Coordination",
+        "server-side-rendering-ssr": "Server-Side Rendering (SSR)"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/built-ins/keep-alive.md",
+      "title": "",
+      "headings": {
+        "keepalive": "KeepAlive",
+        "basic-usage": "Basic Usage",
+        "include-exclude": "Include / Exclude",
+        "max-cached-instances": "Max Cached Instances",
+        "lifecycle-of-cached-instance": "Lifecycle of Cached Instance"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/built-ins/suspense.md",
+      "title": "",
+      "headings": {
+        "suspense": "Suspense",
+        "async-dependencies": "Async Dependencies",
+        "async-setup": "async setup()",
+        "async-components": "Async Components",
+        "loading-state": "Loading State",
+        "events": "Events",
+        "error-handling": "Error Handling",
+        "combining-with-other-components": "Combining with Other Components"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/built-ins/teleport.md",
+      "title": "",
+      "headings": {
+        "teleport": "Teleport",
+        "basic-usage": "Basic Usage",
+        "multiple-teleports-on-the-same-target": "Multiple Teleports on the Same Target"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/built-ins/transition-group.md",
+      "title": "",
+      "headings": {
+        "transitiongroup": "TransitionGroup",
+        "differences-from-transition": "Differences from &lt;Transition&gt;",
+        "enter-leave-transitions": "Enter / Leave Transitions",
+        "move-transitions": "Move Transitions",
+        "staggering-list-transitions": "Staggering List Transitions"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/built-ins/transition.md",
+      "title": "",
+      "headings": {
+        "transition": "Transition",
+        "the-transition-component": "The &lt;Transition&gt; Component",
+        "css-based-transitions": "CSS-Based Transitions",
+        "transition-classes": "Transition Classes",
+        "named-transitions": "Named Transitions",
+        "css-transitions": "CSS Transitions",
+        "css-animations": "CSS Animations",
+        "custom-transition-classes": "Custom Transition Classes",
+        "using-transitions-and-animations-together": "Using Transitions and Animations Together",
+        "nested-transitions-and-explicit-transition-durations": "Nested Transitions and Explicit Transition Durations",
+        "performance-considerations": "Performance Considerations",
+        "javascript-hooks": "JavaScript Hooks",
+        "reusable-transitions": "Reusable Transitions",
+        "transition-on-appear": "Transition on Appear",
+        "transition-between-elements": "Transition Between Elements",
+        "transition-modes": "Transition Modes",
+        "transition-between-components": "Transition Between Components",
+        "dynamic-transitions": "Dynamic Transitions"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/components/async.md",
+      "title": "",
+      "headings": {
+        "async-components": "Async Components",
+        "basic-usage": "Basic Usage",
+        "loading-and-error-states": "Loading and Error States",
+        "using-with-suspense": "Using with Suspense"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/components/attrs.md",
+      "title": "",
+      "headings": {
+        "fallthrough-attributes": "Fallthrough Attributes",
+        "attribute-inheritance": "Attribute Inheritance",
+        "class-and-style-merging": "class and style Merging",
+        "v-on-listener-inheritance": "v-on Listener Inheritance",
+        "nested-component-inheritance": "Nested Component Inheritance",
+        "disabling-attribute-inheritance": "Disabling Attribute Inheritance",
+        "attribute-inheritance-on-multiple-root-nodes": "Attribute Inheritance on Multiple Root Nodes",
+        "accessing-fallthrough-attributes-in-javascript": "Accessing Fallthrough Attributes in JavaScript"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/components/events.md",
+      "title": "",
+      "headings": {
+        "component-events": "Component Events",
+        "emitting-and-listening-to-events": "Emitting and Listening to Events",
+        "event-arguments": "Event Arguments",
+        "declaring-emitted-events": "Declaring Emitted Events",
+        "events-validation": "Events Validation"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/components/props.md",
+      "title": "",
+      "headings": {
+        "props": "Props",
+        "props-declaration": "Props Declaration",
+        "prop-passing-details": "Prop Passing Details",
+        "prop-name-casing": "Prop Name Casing",
+        "static-vs-dynamic-props": "Static vs. Dynamic Props",
+        "passing-different-value-types": "Passing Different Value Types",
+        "binding-multiple-properties-using-an-object": "Binding Multiple Properties Using an Object",
+        "one-way-data-flow": "One-Way Data Flow",
+        "mutating-object-array-props": "Mutating Object / Array Props",
+        "prop-validation": "Prop Validation",
+        "runtime-type-checks": "Runtime Type Checks",
+        "boolean-casting": "Boolean Casting"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/components/provide-inject.md",
+      "title": "",
+      "headings": {
+        "provide-inject": "Provide / Inject",
+        "prop-drilling": "Prop Drilling",
+        "provide": "Provide",
+        "app-level-provide": "App-level Provide",
+        "inject": "Inject",
+        "injection-aliasing": "Injection Aliasing *",
+        "injection-default-values": "Injection Default Values",
+        "working-with-reactivity": "Working with Reactivity",
+        "working-with-symbol-keys": "Working with Symbol Keys"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/components/registration.md",
+      "title": "",
+      "headings": {
+        "component-registration": "Component Registration",
+        "global-registration": "Global Registration",
+        "local-registration": "Local Registration",
+        "component-name-casing": "Component Name Casing"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/components/slots.md",
+      "title": "",
+      "headings": {
+        "slots": "Slots",
+        "slot-content-and-outlet": "Slot Content and Outlet",
+        "render-scope": "Render Scope",
+        "fallback-content": "Fallback Content",
+        "named-slots": "Named Slots",
+        "dynamic-slot-names": "Dynamic Slot Names",
+        "scoped-slots": "Scoped Slots",
+        "named-scoped-slots": "Named Scoped Slots",
+        "fancy-list-example": "Fancy List Example",
+        "renderless-components": "Renderless Components"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/components/v-model.md",
+      "title": "",
+      "headings": {
+        "component-v-model": "Component v-model",
+        "v-model-arguments": "v-model arguments",
+        "multiple-v-model-bindings": "Multiple v-model bindings",
+        "handling-v-model-modifiers": "Handling v-model modifiers"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/essentials/application.md",
+      "title": "",
+      "headings": {
+        "creating-a-vue-application": "Creating a Vue Application",
+        "the-application-instance": "The application instance",
+        "the-root-component": "The Root Component",
+        "mounting-the-app": "Mounting the App",
+        "in-dom-root-component-template": "In-DOM Root Component Template",
+        "app-configurations": "App Configurations",
+        "multiple-application-instances": "Multiple application instances"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/essentials/template-syntax.md",
+      "title": "",
+      "headings": {
+        "template-syntax": "Template Syntax",
+        "text-interpolation": "Text Interpolation",
+        "raw-html": "Raw HTML",
+        "attribute-bindings": "Attribute Bindings",
+        "shorthand": "Shorthand",
+        "boolean-attributes": "Boolean Attributes",
+        "dynamically-binding-multiple-attributes": "Dynamically Binding Multiple Attributes",
+        "using-javascript-expressions": "Using JavaScript Expressions",
+        "expressions-only": "Expressions Only",
+        "calling-functions": "Calling Functions",
+        "restricted-globals-access": "Restricted Globals Access",
+        "directives": "Directives",
+        "arguments": "Arguments",
+        "dynamic-arguments": "Dynamic Arguments",
+        "modifiers": "Modifiers"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/extras/animation.md",
+      "title": "",
+      "headings": {
+        "animation-techniques": "Animation Techniques",
+        "class-based-animations": "Class-based Animations",
+        "state-driven-animations": "State-driven Animations",
+        "animating-with-watchers": "Animating with Watchers"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/extras/composition-api-faq.md",
+      "title": "",
+      "headings": {
+        "composition-api-faq": "Composition API FAQ",
+        "what-is-composition-api": "What is Composition API?",
+        "why-composition-api": "Why Composition API?",
+        "better-logic-reuse": "Better Logic Reuse",
+        "more-flexible-code-organization": "More Flexible Code Organization",
+        "better-type-inference": "Better Type Inference",
+        "smaller-production-bundle-and-less-overhead": "Smaller Production Bundle and Less Overhead",
+        "relationship-with-options-api": "Relationship with Options API",
+        "trade-offs": "Trade-offs",
+        "does-composition-api-cover-all-use-cases": "Does Composition API cover all use cases?",
+        "can-i-use-both-apis-together": "Can I use both APIs together?",
+        "will-options-api-be-deprecated": "Will Options API be deprecated?",
+        "relationship-with-class-api": "Relationship with Class API",
+        "comparison-with-react-hooks": "Comparison with React Hooks"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/extras/custom-renderer.md",
+      "title": "",
+      "headings": {
+        "custom-renderers": "Custom Renderers"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/extras/reactivity-in-depth.md",
+      "title": "",
+      "headings": {
+        "reactivity-in-depth": "Reactivity in Depth",
+        "what-is-reactivity": "What is Reactivity?",
+        "how-reactivity-works-in-vue": "How Reactivity Works in Vue",
+        "runtime-vs-compile-time-reactivity": "Runtime vs. Compile-time Reactivity",
+        "reactivity-debugging": "Reactivity Debugging",
+        "component-debugging-hooks": "Component Debugging Hooks",
+        "computed-debugging": "Computed Debugging",
+        "watcher-debugging": "Watcher Debugging",
+        "integration-with-external-state-systems": "Integration with External State Systems",
+        "immutable-data": "Immutable Data",
+        "state-machines": "State Machines",
+        "rxjs": "RxJS"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/extras/reactivity-transform.md",
+      "title": "",
+      "headings": {
+        "reactivity-transform": "Reactivity Transform",
+        "refs-vs-reactive-variables": "Refs vs. Reactive Variables",
+        "destructuring-with": "Destructuring with $()",
+        "convert-existing-refs-to-reactive-variables-with": "Convert Existing Refs to Reactive Variables with $()",
+        "reactive-props-destructure": "Reactive Props Destructure",
+        "retaining-reactivity-across-function-boundaries": "Retaining Reactivity Across Function Boundaries",
+        "passing-into-function-as-argument": "Passing into function as argument",
+        "returning-inside-function-scope": "Returning inside function scope",
+        "using-on-destructured-props": "Using $() on destructured props",
+        "typescript-integration": "TypeScript Integration ",
+        "explicit-opt-in": "Explicit Opt-in",
+        "vite": "Vite",
+        "vue-cli": "vue-cli",
+        "plain-webpack-vue-loader": "Plain webpack + vue-loader"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/extras/render-function.md",
+      "title": "",
+      "headings": {
+        "render-functions-and-amp-jsx": "Render Functions &amp; JSX",
+        "basic-usage": "Basic Usage",
+        "creating-vnodes": "Creating Vnodes",
+        "declaring-render-functions": "Declaring Render Functions",
+        "vnodes-must-be-unique": "Vnodes Must Be Unique",
+        "jsx-tsx": "JSX / TSX",
+        "render-function-recipes": "Render Function Recipes",
+        "v-if": "v-if",
+        "v-for": "v-for",
+        "v-on": "v-on",
+        "components": "Components",
+        "rendering-slots": "Rendering Slots",
+        "passing-slots": "Passing Slots",
+        "built-in-components": "Built-in Components",
+        "v-model": "v-model",
+        "custom-directives": "Custom Directives",
+        "functional-components": "Functional Components"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/extras/rendering-mechanism.md",
+      "title": "",
+      "headings": {
+        "rendering-mechanism": "Rendering Mechanism",
+        "virtual-dom": "Virtual DOM",
+        "render-pipeline": "Render Pipeline",
+        "templates-vs-render-functions": "Templates vs. Render Functions",
+        "compiler-informed-virtual-dom": "Compiler-Informed Virtual DOM",
+        "static-hoisting": "Static Hoisting",
+        "patch-flags": "Patch Flags",
+        "tree-flattening": "Tree Flattening",
+        "impact-on-ssr-hydration": "Impact on SSR Hydration"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/extras/ways-of-using-vue.md",
+      "title": "",
+      "headings": {
+        "ways-of-using-vue": "Ways of Using Vue",
+        "standalone-script": "Standalone Script",
+        "embedded-web-components": "Embedded Web Components",
+        "single-page-application-spa": "Single-Page Application (SPA)",
+        "fullstack-ssr": "Fullstack / SSR",
+        "jamstack-ssg": "JAMStack / SSG",
+        "beyond-the-web": "Beyond the Web"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/extras/web-components.md",
+      "title": "",
+      "headings": {
+        "vue-and-web-components": "Vue and Web Components",
+        "using-custom-elements-in-vue": "Using Custom Elements in Vue",
+        "skipping-component-resolution": "Skipping Component Resolution",
+        "passing-dom-properties": "Passing DOM Properties",
+        "building-custom-elements-with-vue": "Building Custom Elements with Vue",
+        "definecustomelement": "defineCustomElement",
+        "sfc-as-custom-element": "SFC as Custom Element",
+        "tips-for-a-vue-custom-elements-library": "Tips for a Vue Custom Elements Library",
+        "web-components-vs-vue-components": "Web Components vs. Vue Components"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "docs/quick-start.md",
+      "title": "",
+      "headings": {
+        "quick-start": "Quick Start",
+        "try-vue-online": "Try Vue Online",
+        "creating-a-vue-application": "Creating a Vue Application",
+        "using-vue-from-cdn": "Using Vue from CDN",
+        "using-the-global-build": "Using the Global Build",
+        "using-the-es-module-build": "Using the ES Module Build",
+        "enabling-import-maps": "Enabling Import maps",
+        "splitting-up-the-modules": "Splitting Up the Modules",
+        "using-composition-api-without-a-build-step": "Using Composition API without a Build Step",
+        "next-steps": "Next Steps"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "index.md",
+      "title": "Landing Page",
+      "headings": {
+        "vue-js-the-progressive-javascript-framework": "Vue.js - The Progressive JavaScript Framework"
+      },
+      "headingKeywords": {}
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 4.0.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="../../markbind/css/octicons.css">
+    <link rel="stylesheet" href="../../markbind/material-icons/material-icons.css">
+    <link rel="stylesheet" href="../../markbind/css/codeblock-dark.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
+    <script src="../../markbind/js/vue.min.js"></script>
+    <script src="../../markbind/js/markbind.min.js"></script>
+    <script src="template-syntax.page-vue-render.js"></script>
+    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="/plugins/markbind-plugin-tree/markbind-plugin-tree.css">
+    
+  <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<script>
+  const baseUrl = ''
+</script>
+<body >
+<div id="app" data-server-rendered="true"><header sticky=""><div data-v-15113a2f><nav class="navbar navbar-expand-md d-print-none navbar-dark bg-dark" data-v-15113a2f><div class="container-fluid" data-v-15113a2f><div class="navbar-left" data-v-15113a2f></div> <div class="navbar-default" data-v-15113a2f><ul class="navbar-nav me-auto mt-2 mt-lg-0" data-v-15113a2f><li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Essentials</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/essentials/application.html" class="dropdown-item" data-v-2e98b3f0>Creating an Application</a></li> <li data-v-2e98b3f0><a href="/docs/essentials/template-syntax.html" class="dropdown-item" data-v-2e98b3f0>Template Syntax</a></li></ul></li> <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Components In-Depth</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/components/registration.html" class="dropdown-item" data-v-2e98b3f0>Registration</a></li> <li data-v-2e98b3f0><a href="/docs/components/props.html" class="dropdown-item" data-v-2e98b3f0>Props</a></li> <li data-v-2e98b3f0><a href="/docs/components/events.html" class="dropdown-item" data-v-2e98b3f0>Events</a></li> <li data-v-2e98b3f0><a href="/docs/components/v-model.html" class="dropdown-item" data-v-2e98b3f0>Component v-model</a></li> <li data-v-2e98b3f0><a href="/docs/components/attrs.html" class="dropdown-item" data-v-2e98b3f0>Fallthrough Attributes</a></li> <li data-v-2e98b3f0><a href="/docs/components/slots.html" class="dropdown-item" data-v-2e98b3f0>Slots</a></li> <li data-v-2e98b3f0><a href="/docs/components/provide-inject.html" class="dropdown-item" data-v-2e98b3f0>Provide / inject</a></li> <li data-v-2e98b3f0><a href="/docs/components/async.html" class="dropdown-item" data-v-2e98b3f0>Async Components</a></li></ul></li> <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Built-in Components</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/built-ins/transition.html" class="dropdown-item" data-v-2e98b3f0>Transition</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/transition-group.html" class="dropdown-item" data-v-2e98b3f0>TransitionGroup</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/keep-alive.html" class="dropdown-item" data-v-2e98b3f0>KeepAlive</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/teleport.html" class="dropdown-item" data-v-2e98b3f0>Teleport</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/suspense.html" class="dropdown-item" data-v-2e98b3f0>Suspense</a></li></ul></li>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Extra Topics</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/extras/ways-of-using-vue.html" class="dropdown-item" data-v-2e98b3f0>Ways of using Vue</a></li> <li data-v-2e98b3f0><a href="/docs/extras/composition-api-faq.html" class="dropdown-item" data-v-2e98b3f0>Composition API FAQ</a></li> <li data-v-2e98b3f0><a href="/docs/extras/reactivity-in-depth.html" class="dropdown-item" data-v-2e98b3f0>Reactivity in Depth</a></li> <li data-v-2e98b3f0><a href="/docs/extras/rendering-mechanism.html" class="dropdown-item" data-v-2e98b3f0>Rendering Mechanism</a></li> <li data-v-2e98b3f0><a href="/docs/extras/render-function.html" class="dropdown-item" data-v-2e98b3f0>Render Functions &amp; JSX</a></li> <li data-v-2e98b3f0><a href="/docs/extras/web-components.html" class="dropdown-item" data-v-2e98b3f0>Vue and Web components</a></li> <li data-v-2e98b3f0><a href="/docs/extras/animation.html" class="dropdown-item" data-v-2e98b3f0>Animation Techniques</a></li> <li data-v-2e98b3f0><a href="/docs/extras/reactivity-transform.html" class="dropdown-item" data-v-2e98b3f0>Reactivity Transform</a></li>
+=======
+    <li class="nav-link dropdown-submenu dropend" data-v-3d2bfc10 data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-item submenu-toggle" data-v-3d2bfc10>Best practises</a> <ul class="dropdown-menu" data-v-3d2bfc10> <li data-v-3d2bfc10><a href="/docs/best-practices/production-deployment.html" class="dropdown-item" data-v-3d2bfc10>Production Deployment</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/performance.html" class="dropdown-item" data-v-3d2bfc10>Performance</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/accessibility.html" class="dropdown-item" data-v-3d2bfc10>Accessibility</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/security.html" class="dropdown-item" data-v-3d2bfc10>Security</a></li>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 473d14335b50a8d8d2ed962afbba21a01abdecd7
+    </ul></li></ul></li></ul></div> <!----></div></nav> <div class="lower-navbar-container" style="display:none;" data-v-15113a2f><!----> <!----></div></div></header> <div id="flex-body"><nav id="site-nav" data-v-e8c82f88><div class="site-nav-top" data-v-e8c82f88><div class="fw-bold mb-2" style="font-size:1.25rem;" data-v-e8c82f88>Template</div></div> <div class="nav-component slim-scroll" data-v-e8c82f88><div class="site-nav-root"><ul class="site-nav-list site-nav-list-root" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Getting Started 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/introduction.html" data-v-e8c82f88>Introduction</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/quick-start.html" data-v-e8c82f88>Quick Start</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Essentials 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/essentials/application.html" data-v-e8c82f88>Creating an Application</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/essentials/template-syntax.html" data-v-e8c82f88>Template Syntax</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Components In-Depth
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/registration.html" data-v-e8c82f88>Registration</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/props.html" data-v-e8c82f88>Props</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/events.html" data-v-e8c82f88>Events</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/v-model.html" data-v-e8c82f88>Component v-model</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/attrs.html" data-v-e8c82f88>Fallthrough Attributes</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/slots.html" data-v-e8c82f88>Slots</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/provide-inject.html" data-v-e8c82f88>Provide / inject</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/async.html" data-v-e8c82f88>Async Components</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Reusability</li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Built-in Components
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/transition.html" data-v-e8c82f88>Transition</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/transition-group.html" data-v-e8c82f88>TransitionGroup</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/keep-alive.html" data-v-e8c82f88>KeepAlive</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/teleport.html" data-v-e8c82f88>Teleport</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/suspense.html" data-v-e8c82f88>Suspense</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Scaling Up</li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Best Practices 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/production-deployment.html" data-v-e8c82f88>Production Deployment</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/performance.html" data-v-e8c82f88>Performance</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/accessibility.html" data-v-e8c82f88>Accessibility</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/security.html" data-v-e8c82f88>Security</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Extra topics 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/ways-of-using-vue.html" data-v-e8c82f88>Ways of using Vue</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/composition-api-faq.html" data-v-e8c82f88>Composition API FAQ</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/reactivity-in-depth.html" data-v-e8c82f88>Reactivity in Depth</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/rendering-mechanism.html" data-v-e8c82f88>Rendering Mechanism</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/render-function.html" data-v-e8c82f88>Render Functions &amp; JSX</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/web-components.html" data-v-e8c82f88>Vue and Web Components</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/animation.html" data-v-e8c82f88>Animation Techniques</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/reactivity-transform.html" data-v-e8c82f88>Reactivity Transform</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>TypeScript</li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Extra Topics</li> <!----></ul></div></div> <!----></nav> <div id="content-wrapper"><h1 id="template-syntax"><span id="template-syntax" class="anchor"></span>Template Syntax<a href="#template-syntax" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h1> <p>Vue uses an HTML-based template syntax that allows you to declaratively bind the rendered DOM to the underlying component instance's data. All Vue templates are syntactically valid HTML that can be parsed by spec-compliant browsers and HTML parsers.</p> <p>Under the hood, Vue compiles the templates into highly-optimized JavaScript code. Combined with the reactivity system, Vue can intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulations when the app state changes.</p> <p>If you are familiar with Virtual DOM concepts and prefer the raw power of JavaScript, you can also directly write render functions instead of templates, with optional JSX support. However, do note that they do not enjoy the same level of compile-time optimizations as templates.</p> <h2 id="text-interpolation"><span id="text-interpolation" class="anchor"></span>Text Interpolation<a href="#text-interpolation" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>The most basic form of data binding is text interpolation using the &quot;Mustache&quot; syntax (double curly braces):</p> <pre><code class="hljs"><span>&lt;span&gt;Message: &lt;/span&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>The mustache tag will be replaced with the value of the <code class="hljs inline no-lang">msg</code> property from the corresponding component instance. It will also be updated whenever the <code class="hljs inline no-lang">msg</code> property changes.</p> <h2 id="raw-html"><span id="raw-html" class="anchor"></span>Raw HTML<a href="#raw-html" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>The double mustaches interpret the data as plain text, not HTML. In order to output real HTML, you will need to use the <a href="https://vuejs.org/api/built-in-directives.html#v-html"><code class="hljs inline no-lang">v-html</code> directive</a>:</p> <pre><code class="hljs"><span>&lt;p&gt;Using text interpolation: &lt;/p&gt;
+</span><span>&lt;p&gt;Using v-html directive: &lt;span v-html=&quot;rawHtml&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre> <div class="demo"><p>Using text interpolation: </p> <p>Using v-html directive: <span></span></p></div> <p>Here we're encountering something new. The <code class="hljs inline no-lang">v-html</code> attribute you're seeing is called a <strong>directive</strong>. Directives are prefixed with <code class="hljs inline no-lang">v-</code> to indicate that they are special attributes provided by Vue, and as you may have guessed, they apply special reactive behavior to the rendered DOM. Here, we're basically saying &quot;keep this element's inner HTML up-to-date with the <code class="hljs inline no-lang">rawHtml</code> property on the current active instance.&quot;</p> <p>The contents of the <code class="hljs inline no-lang">span</code> will be replaced with the value of the <code class="hljs inline no-lang">rawHtml</code> property, interpreted as plain HTML - data bindings are ignored. Note that you cannot use <code class="hljs inline no-lang">v-html</code> to compose template partials, because Vue is not a string-based templating engine. Instead, components are preferred as the fundamental unit for UI reuse and composition.</p> <p>:::warning Security Warning
+Dynamically rendering arbitrary HTML on your website can be very dangerous because it can easily lead to <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS vulnerabilities</a>. Only use <code class="hljs inline no-lang">v-html</code> on trusted content and <strong>never</strong> on user-provided content.
+:::</p> <h2 id="attribute-bindings"><span id="attribute-bindings" class="anchor"></span>Attribute Bindings<a href="#attribute-bindings" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>Mustaches cannot be used inside HTML attributes. Instead, use a <a href="https://vuejs.org/api/built-in-directives.html#v-bind"><code class="hljs inline no-lang">v-bind</code> directive</a>:</p> <pre><code class="hljs"><span>&lt;div v-bind:id=&quot;dynamicId&quot;&gt;&lt;/div&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>The <code class="hljs inline no-lang">v-bind</code> directive instructs Vue to keep the element's <code class="hljs inline no-lang">id</code> attribute in sync with the component's <code class="hljs inline no-lang">dynamicId</code> property. If the bound value is <code class="hljs inline no-lang">null</code> or <code class="hljs inline no-lang">undefined</code>, then the attribute will be removed from the rendered element.
+0</p> <h3 id="shorthand"><span id="shorthand" class="anchor"></span>Shorthand<a href="#shorthand" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>Because <code class="hljs inline no-lang">v-bind</code> is so commonly used, it has a dedicated shorthand syntax:</p> <pre><code class="hljs"><span>&lt;div :id=&quot;dynamicId&quot;&gt;&lt;/div&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Attributes that start with <code class="hljs inline no-lang">:</code> may look a bit different from normal HTML, but it is in fact a valid character for attribute names and all Vue-supported browsers can parse it correctly. In addition, they do not appear in the final rendered markup. The shorthand syntax is optional, but you will likely appreciate it when you learn more about its usage later.</p> <blockquote><p>For the rest of the guide, we will be using the shorthand syntax in code examples, as that's the most common usage for Vue developers.</p></blockquote> <h3 id="boolean-attributes"><span id="boolean-attributes" class="anchor"></span>Boolean Attributes<a href="#boolean-attributes" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p><a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes">Boolean attributes</a> are attributes that can indicate true / false values by their presence on an element. For example, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled"><code class="hljs inline no-lang">disabled</code></a> is one of the most commonly used boolean attributes.</p> <p><code class="hljs inline no-lang">v-bind</code> works a bit differently in this case:</p> <pre><code class="hljs"><span>&lt;button :disabled=&quot;isButtonDisabled&quot;&gt;Button&lt;/button&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>The <code class="hljs inline no-lang">disabled</code> attribute will be included if <code class="hljs inline no-lang">isButtonDisabled</code> has a <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">truthy value</a>. It will also be included if the value is an empty string, maintaining consistency with <code class="hljs inline no-lang">&lt;button disabled=&quot;&quot;&gt;</code>. For other <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">falsy values</a> the attribute will be omitted.</p> <h3 id="dynamically-binding-multiple-attributes"><span id="dynamically-binding-multiple-attributes" class="anchor"></span>Dynamically Binding Multiple Attributes<a href="#dynamically-binding-multiple-attributes" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>If you have a JavaScript object representing multiple attributes that looks like this:</p> <div class="composition-api"><pre><code class="hljs js"><span><span class="hljs-keyword">const</span> objectOfAttrs = {
+</span><span>  <span class="hljs-attr">id</span>: <span class="hljs-string">'container'</span>,
+</span><span>  <span class="hljs-attr">class</span>: <span class="hljs-string">'wrapper'</span>
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-function"><span class="hljs-title">data</span>(<span class="hljs-params"></span>)</span> {
+</span><span>  <span class="hljs-keyword">return</span> {
+</span><span>    <span class="hljs-attr">objectOfAttrs</span>: {
+</span><span>      <span class="hljs-attr">id</span>: <span class="hljs-string">'container'</span>,
+</span><span>      <span class="hljs-attr">class</span>: <span class="hljs-string">'wrapper'</span>
+</span><span>    }
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <p>You can bind them to a single element by using <code class="hljs inline no-lang">v-bind</code> without an argument:</p> <pre><code class="hljs"><span>&lt;div v-bind=&quot;objectOfAttrs&quot;&gt;&lt;/div&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h2 id="using-javascript-expressions"><span id="using-javascript-expressions" class="anchor"></span>Using JavaScript Expressions<a href="#using-javascript-expressions" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>So far we've only been binding to simple property keys in our templates. But Vue actually supports the full power of JavaScript expressions inside all data bindings:</p> <pre><code class="hljs"><span>{{ number + 1 }}
+</span><span>
+</span><span>{{ ok ? 'YES' : 'NO' }}
+</span><span>
+</span><span>{{ message.split('').reverse().join('') }}
+</span><span>
+</span><span>&lt;div :id=&quot;list-${id}&quot;&gt;&lt;/div&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>These expressions will be evaluated as JavaScript in the data scope of the current component instance.</p> <p>In Vue templates, JavaScript expressions can be used in the following positions:</p> <ul><li>Inside text interpolations (mustaches)</li> <li>In the attribute value of any Vue directives (special attributes that start with <code class="hljs inline no-lang">v-</code>)</li></ul> <h3 id="expressions-only"><span id="expressions-only" class="anchor"></span>Expressions Only<a href="#expressions-only" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>Each binding can only contain <strong>one single expression</strong>. An expression is a piece of code that can be evaluated to a value. A simple check is whether it can be used after <code class="hljs inline no-lang">return</code>.</p> <p>Therefore, the following will <strong>NOT</strong> work:</p> <pre><code class="hljs"><span>&lt;!-- this is a statement, not an expression: --&gt;
+</span><span>{{ var a = 1 }}
+</span><span>
+</span><span>&lt;!-- flow control won't work either, use ternary expressions --&gt;
+</span><span>{{ if (ok) { return message } }}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h3 id="calling-functions"><span id="calling-functions" class="anchor"></span>Calling Functions<a href="#calling-functions" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>It is possible to call a component-exposed method inside a binding expression:</p> <pre><code class="hljs"><span>&lt;span :title=&quot;toTitleDate(date)&quot;&gt;
+</span><span>  {{ formatDate(date) }}
+</span><span>&lt;/span&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>:::tip
+Functions called inside binding expressions will be called every time the component updates, so they should <strong>not</strong> have any side effects, such as changing data or triggering asynchronous operations.
+:::</p> <h3 id="restricted-globals-access"><span id="restricted-globals-access" class="anchor"></span>Restricted Globals Access<a href="#restricted-globals-access" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>Template expressions are sandboxed and only have access to a <a href="https://github.com/vuejs/core/blob/main/packages/shared/src/globalsWhitelist.ts#L3">restricted list of globals</a>. The list exposes commonly used built-in globals such as <code class="hljs inline no-lang">Math</code> and <code class="hljs inline no-lang">Date</code>.</p> <p>Globals not explicitly included in the list, for example user-attached properties on <code class="hljs inline no-lang">window</code>, will not be accessible in template expressions. You can, however, explicitly define additional globals for all Vue expressions by adding them to <a href="https://vuejs.org/api/application.html#app-config-globalproperties"><code class="hljs inline no-lang">app.config.globalProperties</code></a>.</p> <h2 id="directives"><span id="directives" class="anchor"></span>Directives<a href="#directives" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>Directives are special attributes with the <code class="hljs inline no-lang">v-</code> prefix. Vue provides a number of <a href="https://vuejs.org/api/built-in-directives.html">built-in directives</a>, including <code class="hljs inline no-lang">v-html</code> and <code class="hljs inline no-lang">v-bind</code> which we have introduced above.</p> <p>Directive attribute values are expected to be single JavaScript expressions (with the exception of <code class="hljs inline no-lang">v-for</code>, <code class="hljs inline no-lang">v-on</code> and <code class="hljs inline no-lang">v-slot</code>, which will be discussed in their respective sections later). A directive's job is to reactively apply updates to the DOM when the value of its expression changes. Take <a href="https://vuejs.org/api/built-in-directives.html#v-if"><code class="hljs inline no-lang">v-if</code></a> as an example:</p> <pre><code class="hljs"><span>&lt;p v-if=&quot;seen&quot;&gt;Now you see me&lt;/p&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Here, the <code class="hljs inline no-lang">v-if</code> directive would remove / insert the <code class="hljs inline no-lang">&lt;p&gt;</code> element based on the truthiness of the value of the expression <code class="hljs inline no-lang">seen</code>.</p> <h3 id="arguments"><span id="arguments" class="anchor"></span>Arguments<a href="#arguments" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>Some directives can take an &quot;argument&quot;, denoted by a colon after the directive name. For example, the <code class="hljs inline no-lang">v-bind</code> directive is used to reactively update an HTML attribute:</p> <pre><code class="hljs"><span>&lt;a v-bind:href=&quot;url&quot;&gt; ... &lt;/a&gt;
+</span><span>
+</span><span>&lt;!-- shorthand --&gt;
+</span><span>&lt;a :href=&quot;url&quot;&gt; ... &lt;/a&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Here, <code class="hljs inline no-lang">href</code> is the argument, which tells the <code class="hljs inline no-lang">v-bind</code> directive to bind the element's <code class="hljs inline no-lang">href</code> attribute to the value of the expression <code class="hljs inline no-lang">url</code>. In the shorthand, everything before the argument (i.e., <code class="hljs inline no-lang">v-bind:</code>) is condensed into a single character, <code class="hljs inline no-lang">:</code>.</p> <p>Another example is the <code class="hljs inline no-lang">v-on</code> directive, which listens to DOM events:</p> <pre><code class="hljs"><span>&lt;a v-on:click=&quot;doSomething&quot;&gt; ... &lt;/a&gt;
+</span><span>
+</span><span>&lt;!-- shorthand --&gt;
+</span><span>&lt;a @click=&quot;doSomething&quot;&gt; ... &lt;/a&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Here, the argument is the event name to listen to: <code class="hljs inline no-lang">click</code>. <code class="hljs inline no-lang">v-on</code> has a corresponding shorthand, namely the <code class="hljs inline no-lang">@</code> character. We will talk about event handling in more detail too.</p> <h3 id="dynamic-arguments"><span id="dynamic-arguments" class="anchor"></span>Dynamic Arguments<a href="#dynamic-arguments" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>It is also possible to use a JavaScript expression in a directive argument by wrapping it with square brackets:</p> <pre><code class="hljs"><span>&lt;!--
+</span><span>Note that there are some constraints to the argument expression,
+</span><span>as explained in the &quot;Dynamic Argument Value Constraints&quot; and &quot;Dynamic Argument Syntax Constraints&quot; sections below.
+</span><span>--&gt;
+</span><span>&lt;a v-bind:[attributeName]=&quot;url&quot;&gt; ... &lt;/a&gt;
+</span><span>
+</span><span>&lt;!-- shorthand --&gt;
+</span><span>&lt;a :[attributeName]=&quot;url&quot;&gt; ... &lt;/a&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Here, <code class="hljs inline no-lang">attributeName</code> will be dynamically evaluated as a JavaScript expression, and its evaluated value will be used as the final value for the argument. For example, if your component instance has a data property, <code class="hljs inline no-lang">attributeName</code>, whose value is <code class="hljs inline no-lang">&quot;href&quot;</code>, then this binding will be equivalent to <code class="hljs inline no-lang">v-bind:href</code>.</p> <p>Similarly, you can use dynamic arguments to bind a handler to a dynamic event name:</p> <pre><code class="hljs"><span>&lt;a v-on:[eventName]=&quot;doSomething&quot;&gt; ... &lt;/a&gt;
+</span><span>
+</span><span>&lt;!-- shorthand --&gt;
+</span><span>&lt;a @[eventName]=&quot;doSomething&quot;&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>In this example, when <code class="hljs inline no-lang">eventName</code>'s value is <code class="hljs inline no-lang">&quot;focus&quot;</code>, <code class="hljs inline no-lang">v-on:[eventName]</code> will be equivalent to <code class="hljs inline no-lang">v-on:focus</code>.</p> <h4 id="dynamic-argument-value-constraints"><span id="dynamic-argument-value-constraints" class="anchor"></span>Dynamic Argument Value Constraints<a href="#dynamic-argument-value-constraints" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <p>Dynamic arguments are expected to evaluate to a string, with the exception of <code class="hljs inline no-lang">null</code>. The special value <code class="hljs inline no-lang">null</code> can be used to explicitly remove the binding. Any other non-string value will trigger a warning.</p> <h4 id="dynamic-argument-syntax-constraints"><span id="dynamic-argument-syntax-constraints" class="anchor"></span>Dynamic Argument Syntax Constraints<a href="#dynamic-argument-syntax-constraints" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <p>Dynamic argument expressions have some syntax constraints because certain characters, such as spaces and quotes, are invalid inside HTML attribute names. For example, the following is invalid:</p> <pre><code class="hljs"><span>&lt;!-- This will trigger a compiler warning. --&gt;
+</span><span>&lt;a :['foo' + bar]=&quot;value&quot;&gt; ... &lt;/a&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>If you need to pass a complex dynamic argument, it's probably better to use a <a href="/docs/essentials/computed.html">computed property</a>, which we will cover shortly.</p> <p>When using in-DOM templates (templates directly written in an HTML file), you should also avoid naming keys with uppercase characters, as browsers will coerce attribute names into lowercase:</p> <pre><code class="hljs"><span>&lt;a :[someAttr]=&quot;value&quot;&gt; ... &lt;/a&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>The above will be converted to <code class="hljs inline no-lang">:[someattr]</code> in in-DOM templates. If your component has a <code class="hljs inline no-lang">someAttr</code> property instead of <code class="hljs inline no-lang">someattr</code>, your code won't work. Templates inside Single-File Components are <strong>not</strong> subject to this constraint.</p> <h3 id="modifiers"><span id="modifiers" class="anchor"></span>Modifiers<a href="#modifiers" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>Modifiers are special postfixes denoted by a dot, which indicate that a directive should be bound in some special way. For example, the <code class="hljs inline no-lang">.prevent</code> modifier tells the <code class="hljs inline no-lang">v-on</code> directive to call <code class="hljs inline no-lang">event.preventDefault()</code> on the triggered event:</p> <pre><code class="hljs"><span>&lt;form @submit.prevent=&quot;onSubmit&quot;&gt;...&lt;/form&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>You'll see other examples of modifiers later, <a href="/docs/essentials/event-handling.html#event-modifiers">for <code class="hljs inline no-lang">v-on</code></a> and <a href="/docs/essentials/forms.html#modifiers">for <code class="hljs inline no-lang">v-model</code></a>, when we explore those features.</p> <p>And finally, here's the full directive syntax visualized:</p> <p><a href="/docs/essentials/images/directive.png" target="_self"><img src="/docs/essentials/images/directive.png" alt="" class="img-fluid"></a></p> <i id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true" class="fa fa-arrow-circle-up fa-lg d-print-none"></i></div> <nav id="page-nav" data-v-e8c82f88><div class="nav-component slim-scroll" data-v-e8c82f88></div> <!----></nav></div> <footer><div class="text-center"><small>[Generated by <a href="https://markbind.org/">MarkBind 4.0.2</a>]</small></div></footer></div>
+</body><script setup>
+  const rawHtml = '<span style="color: red">This should be red.</span>'
+</script><script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script>
+  MarkBind.setupWithSearch()
+</script>
+    <script>
+    function copyCodeBlock(element) {
+        const pre = element.parentElement.parentElement;
+        const codeElement = pre.querySelector('code');
+
+        // create dummy text element to select() the text field
+        const textElement = document.createElement('textarea');
+        textElement.value = codeElement.textContent;
+        document.body.appendChild(textElement);
+        textElement.select();
+
+        document.execCommand('copy');
+        document.body.removeChild(textElement);
+    }
+    </script>
+</html>

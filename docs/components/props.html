@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 4.0.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="../../markbind/css/octicons.css">
+    <link rel="stylesheet" href="../../markbind/material-icons/material-icons.css">
+    <link rel="stylesheet" href="../../markbind/css/codeblock-dark.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
+    <script src="../../markbind/js/vue.min.js"></script>
+    <script src="../../markbind/js/markbind.min.js"></script>
+    <script src="props.page-vue-render.js"></script>
+    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="/plugins/markbind-plugin-tree/markbind-plugin-tree.css">
+    
+  <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<script>
+  const baseUrl = ''
+</script>
+<body >
+<div id="app" data-server-rendered="true"><header sticky=""><div data-v-15113a2f><nav class="navbar navbar-expand-md d-print-none navbar-dark bg-dark" data-v-15113a2f><div class="container-fluid" data-v-15113a2f><div class="navbar-left" data-v-15113a2f></div> <div class="navbar-default" data-v-15113a2f><ul class="navbar-nav me-auto mt-2 mt-lg-0" data-v-15113a2f><li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Essentials</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/essentials/application.html" class="dropdown-item" data-v-2e98b3f0>Creating an Application</a></li> <li data-v-2e98b3f0><a href="/docs/essentials/template-syntax.html" class="dropdown-item" data-v-2e98b3f0>Template Syntax</a></li></ul></li> <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Components In-Depth</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/components/registration.html" class="dropdown-item" data-v-2e98b3f0>Registration</a></li> <li data-v-2e98b3f0><a href="/docs/components/props.html" class="dropdown-item" data-v-2e98b3f0>Props</a></li> <li data-v-2e98b3f0><a href="/docs/components/events.html" class="dropdown-item" data-v-2e98b3f0>Events</a></li> <li data-v-2e98b3f0><a href="/docs/components/v-model.html" class="dropdown-item" data-v-2e98b3f0>Component v-model</a></li> <li data-v-2e98b3f0><a href="/docs/components/attrs.html" class="dropdown-item" data-v-2e98b3f0>Fallthrough Attributes</a></li> <li data-v-2e98b3f0><a href="/docs/components/slots.html" class="dropdown-item" data-v-2e98b3f0>Slots</a></li> <li data-v-2e98b3f0><a href="/docs/components/provide-inject.html" class="dropdown-item" data-v-2e98b3f0>Provide / inject</a></li> <li data-v-2e98b3f0><a href="/docs/components/async.html" class="dropdown-item" data-v-2e98b3f0>Async Components</a></li></ul></li> <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Built-in Components</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/built-ins/transition.html" class="dropdown-item" data-v-2e98b3f0>Transition</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/transition-group.html" class="dropdown-item" data-v-2e98b3f0>TransitionGroup</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/keep-alive.html" class="dropdown-item" data-v-2e98b3f0>KeepAlive</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/teleport.html" class="dropdown-item" data-v-2e98b3f0>Teleport</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/suspense.html" class="dropdown-item" data-v-2e98b3f0>Suspense</a></li></ul></li>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Extra Topics</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/extras/ways-of-using-vue.html" class="dropdown-item" data-v-2e98b3f0>Ways of using Vue</a></li> <li data-v-2e98b3f0><a href="/docs/extras/composition-api-faq.html" class="dropdown-item" data-v-2e98b3f0>Composition API FAQ</a></li> <li data-v-2e98b3f0><a href="/docs/extras/reactivity-in-depth.html" class="dropdown-item" data-v-2e98b3f0>Reactivity in Depth</a></li> <li data-v-2e98b3f0><a href="/docs/extras/rendering-mechanism.html" class="dropdown-item" data-v-2e98b3f0>Rendering Mechanism</a></li> <li data-v-2e98b3f0><a href="/docs/extras/render-function.html" class="dropdown-item" data-v-2e98b3f0>Render Functions &amp; JSX</a></li> <li data-v-2e98b3f0><a href="/docs/extras/web-components.html" class="dropdown-item" data-v-2e98b3f0>Vue and Web components</a></li> <li data-v-2e98b3f0><a href="/docs/extras/animation.html" class="dropdown-item" data-v-2e98b3f0>Animation Techniques</a></li> <li data-v-2e98b3f0><a href="/docs/extras/reactivity-transform.html" class="dropdown-item" data-v-2e98b3f0>Reactivity Transform</a></li>
+=======
+    <li class="nav-link dropdown-submenu dropend" data-v-3d2bfc10 data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-item submenu-toggle" data-v-3d2bfc10>Best practises</a> <ul class="dropdown-menu" data-v-3d2bfc10> <li data-v-3d2bfc10><a href="/docs/best-practices/production-deployment.html" class="dropdown-item" data-v-3d2bfc10>Production Deployment</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/performance.html" class="dropdown-item" data-v-3d2bfc10>Performance</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/accessibility.html" class="dropdown-item" data-v-3d2bfc10>Accessibility</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/security.html" class="dropdown-item" data-v-3d2bfc10>Security</a></li>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 473d14335b50a8d8d2ed962afbba21a01abdecd7
+    </ul></li></ul></li></ul></div> <!----></div></nav> <div class="lower-navbar-container" style="display:none;" data-v-15113a2f><!----> <!----></div></div></header> <div id="flex-body"><nav id="site-nav" data-v-e8c82f88><div class="site-nav-top" data-v-e8c82f88><div class="fw-bold mb-2" style="font-size:1.25rem;" data-v-e8c82f88>Template</div></div> <div class="nav-component slim-scroll" data-v-e8c82f88><div class="site-nav-root"><ul class="site-nav-list site-nav-list-root" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Getting Started 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/introduction.html" data-v-e8c82f88>Introduction</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/quick-start.html" data-v-e8c82f88>Quick Start</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Essentials 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/essentials/application.html" data-v-e8c82f88>Creating an Application</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/essentials/template-syntax.html" data-v-e8c82f88>Template Syntax</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Components In-Depth
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/registration.html" data-v-e8c82f88>Registration</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/props.html" data-v-e8c82f88>Props</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/events.html" data-v-e8c82f88>Events</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/v-model.html" data-v-e8c82f88>Component v-model</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/attrs.html" data-v-e8c82f88>Fallthrough Attributes</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/slots.html" data-v-e8c82f88>Slots</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/provide-inject.html" data-v-e8c82f88>Provide / inject</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/async.html" data-v-e8c82f88>Async Components</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Reusability</li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Built-in Components
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/transition.html" data-v-e8c82f88>Transition</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/transition-group.html" data-v-e8c82f88>TransitionGroup</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/keep-alive.html" data-v-e8c82f88>KeepAlive</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/teleport.html" data-v-e8c82f88>Teleport</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/suspense.html" data-v-e8c82f88>Suspense</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Scaling Up</li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Best Practices 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/production-deployment.html" data-v-e8c82f88>Production Deployment</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/performance.html" data-v-e8c82f88>Performance</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/accessibility.html" data-v-e8c82f88>Accessibility</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/security.html" data-v-e8c82f88>Security</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Extra topics 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/ways-of-using-vue.html" data-v-e8c82f88>Ways of using Vue</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/composition-api-faq.html" data-v-e8c82f88>Composition API FAQ</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/reactivity-in-depth.html" data-v-e8c82f88>Reactivity in Depth</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/rendering-mechanism.html" data-v-e8c82f88>Rendering Mechanism</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/render-function.html" data-v-e8c82f88>Render Functions &amp; JSX</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/web-components.html" data-v-e8c82f88>Vue and Web Components</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/animation.html" data-v-e8c82f88>Animation Techniques</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/reactivity-transform.html" data-v-e8c82f88>Reactivity Transform</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>TypeScript</li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Extra Topics</li> <!----></ul></div></div> <!----></nav> <div id="content-wrapper"><h1 id="props"><span id="props" class="anchor"></span>Props<a href="#props" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h1> <blockquote><p>This page assumes you've already read the <a href="/docs/essentials/component-basics">Components Basics</a>. Read that first if you are new to components.</p></blockquote> <div class="options-api"><vueschoollink href="https://vueschool.io/lessons/vue-3-reusable-components-with-props" title="Free Vue.js Props Lesson"></vueschoollink></div> <h2 id="props-declaration"><span id="props-declaration" class="anchor"></span>Props Declaration<a href="#props-declaration" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>Vue components require explicit props declaration so that Vue knows what external props passed to the component should be treated as fallthrough attributes (which will be discussed in <a href="/docs/components/attrs">its dedicated section</a>).</p> <div class="composition-api"><p>In SFCs using <code class="hljs inline no-lang">&lt;script setup&gt;</code>, props can be declared using the <code class="hljs inline no-lang">defineProps()</code> macro:</p> <pre><code class="hljs"><span>&lt;script setup&gt;
+</span><span>const props = defineProps(['foo'])
+</span><span>
+</span><span>console.log(props.foo)
+</span><span>&lt;/script&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>In non-<code class="hljs inline no-lang">&lt;script setup&gt;</code> components, props are declared using the <a href="/api/options-state.html#props"><code class="hljs inline no-lang">props</code></a> option:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: [<span class="hljs-string">'foo'</span>],
+</span><span>  <span class="hljs-function"><span class="hljs-title">setup</span>(<span class="hljs-params">props</span>)</span> {
+</span><span>    <span class="hljs-comment">// setup() receives props as the first argument.</span>
+</span><span>    <span class="hljs-built_in">console</span>.log(props.foo)
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Notice the argument passed to <code class="hljs inline no-lang">defineProps()</code> is the same as the value provided to the <code class="hljs inline no-lang">props</code> options: the same props options API is shared between the two declaration styles.</p></div> <div class="options-api"><p>Props are declared using the <a href="/api/options-state.html#props"><code class="hljs inline no-lang">props</code></a> option:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: [<span class="hljs-string">'foo'</span>],
+</span><span>  <span class="hljs-function"><span class="hljs-title">created</span>(<span class="hljs-params"></span>)</span> {
+</span><span>    <span class="hljs-comment">// props are exposed on `this`</span>
+</span><span>    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">this</span>.foo)
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <p>In addition to declaring props using an array of strings, we can also use the object syntax:</p> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: {
+</span><span>    <span class="hljs-attr">title</span>: <span class="hljs-built_in">String</span>,
+</span><span>    <span class="hljs-attr">likes</span>: <span class="hljs-built_in">Number</span>
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="composition-api"><pre><code class="hljs js"><span><span class="hljs-comment">// in &lt;script setup&gt;</span>
+</span><span>defineProps({
+</span><span>  <span class="hljs-attr">title</span>: <span class="hljs-built_in">String</span>,
+</span><span>  <span class="hljs-attr">likes</span>: <span class="hljs-built_in">Number</span>
+</span><span>})
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><pre><code class="hljs js"><span><span class="hljs-comment">// in non-&lt;script setup&gt;</span>
+</span><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: {
+</span><span>    <span class="hljs-attr">title</span>: <span class="hljs-built_in">String</span>,
+</span><span>    <span class="hljs-attr">likes</span>: <span class="hljs-built_in">Number</span>
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <p>For each property in the object declaration syntax, the key is the name of the prop, while the value should be the constructor function of the expected type.</p> <p>This not only documents your component, but will also warn other developers using your component in the browser console if they pass the wrong type. We will discuss more details about <a href="#prop-validation">prop validation</a> further down this page.</p> <div class="options-api"><p>See also: <a href="/docs/typescript/options-api.html#typing-component-props">Typing Component Props</a> <sup class="vt-badge ts"></sup></p></div> <div class="composition-api"><p>If you are using TypeScript with <code class="hljs inline no-lang">&lt;script setup&gt;</code>, it's also possible to declare props using pure type annotations:</p> <pre><code class="hljs"><span>&lt;script setup lang=&quot;ts&quot;&gt;
+</span><span>defineProps&lt;{
+</span><span>  title?: string
+</span><span>  likes?: number
+</span><span>}&gt;()
+</span><span>&lt;/script&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>More details: <a href="/docs/typescript/composition-api.html#typing-component-props">Typing Component Props</a> <sup class="vt-badge ts"></sup></p></div> <h2 id="prop-passing-details"><span id="prop-passing-details" class="anchor"></span>Prop Passing Details<a href="#prop-passing-details" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <h3 id="prop-name-casing"><span id="prop-name-casing" class="anchor"></span>Prop Name Casing<a href="#prop-name-casing" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>We declare long prop names using camelCase because this avoids having to use quotes when using them as property keys, and allows us to reference them directly in template expressions because they are valid JavaScript identifiers:</p> <div class="composition-api"><pre><code class="hljs js"><span>defineProps({
+</span><span>  <span class="hljs-attr">greetingMessage</span>: <span class="hljs-built_in">String</span>
+</span><span>})
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: {
+</span><span>    <span class="hljs-attr">greetingMessage</span>: <span class="hljs-built_in">String</span>
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <pre><code class="hljs"><span>&lt;span&gt;&lt;/span&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Technically, you can also use camelCase when passing props to a child component (except in <a href="/docs/essentials/component-basics.html#dom-template-parsing-caveats">DOM templates</a>). However, the convention is using kebab-case in all cases to align with HTML attributes:</p> <pre><code class="hljs"><span>&lt;MyComponent greeting-message=&quot;hello&quot; /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>We use <a href="/docs/components/registration.html#component-name-casing">PascalCase for component tags</a> when possible because it improves template readability by differentiating Vue components from native elements. However, there isn't as much practical benefit in using camelCase when passing props, so we choose to follow each language's conventions.</p> <h3 id="static-vs-dynamic-props"><span id="static-vs-dynamic-props" class="anchor"></span>Static vs. Dynamic Props<a href="#static-vs-dynamic-props" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>So far, you've seen props passed as static values, like in:</p> <pre><code class="hljs"><span>&lt;BlogPost title=&quot;My journey with Vue&quot; /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>You've also seen props assigned dynamically with <code class="hljs inline no-lang">v-bind</code> or its <code class="hljs inline no-lang">:</code> shortcut, such as in:</p> <pre><code class="hljs"><span>&lt;!-- Dynamically assign the value of a variable --&gt;
+</span><span>&lt;BlogPost :title=&quot;post.title&quot; /&gt;
+</span><span>
+</span><span>&lt;!-- Dynamically assign the value of a complex expression --&gt;
+</span><span>&lt;BlogPost :title=&quot;post.title + ' by ' + post.author.name&quot; /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h3 id="passing-different-value-types"><span id="passing-different-value-types" class="anchor"></span>Passing Different Value Types<a href="#passing-different-value-types" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>In the two examples above, we happen to pass string values, but <em>any</em> type of value can be passed to a prop.</p> <h4 id="number"><span id="number" class="anchor"></span>Number<a href="#number" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <pre><code class="hljs"><span>&lt;!-- Even though `42` is static, we need v-bind to tell Vue that --&gt;
+</span><span>&lt;!-- this is a JavaScript expression rather than a string.       --&gt;
+</span><span>&lt;BlogPost :likes=&quot;42&quot; /&gt;
+</span><span>
+</span><span>&lt;!-- Dynamically assign to the value of a variable. --&gt;
+</span><span>&lt;BlogPost :likes=&quot;post.likes&quot; /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h4 id="boolean"><span id="boolean" class="anchor"></span>Boolean<a href="#boolean" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <pre><code class="hljs"><span>&lt;!-- Including the prop with no value will imply `true`. --&gt;
+</span><span>&lt;BlogPost is-published /&gt;
+</span><span>
+</span><span>&lt;!-- Even though `false` is static, we need v-bind to tell Vue that --&gt;
+</span><span>&lt;!-- this is a JavaScript expression rather than a string.          --&gt;
+</span><span>&lt;BlogPost :is-published=&quot;false&quot; /&gt;
+</span><span>
+</span><span>&lt;!-- Dynamically assign to the value of a variable. --&gt;
+</span><span>&lt;BlogPost :is-published=&quot;post.isPublished&quot; /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h4 id="array"><span id="array" class="anchor"></span>Array<a href="#array" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <pre><code class="hljs"><span>&lt;!-- Even though the array is static, we need v-bind to tell Vue that --&gt;
+</span><span>&lt;!-- this is a JavaScript expression rather than a string.            --&gt;
+</span><span>&lt;BlogPost :comment-ids=&quot;[234, 266, 273]&quot; /&gt;
+</span><span>
+</span><span>&lt;!-- Dynamically assign to the value of a variable. --&gt;
+</span><span>&lt;BlogPost :comment-ids=&quot;post.commentIds&quot; /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h4 id="object"><span id="object" class="anchor"></span>Object<a href="#object" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h4> <pre><code class="hljs"><span>&lt;!-- Even though the object is static, we need v-bind to tell Vue that --&gt;
+</span><span>&lt;!-- this is a JavaScript expression rather than a string.             --&gt;
+</span><span>&lt;BlogPost
+</span><span>  :author=&quot;{
+</span><span>    name: 'Veronica',
+</span><span>    company: 'Veridian Dynamics'
+</span><span>  }&quot;
+</span><span> /&gt;
+</span><span>
+</span><span>&lt;!-- Dynamically assign to the value of a variable. --&gt;
+</span><span>&lt;BlogPost :author=&quot;post.author&quot; /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h3 id="binding-multiple-properties-using-an-object"><span id="binding-multiple-properties-using-an-object" class="anchor"></span>Binding Multiple Properties Using an Object<a href="#binding-multiple-properties-using-an-object" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>If you want to pass all the properties of an object as props, you can use <a href="/docs/essentials/template-syntax.html#dynamically-binding-multiple-attributes"><code class="hljs inline no-lang">v-bind</code> without an argument</a> (<code class="hljs inline no-lang">v-bind</code> instead of <code class="hljs inline no-lang">:prop-name</code>). For example, given a <code class="hljs inline no-lang">post</code> object:</p> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-function"><span class="hljs-title">data</span>(<span class="hljs-params"></span>)</span> {
+</span><span>    <span class="hljs-keyword">return</span> {
+</span><span>      <span class="hljs-attr">post</span>: {
+</span><span>        <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>,
+</span><span>        <span class="hljs-attr">title</span>: <span class="hljs-string">'My Journey with Vue'</span>
+</span><span>      }
+</span><span>    }
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="composition-api"><pre><code class="hljs js"><span><span class="hljs-keyword">const</span> post = {
+</span><span>  <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>,
+</span><span>  <span class="hljs-attr">title</span>: <span class="hljs-string">'My Journey with Vue'</span>
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <p>The following template:</p> <pre><code class="hljs"><span>&lt;BlogPost v-bind=&quot;post&quot; /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Will be equivalent to:</p> <pre><code class="hljs"><span>&lt;BlogPost :id=&quot;post.id&quot; :title=&quot;post.title&quot; /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h2 id="one-way-data-flow"><span id="one-way-data-flow" class="anchor"></span>One-Way Data Flow<a href="#one-way-data-flow" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>All props form a <strong>one-way-down binding</strong> between the child property and the parent one: when the parent property updates, it will flow down to the child, but not the other way around. This prevents child components from accidentally mutating the parent's state, which can make your app's data flow harder to understand.</p> <p>In addition, every time the parent component is updated, all props in the child component will be refreshed with the latest value. This means you should <strong>not</strong> attempt to mutate a prop inside a child component. If you do, Vue will warn you in the console:</p> <div class="composition-api"><pre><code class="hljs js"><span><span class="hljs-keyword">const</span> props = defineProps([<span class="hljs-string">'foo'</span>])
+</span><span>
+</span><span><span class="hljs-comment">// ❌ warning, props are readonly!</span>
+</span><span>props.foo = <span class="hljs-string">'bar'</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: [<span class="hljs-string">'foo'</span>],
+</span><span>  <span class="hljs-function"><span class="hljs-title">created</span>(<span class="hljs-params"></span>)</span> {
+</span><span>    <span class="hljs-comment">// ❌ warning, props are readonly!</span>
+</span><span>    <span class="hljs-built_in">this</span>.foo = <span class="hljs-string">'bar'</span>
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <p>There are usually two cases where it's tempting to mutate a prop:</p> <ol><li><p><strong>The prop is used to pass in an initial value; the child component wants to use it as a local data property afterwards.</strong> In this case, it's best to define a local data property that uses the prop as its initial value:</p> <div class="composition-api"><pre><code class="hljs js"><span><span class="hljs-keyword">const</span> props = defineProps([<span class="hljs-string">'initialCounter'</span>])
+</span><span>
+</span><span><span class="hljs-comment">// counter only uses props.initialCounter as the initial value;</span>
+</span><span><span class="hljs-comment">// it is disconnected from future prop updates.</span>
+</span><span><span class="hljs-keyword">const</span> counter = ref(props.initialCounter)
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: [<span class="hljs-string">'initialCounter'</span>],
+</span><span>  <span class="hljs-function"><span class="hljs-title">data</span>(<span class="hljs-params"></span>)</span> {
+</span><span>    <span class="hljs-keyword">return</span> {
+</span><span>      <span class="hljs-comment">// counter only uses this.initialCounter as the initial value;</span>
+</span><span>      <span class="hljs-comment">// it is disconnected from future prop updates.</span>
+</span><span>      <span class="hljs-attr">counter</span>: <span class="hljs-built_in">this</span>.initialCounter
+</span><span>    }
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div></li> <li><p><strong>The prop is passed in as a raw value that needs to be transformed.</strong> In this case, it's best to define a computed property using the prop's value:</p> <div class="composition-api"><pre><code class="hljs js"><span><span class="hljs-keyword">const</span> props = defineProps([<span class="hljs-string">'size'</span>])
+</span><span>
+</span><span><span class="hljs-comment">// computed property that auto-updates when the prop changes</span>
+</span><span><span class="hljs-keyword">const</span> normalizedSize = computed(<span class="hljs-function">() =&gt;</span> props.size.trim().toLowerCase())
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: [<span class="hljs-string">'size'</span>],
+</span><span>  <span class="hljs-attr">computed</span>: {
+</span><span>    <span class="hljs-comment">// computed property that auto-updates when the prop changes</span>
+</span><span>    <span class="hljs-function"><span class="hljs-title">normalizedSize</span>(<span class="hljs-params"></span>)</span> {
+</span><span>      <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.size.trim().toLowerCase()
+</span><span>    }
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div></li></ol> <h3 id="mutating-object-array-props"><span id="mutating-object-array-props" class="anchor"></span>Mutating Object / Array Props<a href="#mutating-object-array-props" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>When objects and arrays are passed as props, while the child component cannot mutate the prop binding, it <strong>will</strong> be able to mutate the object or array's nested properties. This is because in JavaScript objects and arrays are passed by reference, and it is unreasonably expensive for Vue to prevent such mutations.</p> <p>The main drawback of such mutations is that it allows the child component to affect parent state in a way that isn't obvious to the parent component, potentially making it more difficult to reason about the data flow in the future. As a best practice, you should avoid such mutations unless the parent and child are tightly coupled by design. In most cases, the child should <a href="/docs/components/events.html">emit an event</a> to let the parent perform the mutation.</p> <h2 id="prop-validation"><span id="prop-validation" class="anchor"></span>Prop Validation<a href="#prop-validation" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>Components can specify requirements for their props, such as the types you've already seen. If a requirement is not met, Vue will warn you in the browser's JavaScript console. This is especially useful when developing a component that is intended to be used by others.</p> <p>To specify prop validations, you can provide an object with validation requirements to the <span class="composition-api"><code class="hljs inline no-lang">defineProps()</code> macro</span><span class="options-api"><code class="hljs inline no-lang">props</code> option</span>, instead of an array of strings. For example:</p> <div class="composition-api"><pre><code class="hljs js"><span>defineProps({
+</span><span>  <span class="hljs-comment">// Basic type check</span>
+</span><span>  <span class="hljs-comment">//  (`null` and `undefined` values will allow any type)</span>
+</span><span>  <span class="hljs-attr">propA</span>: <span class="hljs-built_in">Number</span>,
+</span><span>  <span class="hljs-comment">// Multiple possible types</span>
+</span><span>  <span class="hljs-attr">propB</span>: [<span class="hljs-built_in">String</span>, <span class="hljs-built_in">Number</span>],
+</span><span>  <span class="hljs-comment">// Required string</span>
+</span><span>  <span class="hljs-attr">propC</span>: {
+</span><span>    <span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>,
+</span><span>    <span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>
+</span><span>  },
+</span><span>  <span class="hljs-comment">// Number with a default value</span>
+</span><span>  <span class="hljs-attr">propD</span>: {
+</span><span>    <span class="hljs-attr">type</span>: <span class="hljs-built_in">Number</span>,
+</span><span>    <span class="hljs-attr">default</span>: <span class="hljs-number">100</span>
+</span><span>  },
+</span><span>  <span class="hljs-comment">// Object with a default value</span>
+</span><span>  <span class="hljs-attr">propE</span>: {
+</span><span>    <span class="hljs-attr">type</span>: <span class="hljs-built_in">Object</span>,
+</span><span>    <span class="hljs-comment">// Object or array defaults must be returned from</span>
+</span><span>    <span class="hljs-comment">// a factory function. The function receives the raw</span>
+</span><span>    <span class="hljs-comment">// props received by the component as the argument.</span>
+</span><span>    <span class="hljs-function"><span class="hljs-title">default</span>(<span class="hljs-params">rawProps</span>)</span> {
+</span><span>      <span class="hljs-keyword">return</span> { <span class="hljs-attr">message</span>: <span class="hljs-string">'hello'</span> }
+</span><span>    }
+</span><span>  },
+</span><span>  <span class="hljs-comment">// Custom validator function</span>
+</span><span>  <span class="hljs-attr">propF</span>: {
+</span><span>    <span class="hljs-function"><span class="hljs-title">validator</span>(<span class="hljs-params">value</span>)</span> {
+</span><span>      <span class="hljs-comment">// The value must match one of these strings</span>
+</span><span>      <span class="hljs-keyword">return</span> [<span class="hljs-string">'success'</span>, <span class="hljs-string">'warning'</span>, <span class="hljs-string">'danger'</span>].includes(value)
+</span><span>    }
+</span><span>  },
+</span><span>  <span class="hljs-comment">// Function with a default value</span>
+</span><span>  <span class="hljs-attr">propG</span>: {
+</span><span>    <span class="hljs-attr">type</span>: <span class="hljs-built_in">Function</span>,
+</span><span>    <span class="hljs-comment">// Unlike object or array default, this is not a factory function - this is a function to serve as a default value</span>
+</span><span>    <span class="hljs-function"><span class="hljs-title">default</span>(<span class="hljs-params"></span>)</span> {
+</span><span>      <span class="hljs-keyword">return</span> <span class="hljs-string">'Default function'</span>
+</span><span>    }
+</span><span>  }
+</span><span>})
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>:::tip
+Code inside the <code class="hljs inline no-lang">defineProps()</code> argument <strong>cannot access other variables declared in <code class="hljs inline no-lang">&lt;script setup&gt;</code></strong>, because the entire expression is moved to an outer function scope when compiled.
+:::</p></div> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: {
+</span><span>    <span class="hljs-comment">// Basic type check</span>
+</span><span>    <span class="hljs-comment">//  (`null` and `undefined` values will allow any type)</span>
+</span><span>    <span class="hljs-attr">propA</span>: <span class="hljs-built_in">Number</span>,
+</span><span>    <span class="hljs-comment">// Multiple possible types</span>
+</span><span>    <span class="hljs-attr">propB</span>: [<span class="hljs-built_in">String</span>, <span class="hljs-built_in">Number</span>],
+</span><span>    <span class="hljs-comment">// Required string</span>
+</span><span>    <span class="hljs-attr">propC</span>: {
+</span><span>      <span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>,
+</span><span>      <span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>
+</span><span>    },
+</span><span>    <span class="hljs-comment">// Number with a default value</span>
+</span><span>    <span class="hljs-attr">propD</span>: {
+</span><span>      <span class="hljs-attr">type</span>: <span class="hljs-built_in">Number</span>,
+</span><span>      <span class="hljs-attr">default</span>: <span class="hljs-number">100</span>
+</span><span>    },
+</span><span>    <span class="hljs-comment">// Object with a default value</span>
+</span><span>    <span class="hljs-attr">propE</span>: {
+</span><span>      <span class="hljs-attr">type</span>: <span class="hljs-built_in">Object</span>,
+</span><span>      <span class="hljs-comment">// Object or array defaults must be returned from</span>
+</span><span>      <span class="hljs-comment">// a factory function. The function receives the raw</span>
+</span><span>      <span class="hljs-comment">// props received by the component as the argument.</span>
+</span><span>      <span class="hljs-function"><span class="hljs-title">default</span>(<span class="hljs-params">rawProps</span>)</span> {
+</span><span>        <span class="hljs-keyword">return</span> { <span class="hljs-attr">message</span>: <span class="hljs-string">'hello'</span> }
+</span><span>      }
+</span><span>    },
+</span><span>    <span class="hljs-comment">// Custom validator function</span>
+</span><span>    <span class="hljs-attr">propF</span>: {
+</span><span>      <span class="hljs-function"><span class="hljs-title">validator</span>(<span class="hljs-params">value</span>)</span> {
+</span><span>        <span class="hljs-comment">// The value must match one of these strings</span>
+</span><span>        <span class="hljs-keyword">return</span> [<span class="hljs-string">'success'</span>, <span class="hljs-string">'warning'</span>, <span class="hljs-string">'danger'</span>].includes(value)
+</span><span>      }
+</span><span>    },
+</span><span>    <span class="hljs-comment">// Function with a default value</span>
+</span><span>    <span class="hljs-attr">propG</span>: {
+</span><span>      <span class="hljs-attr">type</span>: <span class="hljs-built_in">Function</span>,
+</span><span>      <span class="hljs-comment">// Unlike object or array default, this is not a factory function - this is a function to serve as a default value</span>
+</span><span>      <span class="hljs-function"><span class="hljs-title">default</span>(<span class="hljs-params"></span>)</span> {
+</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">'Default function'</span>
+</span><span>      }
+</span><span>    }
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <p>Additional details:</p> <ul><li><p>All props are optional by default, unless <code class="hljs inline no-lang">required: true</code> is specified.</p></li> <li><p>An absent optional prop other than <code class="hljs inline no-lang">Boolean</code> will have <code class="hljs inline no-lang">undefined</code> value.</p></li> <li><p>The <code class="hljs inline no-lang">Boolean</code> absent props will be cast to <code class="hljs inline no-lang">false</code>. You can change this by setting a <code class="hljs inline no-lang">default</code> for it — i.e.: <code class="hljs inline no-lang">default: undefined</code> to behave as a non-Boolean prop.</p></li> <li><p>If a <code class="hljs inline no-lang">default</code> value is specified, it will be used if the resolved prop value is <code class="hljs inline no-lang">undefined</code> - this includes both when the prop is absent, or an explicit <code class="hljs inline no-lang">undefined</code> value is passed.</p></li></ul> <p>When prop validation fails, Vue will produce a console warning (if using the development build).</p> <div class="composition-api"><p>If using <a href="/api/sfc-script-setup.html#typescript-only-features">Type-based props declarations</a> <sup class="vt-badge ts"></sup>, Vue will try its best to compile the type annotations into equivalent runtime prop declarations. For example, <code class="hljs inline no-lang">defineProps&lt;{ msg: string }&gt;</code> will be compiled into <code class="hljs inline no-lang">{ msg: { type: String, required: true }}</code>.</p></div> <div class="options-api"><p>::: tip Note
+Note that props are validated <strong>before</strong> a component instance is created, so instance properties (e.g. <code class="hljs inline no-lang">data</code>, <code class="hljs inline no-lang">computed</code>, etc.) will not be available inside <code class="hljs inline no-lang">default</code> or <code class="hljs inline no-lang">validator</code> functions.
+:::</p></div> <h3 id="runtime-type-checks"><span id="runtime-type-checks" class="anchor"></span>Runtime Type Checks<a href="#runtime-type-checks" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>The <code class="hljs inline no-lang">type</code> can be one of the following native constructors:</p> <ul><li><code class="hljs inline no-lang">String</code></li> <li><code class="hljs inline no-lang">Number</code></li> <li><code class="hljs inline no-lang">Boolean</code></li> <li><code class="hljs inline no-lang">Array</code></li> <li><code class="hljs inline no-lang">Object</code></li> <li><code class="hljs inline no-lang">Date</code></li> <li><code class="hljs inline no-lang">Function</code></li> <li><code class="hljs inline no-lang">Symbol</code></li></ul> <p>In addition, <code class="hljs inline no-lang">type</code> can also be a custom class or constructor function and the assertion will be made with an <code class="hljs inline no-lang">instanceof</code> check. For example, given the following class:</p> <pre><code class="hljs js"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>{
+</span><span>  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">firstName, lastName</span>)</span> {
+</span><span>    <span class="hljs-built_in">this</span>.firstName = firstName
+</span><span>    <span class="hljs-built_in">this</span>.lastName = lastName
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>You could use it as a prop's type:</p> <div class="composition-api"><pre><code class="hljs js"><span>defineProps({
+</span><span>  <span class="hljs-attr">author</span>: Person
+</span><span>})
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: {
+</span><span>    <span class="hljs-attr">author</span>: Person
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <p>Vue will use <code class="hljs inline no-lang">instanceof Person</code> to validate whether the value of the <code class="hljs inline no-lang">author</code> prop is indeed an instance of the <code class="hljs inline no-lang">Person</code> class.</p> <h2 id="boolean-casting"><span id="boolean-casting" class="anchor"></span>Boolean Casting<a href="#boolean-casting" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>Props with <code class="hljs inline no-lang">Boolean</code> type has special casting rules to mimic the behavior of native boolean attributes. Given a <code class="hljs inline no-lang">&lt;MyComponent&gt;</code> with the following declaration:</p> <div class="composition-api"><pre><code class="hljs js"><span>defineProps({
+</span><span>  <span class="hljs-attr">disabled</span>: <span class="hljs-built_in">Boolean</span>
+</span><span>})
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: {
+</span><span>    <span class="hljs-attr">disabled</span>: <span class="hljs-built_in">Boolean</span>
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <p>The component can be used like this:</p> <pre><code class="hljs"><span>&lt;!-- equivalent of passing :disabled=&quot;true&quot; --&gt;
+</span><span>&lt;MyComponent disabled /&gt;
+</span><span>
+</span><span>&lt;!-- equivalent of passing :disabled=&quot;false&quot; --&gt;
+</span><span>&lt;MyComponent /&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>When a prop is declared to allow multiple types, e.g.</p> <div class="composition-api"><pre><code class="hljs js"><span>defineProps({
+</span><span>  <span class="hljs-attr">disabled</span>: [<span class="hljs-built_in">Boolean</span>, <span class="hljs-built_in">Number</span>]
+</span><span>})
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-attr">props</span>: {
+</span><span>    <span class="hljs-attr">disabled</span>: [<span class="hljs-built_in">Boolean</span>, <span class="hljs-built_in">Number</span>]
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <p>The casting rules for <code class="hljs inline no-lang">Boolean</code> will apply regardless of type appearance order.</p> <i id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true" class="fa fa-arrow-circle-up fa-lg d-print-none"></i></div> <nav id="page-nav" data-v-e8c82f88><div class="nav-component slim-scroll" data-v-e8c82f88></div> <!----></nav></div> <footer><div class="text-center"><small>[Generated by <a href="https://markbind.org/">MarkBind 4.0.2</a>]</small></div></footer></div>
+</body><script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script>
+  MarkBind.setupWithSearch()
+</script>
+    <script>
+    function copyCodeBlock(element) {
+        const pre = element.parentElement.parentElement;
+        const codeElement = pre.querySelector('code');
+
+        // create dummy text element to select() the text field
+        const textElement = document.createElement('textarea');
+        textElement.value = codeElement.textContent;
+        document.body.appendChild(textElement);
+        textElement.select();
+
+        document.execCommand('copy');
+        document.body.removeChild(textElement);
+    }
+    </script>
+</html>

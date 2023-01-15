@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 4.0.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="../../markbind/css/octicons.css">
+    <link rel="stylesheet" href="../../markbind/material-icons/material-icons.css">
+    <link rel="stylesheet" href="../../markbind/css/codeblock-dark.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
+    <script src="../../markbind/js/vue.min.js"></script>
+    <script src="../../markbind/js/markbind.min.js"></script>
+    <script src="reactivity-in-depth.page-vue-render.js"></script>
+    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="/plugins/markbind-plugin-tree/markbind-plugin-tree.css">
+    
+  <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<script>
+  const baseUrl = ''
+</script>
+<body >
+<div id="app" data-server-rendered="true"><header sticky=""><div data-v-15113a2f><nav class="navbar navbar-expand-md d-print-none navbar-dark bg-dark" data-v-15113a2f><div class="container-fluid" data-v-15113a2f><div class="navbar-left" data-v-15113a2f></div> <div class="navbar-default" data-v-15113a2f><ul class="navbar-nav me-auto mt-2 mt-lg-0" data-v-15113a2f><li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Essentials</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/essentials/application.html" class="dropdown-item" data-v-2e98b3f0>Creating an Application</a></li> <li data-v-2e98b3f0><a href="/docs/essentials/template-syntax.html" class="dropdown-item" data-v-2e98b3f0>Template Syntax</a></li></ul></li> <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Components In-Depth</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/components/registration.html" class="dropdown-item" data-v-2e98b3f0>Registration</a></li> <li data-v-2e98b3f0><a href="/docs/components/props.html" class="dropdown-item" data-v-2e98b3f0>Props</a></li> <li data-v-2e98b3f0><a href="/docs/components/events.html" class="dropdown-item" data-v-2e98b3f0>Events</a></li> <li data-v-2e98b3f0><a href="/docs/components/v-model.html" class="dropdown-item" data-v-2e98b3f0>Component v-model</a></li> <li data-v-2e98b3f0><a href="/docs/components/attrs.html" class="dropdown-item" data-v-2e98b3f0>Fallthrough Attributes</a></li> <li data-v-2e98b3f0><a href="/docs/components/slots.html" class="dropdown-item" data-v-2e98b3f0>Slots</a></li> <li data-v-2e98b3f0><a href="/docs/components/provide-inject.html" class="dropdown-item" data-v-2e98b3f0>Provide / inject</a></li> <li data-v-2e98b3f0><a href="/docs/components/async.html" class="dropdown-item" data-v-2e98b3f0>Async Components</a></li></ul></li> <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Built-in Components</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/built-ins/transition.html" class="dropdown-item" data-v-2e98b3f0>Transition</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/transition-group.html" class="dropdown-item" data-v-2e98b3f0>TransitionGroup</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/keep-alive.html" class="dropdown-item" data-v-2e98b3f0>KeepAlive</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/teleport.html" class="dropdown-item" data-v-2e98b3f0>Teleport</a></li> <li data-v-2e98b3f0><a href="/docs/built-ins/suspense.html" class="dropdown-item" data-v-2e98b3f0>Suspense</a></li></ul></li>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    <li class="nav-link dropdown" data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-toggle" data-v-2e98b3f0>Extra Topics</a> <ul class="dropdown-menu" data-v-2e98b3f0> <li data-v-2e98b3f0><a href="/docs/extras/ways-of-using-vue.html" class="dropdown-item" data-v-2e98b3f0>Ways of using Vue</a></li> <li data-v-2e98b3f0><a href="/docs/extras/composition-api-faq.html" class="dropdown-item" data-v-2e98b3f0>Composition API FAQ</a></li> <li data-v-2e98b3f0><a href="/docs/extras/reactivity-in-depth.html" class="dropdown-item" data-v-2e98b3f0>Reactivity in Depth</a></li> <li data-v-2e98b3f0><a href="/docs/extras/rendering-mechanism.html" class="dropdown-item" data-v-2e98b3f0>Rendering Mechanism</a></li> <li data-v-2e98b3f0><a href="/docs/extras/render-function.html" class="dropdown-item" data-v-2e98b3f0>Render Functions &amp; JSX</a></li> <li data-v-2e98b3f0><a href="/docs/extras/web-components.html" class="dropdown-item" data-v-2e98b3f0>Vue and Web components</a></li> <li data-v-2e98b3f0><a href="/docs/extras/animation.html" class="dropdown-item" data-v-2e98b3f0>Animation Techniques</a></li> <li data-v-2e98b3f0><a href="/docs/extras/reactivity-transform.html" class="dropdown-item" data-v-2e98b3f0>Reactivity Transform</a></li>
+=======
+    <li class="nav-link dropdown-submenu dropend" data-v-3d2bfc10 data-v-2e98b3f0><a role="button" data-bs-toggle="dropdown" class="dropdown-item submenu-toggle" data-v-3d2bfc10>Best practises</a> <ul class="dropdown-menu" data-v-3d2bfc10> <li data-v-3d2bfc10><a href="/docs/best-practices/production-deployment.html" class="dropdown-item" data-v-3d2bfc10>Production Deployment</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/performance.html" class="dropdown-item" data-v-3d2bfc10>Performance</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/accessibility.html" class="dropdown-item" data-v-3d2bfc10>Accessibility</a></li> <li data-v-3d2bfc10><a href="/docs/best-practices/security.html" class="dropdown-item" data-v-3d2bfc10>Security</a></li>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 473d14335b50a8d8d2ed962afbba21a01abdecd7
+    </ul></li></ul></li></ul></div> <!----></div></nav> <div class="lower-navbar-container" style="display:none;" data-v-15113a2f><!----> <!----></div></div></header> <div id="flex-body"><nav id="site-nav" data-v-e8c82f88><div class="site-nav-top" data-v-e8c82f88><div class="fw-bold mb-2" style="font-size:1.25rem;" data-v-e8c82f88>Template</div></div> <div class="nav-component slim-scroll" data-v-e8c82f88><div class="site-nav-root"><ul class="site-nav-list site-nav-list-root" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Getting Started 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/introduction.html" data-v-e8c82f88>Introduction</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/quick-start.html" data-v-e8c82f88>Quick Start</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Essentials 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/essentials/application.html" data-v-e8c82f88>Creating an Application</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/essentials/template-syntax.html" data-v-e8c82f88>Template Syntax</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Components In-Depth
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/registration.html" data-v-e8c82f88>Registration</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/props.html" data-v-e8c82f88>Props</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/events.html" data-v-e8c82f88>Events</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/v-model.html" data-v-e8c82f88>Component v-model</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/attrs.html" data-v-e8c82f88>Fallthrough Attributes</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/slots.html" data-v-e8c82f88>Slots</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/provide-inject.html" data-v-e8c82f88>Provide / inject</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/components/async.html" data-v-e8c82f88>Async Components</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Reusability</li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Built-in Components
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/transition.html" data-v-e8c82f88>Transition</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/transition-group.html" data-v-e8c82f88>TransitionGroup</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/keep-alive.html" data-v-e8c82f88>KeepAlive</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/teleport.html" data-v-e8c82f88>Teleport</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/built-ins/suspense.html" data-v-e8c82f88>Suspense</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Scaling Up</li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Best Practices 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/production-deployment.html" data-v-e8c82f88>Production Deployment</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/performance.html" data-v-e8c82f88>Performance</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/accessibility.html" data-v-e8c82f88>Accessibility</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/best-practices/security.html" data-v-e8c82f88>Security</a></div></li></ul></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-0" data-v-e8c82f88>Extra topics 
+
+<i onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();" class="site-nav-dropdown-btn-icon site-nav-rotate-icon" data-v-e8c82f88><span aria-hidden="true" class="glyphicon glyphicon-menu-down" data-v-e8c82f88></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list" data-v-e8c82f88><li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/ways-of-using-vue.html" data-v-e8c82f88>Ways of using Vue</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/composition-api-faq.html" data-v-e8c82f88>Composition API FAQ</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/reactivity-in-depth.html" data-v-e8c82f88>Reactivity in Depth</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/rendering-mechanism.html" data-v-e8c82f88>Rendering Mechanism</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/render-function.html" data-v-e8c82f88>Render Functions &amp; JSX</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/web-components.html" data-v-e8c82f88>Vue and Web Components</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/animation.html" data-v-e8c82f88>Animation Techniques</a></div></li> <li data-v-e8c82f88><div onclick="handleSiteNavClick(this)" class="site-nav-default-list-item site-nav-list-item-1" data-v-e8c82f88><a href="/docs/extras/reactivity-transform.html" data-v-e8c82f88>Reactivity Transform</a></div></li></ul></li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>TypeScript</li> <li class="site-nav-custom-list-item site-nav-list-item-0" data-v-e8c82f88>Extra Topics</li> <!----></ul></div></div> <!----></nav> <div id="content-wrapper"><h1 id="reactivity-in-depth"><span id="reactivity-in-depth" class="anchor"></span>Reactivity in Depth<a href="#reactivity-in-depth" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h1> <p>One of Vue’s most distinctive features is the unobtrusive reactivity system. Component state consists of reactive JavaScript objects. When you modify them, the view updates. It makes state management simple and intuitive, but it’s also important to understand how it works to avoid some common gotchas. In this section, we are going to dig into some of the lower-level details of Vue’s reactivity system.</p> <h2 id="what-is-reactivity"><span id="what-is-reactivity" class="anchor"></span>What is Reactivity?<a href="#what-is-reactivity" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>This term comes up in programming quite a bit these days, but what do people mean when they say it? Reactivity is a programming paradigm that allows us to adjust to changes in a declarative manner. The canonical example that people usually show, because it’s a great one, is an Excel spreadsheet:</p> <spreadsheet></spreadsheet> <p>Here cell A2 is defined via a formula of <code class="hljs inline no-lang">= A0 + A1</code> (you can click on A2 to view or edit the formula), so the spreadsheet gives us 3. No surprises there. But if you update A0 or A1, you'll notice that A2 automagically updates too.</p> <p>JavaScript doesn’t usually work like this. If we were to write something comparable in JavaScript:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">let</span> A0 = <span class="hljs-number">1</span>
+</span><span><span class="hljs-keyword">let</span> A1 = <span class="hljs-number">2</span>
+</span><span><span class="hljs-keyword">let</span> A2 = A0 + A1
+</span><span>
+</span><span><span class="hljs-built_in">console</span>.log(A2) <span class="hljs-comment">// 3</span>
+</span><span>
+</span><span>A0 = <span class="hljs-number">2</span>
+</span><span><span class="hljs-built_in">console</span>.log(A2) <span class="hljs-comment">// Still 3</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>When we mutate <code class="hljs inline no-lang">A0</code>, <code class="hljs inline no-lang">A2</code> does not change automatically.</p> <p>So how would we do this in JavaScript? First, in order to re-run the code that updates <code class="hljs inline no-lang">A2</code>, let's wrap it in a function:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">let</span> A2
+</span><span>
+</span><span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">update</span>(<span class="hljs-params"></span>) </span>{
+</span><span>  A2 = A0 + A1
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Then, we need to define a few terms:</p> <ul><li><p>The <code class="hljs inline no-lang">update()</code> function produces a <strong>side effect</strong>, or <strong>effect</strong> for short, because it modifies the state of the program.</p></li> <li><p><code class="hljs inline no-lang">A0</code> and <code class="hljs inline no-lang">A1</code> are considered <strong>dependencies</strong> of the effect, as their values are used to perform the effect. The effect is said to be a <strong>subscriber</strong> to its dependencies.</p></li></ul> <p>What we need is a magic function that can invoke <code class="hljs inline no-lang">update()</code> (the <strong>effect</strong>) whenever <code class="hljs inline no-lang">A0</code> or <code class="hljs inline no-lang">A1</code> (the <strong>dependencies</strong>) change:</p> <pre><code class="hljs js"><span>whenDepsChange(update)
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>This <code class="hljs inline no-lang">whenDepsChange()</code> function has the following tasks:</p> <ol><li><p>Track when a variable is read. E.g. when evaluating the expression <code class="hljs inline no-lang">A0 + A1</code>, both <code class="hljs inline no-lang">A0</code> and <code class="hljs inline no-lang">A1</code> are read.</p></li> <li><p>If a variable is read when there is a currently running effect, make that effect a subscriber to that variable. E.g. because <code class="hljs inline no-lang">A0</code> and <code class="hljs inline no-lang">A1</code> are read when <code class="hljs inline no-lang">update()</code> is being executed, <code class="hljs inline no-lang">update()</code> becomes a subscriber to both <code class="hljs inline no-lang">A0</code> and <code class="hljs inline no-lang">A1</code> after the first call.</p></li> <li><p>Detect when a variable is mutated. E.g. when <code class="hljs inline no-lang">A0</code> is assigned a new value, notify all its subscriber effects to re-run.</p></li></ol> <h2 id="how-reactivity-works-in-vue"><span id="how-reactivity-works-in-vue" class="anchor"></span>How Reactivity Works in Vue<a href="#how-reactivity-works-in-vue" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>We can't really track the reading and writing of local variables like in the example. There's just no mechanism for doing that in vanilla JavaScript. What we <strong>can</strong> do though, is intercept the reading and writing of <strong>object properties</strong>.</p> <p>There are two ways of intercepting property access in JavaScript: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get">getter</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set">setters</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">Proxies</a>. Vue 2 used getter / setters exclusively due to browser support limitations. In Vue 3, Proxies are used for reactive objects and getter / setters are used for refs. Here's some pseudo-code that illustrates how they work:</p> <pre><code 4,9,17,22="" class="hljs js"><span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reactive</span>(<span class="hljs-params">obj</span>) </span>{
+</span><span>  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Proxy</span>(obj, {
+</span><span>    <span class="hljs-function"><span class="hljs-title">get</span>(<span class="hljs-params">target, key</span>)</span> {
+</span><span>      track(target, key)
+</span><span>      <span class="hljs-keyword">return</span> target[key]
+</span><span>    },
+</span><span>    <span class="hljs-function"><span class="hljs-title">set</span>(<span class="hljs-params">target, key, value</span>)</span> {
+</span><span>      target[key] = value
+</span><span>      trigger(target, key)
+</span><span>    }
+</span><span>  })
+</span><span>}
+</span><span>
+</span><span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ref</span>(<span class="hljs-params">value</span>) </span>{
+</span><span>  <span class="hljs-keyword">const</span> refObject = {
+</span><span>    <span class="hljs-keyword">get</span> <span class="hljs-title">value</span>() {
+</span><span>      track(refObject, <span class="hljs-string">'value'</span>)
+</span><span>      <span class="hljs-keyword">return</span> value
+</span><span>    },
+</span><span>    <span class="hljs-keyword">set</span> <span class="hljs-title">value</span>(<span class="hljs-params">newValue</span>) {
+</span><span>      value = newValue
+</span><span>      trigger(refObject, <span class="hljs-string">'value'</span>)
+</span><span>    }
+</span><span>  }
+</span><span>  <span class="hljs-keyword">return</span> refObject
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><div class="alert box-container alert-success" data-v-7d17494f><!----> <div class="header-and-body" data-v-7d17494f><!----> <div class="box-body-wrapper" data-v-7d17494f><div class="icon-wrapper" data-v-7d17494f><i class="fas fa-lightbulb" data-v-7d17494f></i></div> <!----> <div class="contents" data-v-7d17494f>
+Code snippets here and below are meant to explain the core concepts in the simplest form possible, so many details are omitted, and edge cases ignored.
+</div> <!----></div></div></div> <p>This explains a few <a href="/guide/essentials/reactivity-fundamentals.html#limitations-of-reactive">limitations of reactive objects</a> that we have discussed in the fundamentals section:</p> <ul><li><p>When you assign or destructure a reactive object's property to a local variable, the reactivity is &quot;disconnected&quot; because access to the local variable no longer triggers the get / set proxy traps.</p></li> <li><p>The returned proxy from <code class="hljs inline no-lang">reactive()</code>, although behaving just like the original, has a different identity if we compare it to the original using the <code class="hljs inline no-lang">===</code> operator.</p></li></ul> <p>Inside <code class="hljs inline no-lang">track()</code>, we check whether there is a currently running effect. If there is one, we lookup the subscriber effects (stored in a Set) for the property being tracked, and add the effect to the Set:</p> <pre><code class="hljs js"><span><span class="hljs-comment">// This will be set right before an effect is about</span>
+</span><span><span class="hljs-comment">// to be run. We'll deal with this later.</span>
+</span><span><span class="hljs-keyword">let</span> activeEffect
+</span><span>
+</span><span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">track</span>(<span class="hljs-params">target, key</span>) </span>{
+</span><span>  <span class="hljs-keyword">if</span> (activeEffect) {
+</span><span>    <span class="hljs-keyword">const</span> effects = getSubscribersForProperty(target, key)
+</span><span>    effects.add(activeEffect)
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Effect subscriptions are stored in a global <code class="hljs inline no-lang">WeakMap&lt;target, Map&lt;key, Set&lt;effect&gt;&gt;&gt;</code> data structure. If no subscribing effects Set was found for a property (tracked for the first time), it will be created. This is what the <code class="hljs inline no-lang">getSubscribersForProperty()</code> function does, in short. For simplicity, we will skip its details.</p> <p>Inside <code class="hljs inline no-lang">trigger()</code>, we again lookup the subscriber effects for the property. But this time we invoke them instead:</p> <pre><code class="hljs js"><span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">trigger</span>(<span class="hljs-params">target, key</span>) </span>{
+</span><span>  <span class="hljs-keyword">const</span> effects = getSubscribersForProperty(target, key)
+</span><span>  effects.forEach(<span class="hljs-function">(<span class="hljs-params">effect</span>) =&gt;</span> effect())
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Now let's circle back to the <code class="hljs inline no-lang">whenDepsChange()</code> function:</p> <pre><code class="hljs js"><span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">whenDepsChange</span>(<span class="hljs-params">update</span>) </span>{
+</span><span>  <span class="hljs-keyword">const</span> effect = <span class="hljs-function">() =&gt;</span> {
+</span><span>    activeEffect = effect
+</span><span>    update()
+</span><span>    activeEffect = <span class="hljs-literal">null</span>
+</span><span>  }
+</span><span>  effect()
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>It wraps the raw <code class="hljs inline no-lang">update</code> function in an effect that sets itself as the current active effect before running the actual update. This enables <code class="hljs inline no-lang">track()</code> calls during the update to locate the current active effect.</p> <p>At this point, we have created an effect that automatically tracks its dependencies, and re-runs whenever a dependency changes. We call this a <strong>Reactive Effect</strong>.</p> <p>Vue provides an API that allows you to create reactive effects: <a href="/api/reactivity-core.html#watcheffect"><code class="hljs inline no-lang">watchEffect()</code></a>. In fact, you may have noticed that it works pretty similarly to the magical <code class="hljs inline no-lang">whenDepsChange()</code> in the example. We can now rework the original example using actual Vue APIs:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">import</span> { ref, watchEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+</span><span>
+</span><span><span class="hljs-keyword">const</span> A0 = ref(<span class="hljs-number">0</span>)
+</span><span><span class="hljs-keyword">const</span> A1 = ref(<span class="hljs-number">1</span>)
+</span><span><span class="hljs-keyword">const</span> A2 = ref()
+</span><span>
+</span><span>watchEffect(<span class="hljs-function">() =&gt;</span> {
+</span><span>  <span class="hljs-comment">// tracks A0 and A1</span>
+</span><span>  A2.value = A0.value + A1.value
+</span><span>})
+</span><span>
+</span><span><span class="hljs-comment">// triggers the effect</span>
+</span><span>A0.value = <span class="hljs-number">2</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Using a reactive effect to mutate a ref isn't the most interesting use case - in fact, using a computed property makes it more declarative:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">import</span> { ref, computed } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+</span><span>
+</span><span><span class="hljs-keyword">const</span> A0 = ref(<span class="hljs-number">0</span>)
+</span><span><span class="hljs-keyword">const</span> A1 = ref(<span class="hljs-number">1</span>)
+</span><span><span class="hljs-keyword">const</span> A2 = computed(<span class="hljs-function">() =&gt;</span> A0.value + A1.value)
+</span><span>
+</span><span>A0.value = <span class="hljs-number">2</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>Internally, <code class="hljs inline no-lang">computed</code> manages its invalidation and re-computation using a reactive effect.</p> <p>So what's an example of a common and useful reactive effect? Well, updating the DOM! We can implement simple &quot;reactive rendering&quot; like this:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">import</span> { ref, watchEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+</span><span>
+</span><span><span class="hljs-keyword">const</span> count = ref(<span class="hljs-number">0</span>)
+</span><span>
+</span><span>watchEffect(<span class="hljs-function">() =&gt;</span> {
+</span><span>  <span class="hljs-built_in">document</span>.body.innerHTML = <span class="hljs-string">`count is: <span class="hljs-subst">${count.value}</span>`</span>
+</span><span>})
+</span><span>
+</span><span><span class="hljs-comment">// updates the DOM</span>
+</span><span>count.value++
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>In fact, this is pretty close to how a Vue component keeps the state and the DOM in sync - each component instance creates a reactive effect to render and update the DOM. Of course, Vue components use much more efficient ways to update the DOM than <code class="hljs inline no-lang">innerHTML</code>. This is discussed in <a href="/docs/extras/rendering-mechanism">Rendering Mechanism</a>.</p> <div class="options-api"><p>The <code class="hljs inline no-lang">ref()</code>, <code class="hljs inline no-lang">computed()</code> and <code class="hljs inline no-lang">watchEffect()</code> APIs are all part of the Composition API. If you have only been using Options API with Vue so far, you'll notice that Composition API is closer to how Vue's reactivity system works under the hood. In fact, in Vue 3 the Options API is implemented on top of the Composition API. All property access on the component instance (<code class="hljs inline no-lang">this</code>) triggers getter / setters for reactivity tracking, and options like <code class="hljs inline no-lang">watch</code> and <code class="hljs inline no-lang">computed</code> invoke their Composition API equivalents internally.</p></div> <h2 id="runtime-vs-compile-time-reactivity"><span id="runtime-vs-compile-time-reactivity" class="anchor"></span>Runtime vs. Compile-time Reactivity<a href="#runtime-vs-compile-time-reactivity" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>Vue's reactivity system is primarily runtime-based: the tracking and triggering are all performed while the code is running directly in the browser. The pros of runtime reactivity are that it can work without a build step, and there are fewer edge cases. On the other hand, this makes it constrained by the syntax limitations of JavaScript.</p> <p>We have already encountered a limitation in the previous example: JavaScript does not provide a way for us to intercept the reading and writing of local variables, so we have to always access reactive state as object properties, using either reactive objects or refs.</p> <p>We have been experimenting with the <a href="/guide/extras/reactivity-transform.html">Reactivity Transform</a> feature to reduce the code verbosity:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">let</span> A0 = $ref(<span class="hljs-number">0</span>)
+</span><span><span class="hljs-keyword">let</span> A1 = $ref(<span class="hljs-number">1</span>)
+</span><span>
+</span><span><span class="hljs-comment">// track on variable read</span>
+</span><span><span class="hljs-keyword">const</span> A2 = $computed(<span class="hljs-function">() =&gt;</span> A0 + A1)
+</span><span>
+</span><span><span class="hljs-comment">// trigger on variable write</span>
+</span><span>A0 = <span class="hljs-number">2</span>
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p>This snippet compiles into exactly what we'd have written without the transform, by automatically appending <code class="hljs inline no-lang">.value</code> after references to the variables. With Reactivity Transform, Vue's reactivity system becomes a hybrid one.</p> <h2 id="reactivity-debugging"><span id="reactivity-debugging" class="anchor"></span>Reactivity Debugging<a href="#reactivity-debugging" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>It's great that Vue's reactivity system automatically tracks dependencies, but in some cases we may want to figure out exactly what is being tracked, or what is causing a component to re-render.</p> <h3 id="component-debugging-hooks"><span id="component-debugging-hooks" class="anchor"></span>Component Debugging Hooks<a href="#component-debugging-hooks" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>We can debug what dependencies are used during a component's render and which dependency is triggering an update using the <span class="options-api"><code class="hljs inline no-lang">renderTracked</code></span><span class="composition-api"><code class="hljs inline no-lang">onRenderTracked</code></span> and <span class="options-api"><code class="hljs inline no-lang">renderTriggered</code></span><span class="composition-api"><code class="hljs inline no-lang">onRenderTriggered</code></span> lifecycle hooks. Both hooks will receive a debugger event which contains information on the dependency in question. It is recommended to place a <code class="hljs inline no-lang">debugger</code> statement in the callbacks to interactively inspect the dependency:</p> <div class="composition-api"><pre><code class="hljs"><span>&lt;script setup&gt;
+</span><span>import { onRenderTracked, onRenderTriggered } from 'vue'
+</span><span>
+</span><span>onRenderTracked((event) =&gt; {
+</span><span>  debugger
+</span><span>})
+</span><span>
+</span><span>onRenderTriggered((event) =&gt; {
+</span><span>  debugger
+</span><span>})
+</span><span>&lt;/script&gt;
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="options-api"><pre><code class="hljs js"><span><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+</span><span>  <span class="hljs-function"><span class="hljs-title">renderTracked</span>(<span class="hljs-params">event</span>)</span> {
+</span><span>    <span class="hljs-keyword">debugger</span>
+</span><span>  },
+</span><span>  <span class="hljs-function"><span class="hljs-title">renderTriggered</span>(<span class="hljs-params">event</span>)</span> {
+</span><span>    <span class="hljs-keyword">debugger</span>
+</span><span>  }
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre></div> <div class="alert box-container alert-success" data-v-7d17494f><!----> <div class="header-and-body" data-v-7d17494f><!----> <div class="box-body-wrapper" data-v-7d17494f><div class="icon-wrapper" data-v-7d17494f><i class="fas fa-lightbulb" data-v-7d17494f></i></div> <!----> <div class="contents" data-v-7d17494f>
+Component debug hooks only work in development mode.
+</div> <!----></div></div></div> <p>The debug event objects have the following type:</p> <p><span id="debugger-event"></span></p> <pre><code class="hljs ts"><span><span class="hljs-keyword">type</span> DebuggerEvent = {
+</span><span>  <span class="hljs-attr">effect</span>: ReactiveEffect
+</span><span>  <span class="hljs-attr">target</span>: <span class="hljs-built_in">object</span>
+</span><span>  <span class="hljs-attr">type</span>:
+</span><span>    | TrackOpTypes <span class="hljs-comment">/* 'get' | 'has' | 'iterate' */</span>
+</span><span>    | TriggerOpTypes <span class="hljs-comment">/* 'set' | 'add' | 'delete' | 'clear' */</span>
+</span><span>  <span class="hljs-attr">key</span>: <span class="hljs-built_in">any</span>
+</span><span>  newValue?: <span class="hljs-built_in">any</span>
+</span><span>  oldValue?: <span class="hljs-built_in">any</span>
+</span><span>  oldTarget?: <span class="hljs-built_in">Map</span>&lt;<span class="hljs-built_in">any</span>, <span class="hljs-built_in">any</span>&gt; | <span class="hljs-built_in">Set</span>&lt;<span class="hljs-built_in">any</span>&gt;
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><h3 id="computed-debugging"><span id="computed-debugging" class="anchor"></span>Computed Debugging<a href="#computed-debugging" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>We can debug computed properties by passing <code class="hljs inline no-lang">computed()</code> a second options object with <code class="hljs inline no-lang">onTrack</code> and <code class="hljs inline no-lang">onTrigger</code> callbacks:</p> <ul><li><code class="hljs inline no-lang">onTrack</code> will be called when a reactive property or ref is tracked as a dependency.</li> <li><code class="hljs inline no-lang">onTrigger</code> will be called when the watcher callback is triggered by the mutation of a dependency.</li></ul> <p>Both callbacks will receive debugger events in the <a href="#debugger-event">same format</a> as component debug hooks:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">const</span> plusOne = computed(<span class="hljs-function">() =&gt;</span> count.value + <span class="hljs-number">1</span>, {
+</span><span>  <span class="hljs-function"><span class="hljs-title">onTrack</span>(<span class="hljs-params">e</span>)</span> {
+</span><span>    <span class="hljs-comment">// triggered when count.value is tracked as a dependency</span>
+</span><span>    <span class="hljs-keyword">debugger</span>
+</span><span>  },
+</span><span>  <span class="hljs-function"><span class="hljs-title">onTrigger</span>(<span class="hljs-params">e</span>)</span> {
+</span><span>    <span class="hljs-comment">// triggered when count.value is mutated</span>
+</span><span>    <span class="hljs-keyword">debugger</span>
+</span><span>  }
+</span><span>})
+</span><span>
+</span><span><span class="hljs-comment">// access plusOne, should trigger onTrack</span>
+</span><span><span class="hljs-built_in">console</span>.log(plusOne.value)
+</span><span>
+</span><span><span class="hljs-comment">// mutate count.value, should trigger onTrigger</span>
+</span><span>count.value++
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><div class="alert box-container alert-success" data-v-7d17494f><!----> <div class="header-and-body" data-v-7d17494f><!----> <div class="box-body-wrapper" data-v-7d17494f><div class="icon-wrapper" data-v-7d17494f><i class="fas fa-lightbulb" data-v-7d17494f></i></div> <!----> <div class="contents" data-v-7d17494f>
+`onTrack` and `onTrigger` computed options only work in development mode.
+</div> <!----></div></div></div> <h3 id="watcher-debugging"><span id="watcher-debugging" class="anchor"></span>Watcher Debugging<a href="#watcher-debugging" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>Similar to <code class="hljs inline no-lang">computed()</code>, watchers also support the <code class="hljs inline no-lang">onTrack</code> and <code class="hljs inline no-lang">onTrigger</code> options:</p> <pre><code class="hljs js"><span>watch(source, callback, {
+</span><span>  <span class="hljs-function"><span class="hljs-title">onTrack</span>(<span class="hljs-params">e</span>)</span> {
+</span><span>    <span class="hljs-keyword">debugger</span>
+</span><span>  },
+</span><span>  <span class="hljs-function"><span class="hljs-title">onTrigger</span>(<span class="hljs-params">e</span>)</span> {
+</span><span>    <span class="hljs-keyword">debugger</span>
+</span><span>  }
+</span><span>})
+</span><span>
+</span><span>watchEffect(callback, {
+</span><span>  <span class="hljs-function"><span class="hljs-title">onTrack</span>(<span class="hljs-params">e</span>)</span> {
+</span><span>    <span class="hljs-keyword">debugger</span>
+</span><span>  },
+</span><span>  <span class="hljs-function"><span class="hljs-title">onTrigger</span>(<span class="hljs-params">e</span>)</span> {
+</span><span>    <span class="hljs-keyword">debugger</span>
+</span><span>  }
+</span><span>})
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><div class="alert box-container alert-success" data-v-7d17494f><!----> <div class="header-and-body" data-v-7d17494f><!----> <div class="box-body-wrapper" data-v-7d17494f><div class="icon-wrapper" data-v-7d17494f><i class="fas fa-lightbulb" data-v-7d17494f></i></div> <!----> <div class="contents" data-v-7d17494f>
+`onTrack` and `onTrigger` watcher options only work in development mode.
+</div> <!----></div></div></div> <h2 id="integration-with-external-state-systems"><span id="integration-with-external-state-systems" class="anchor"></span>Integration with External State Systems<a href="#integration-with-external-state-systems" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h2> <p>Vue's reactivity system works by deeply converting plain JavaScript objects into reactive proxies. The deep conversion can be unnecessary or sometimes unwanted when integrating with external state management systems (e.g. if an external solution also uses Proxies).</p> <p>The general idea of integrating Vue's reactivity system with an external state management solution is to hold the external state in a <a href="/api/reactivity-advanced.html#shallowref"><code class="hljs inline no-lang">shallowRef</code></a>. A shallow ref is only reactive when its <code class="hljs inline no-lang">.value</code> property is accessed - the inner value is left intact. When the external state changes, replace the ref value to trigger updates.</p> <h3 id="immutable-data"><span id="immutable-data" class="anchor"></span>Immutable Data<a href="#immutable-data" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p>If you are implementing an undo / redo feature, you likely want to take a snapshot of the application's state on every user edit. However, Vue's mutable reactivity system isn't best suited for this if the state tree is large, because serializing the entire state object on every update can be expensive in terms of both CPU and memory costs.</p> <p><a href="https://en.wikipedia.org/wiki/Persistent_data_structure">Immutable data structures</a> solve this by never mutating the state objects - instead, it creates new objects that share the same, unchanged parts with old ones. There are different ways of using immutable data in JavaScript, but we recommend using <a href="https://immerjs.github.io/immer/">Immer</a> with Vue because it allows you to use immutable data while keeping the more ergonomic, mutable syntax.</p> <p>We can integrate Immer with Vue via a simple composable:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">import</span> produce <span class="hljs-keyword">from</span> <span class="hljs-string">'immer'</span>
+</span><span><span class="hljs-keyword">import</span> { shallowRef } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+</span><span>
+</span><span><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useImmer</span>(<span class="hljs-params">baseState</span>) </span>{
+</span><span>  <span class="hljs-keyword">const</span> state = shallowRef(baseState)
+</span><span>  <span class="hljs-keyword">const</span> update = <span class="hljs-function">(<span class="hljs-params">updater</span>) =&gt;</span> {
+</span><span>    state.value = produce(state.value, updater)
+</span><span>  }
+</span><span>
+</span><span>  <span class="hljs-keyword">return</span> [state, update]
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p><a href="https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdCBzZXR1cD5cbmltcG9ydCB7IHVzZUltbWVyIH0gZnJvbSAnLi9pbW1lci5qcydcbiAgXG5jb25zdCBbaXRlbXMsIHVwZGF0ZUl0ZW1zXSA9IHVzZUltbWVyKFtcbiAge1xuICAgICB0aXRsZTogXCJMZWFybiBWdWVcIixcbiAgICAgZG9uZTogdHJ1ZVxuICB9LFxuICB7XG4gICAgIHRpdGxlOiBcIlVzZSBWdWUgd2l0aCBJbW1lclwiLFxuICAgICBkb25lOiBmYWxzZVxuICB9XG5dKVxuXG5mdW5jdGlvbiB0b2dnbGVJdGVtKGluZGV4KSB7XG4gIHVwZGF0ZUl0ZW1zKGl0ZW1zID0+IHtcbiAgICBpdGVtc1tpbmRleF0uZG9uZSA9ICFpdGVtc1tpbmRleF0uZG9uZVxuICB9KVxufVxuPC9zY3JpcHQ+XG5cbjx0ZW1wbGF0ZT5cbiAgPHVsPlxuICAgIDxsaSB2LWZvcj1cIih7IHRpdGxlLCBkb25lIH0sIGluZGV4KSBpbiBpdGVtc1wiXG4gICAgICAgIDpjbGFzcz1cInsgZG9uZSB9XCJcbiAgICAgICAgQGNsaWNrPVwidG9nZ2xlSXRlbShpbmRleClcIj5cbiAgICAgICAge3sgdGl0bGUgfX1cbiAgICA8L2xpPlxuICA8L3VsPlxuPC90ZW1wbGF0ZT5cblxuPHN0eWxlPlxuLmRvbmUge1xuICB0ZXh0LWRlY29yYXRpb246IGxpbmUtdGhyb3VnaDtcbn1cbjwvc3R5bGU+IiwiaW1wb3J0LW1hcC5qc29uIjoie1xuICBcImltcG9ydHNcIjoge1xuICAgIFwidnVlXCI6IFwiaHR0cHM6Ly9zZmMudnVlanMub3JnL3Z1ZS5ydW50aW1lLmVzbS1icm93c2VyLmpzXCIsXG4gICAgXCJpbW1lclwiOiBcImh0dHBzOi8vdW5wa2cuY29tL2ltbWVyQDkuMC43L2Rpc3QvaW1tZXIuZXNtLmpzP21vZHVsZVwiXG4gIH1cbn0iLCJpbW1lci5qcyI6ImltcG9ydCBwcm9kdWNlIGZyb20gJ2ltbWVyJ1xuaW1wb3J0IHsgc2hhbGxvd1JlZiB9IGZyb20gJ3Z1ZSdcblxuZXhwb3J0IGZ1bmN0aW9uIHVzZUltbWVyKGJhc2VTdGF0ZSkge1xuICBjb25zdCBzdGF0ZSA9IHNoYWxsb3dSZWYoYmFzZVN0YXRlKVxuICBjb25zdCB1cGRhdGUgPSAodXBkYXRlcikgPT4ge1xuICAgIHN0YXRlLnZhbHVlID0gcHJvZHVjZShzdGF0ZS52YWx1ZSwgdXBkYXRlcilcbiAgfVxuXG4gIHJldHVybiBbc3RhdGUsIHVwZGF0ZV1cbn0ifQ==">Try it in the Playground</a></p> <h3 id="state-machines"><span id="state-machines" class="anchor"></span>State Machines<a href="#state-machines" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p><a href="https://en.wikipedia.org/wiki/Finite-state_machine">State Machine</a> is a model for describing all the possible states an application can be in, and all the possible ways it can transition from one state to another. While it may be overkill for simple components, it can help make complex state flows more robust and manageable.</p> <p>One of the most popular state machine implementations in JavaScript is <a href="https://xstate.js.org/">XState</a>. Here's a composable that integrates with it:</p> <pre><code class="hljs js"><span><span class="hljs-keyword">import</span> { createMachine, interpret } <span class="hljs-keyword">from</span> <span class="hljs-string">'xstate'</span>
+</span><span><span class="hljs-keyword">import</span> { shallowRef } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+</span><span>
+</span><span><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useMachine</span>(<span class="hljs-params">options</span>) </span>{
+</span><span>  <span class="hljs-keyword">const</span> machine = createMachine(options)
+</span><span>  <span class="hljs-keyword">const</span> state = shallowRef(machine.initialState)
+</span><span>  <span class="hljs-keyword">const</span> service = interpret(machine)
+</span><span>    .onTransition(<span class="hljs-function">(<span class="hljs-params">newState</span>) =&gt;</span> (state.value = newState))
+</span><span>    .start()
+</span><span>  <span class="hljs-keyword">const</span> send = <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> service.send(event)
+</span><span>
+</span><span>  <span class="hljs-keyword">return</span> [state, send]
+</span><span>}
+</span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn">
+    <div class="function-btn-body">
+    
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
+    <g id="surface1">
+      <path d="M 11.273438 0 L 2.546875 0 C 1.746094 0 1.089844 0.613281 1.089844
+      1.363281 L 1.089844 10.910156 L 2.546875 10.910156 L 2.546875 1.363281 L 11.273438
+      1.363281 Z M 13.453125 2.726562 L 5.453125 2.726562 C 4.65625 2.726562 4 3.339844 4
+      4.089844 L 4 13.636719 C 4 14.386719 4.65625 15 5.453125 15 L 13.453125 15 C 14.253906
+      15 14.910156 14.386719 14.910156 13.636719 L 14.910156 4.089844 C 14.910156 3.339844
+      14.253906 2.726562 13.453125 2.726562 Z M 13.453125 13.636719 L 5.453125 13.636719 L
+      5.453125 4.089844 L 13.453125 4.089844 Z M 13.453125 13.636719 "></path>
+    </g>
+</svg>
+
+    </div>
+    </button></div></pre><p><a href="https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdCBzZXR1cD5cbmltcG9ydCB7IHVzZU1hY2hpbmUgfSBmcm9tICcuL21hY2hpbmUuanMnXG4gIFxuY29uc3QgW3N0YXRlLCBzZW5kXSA9IHVzZU1hY2hpbmUoe1xuICBpZDogJ3RvZ2dsZScsXG4gIGluaXRpYWw6ICdpbmFjdGl2ZScsXG4gIHN0YXRlczoge1xuICAgIGluYWN0aXZlOiB7IG9uOiB7IFRPR0dMRTogJ2FjdGl2ZScgfSB9LFxuICAgIGFjdGl2ZTogeyBvbjogeyBUT0dHTEU6ICdpbmFjdGl2ZScgfSB9XG4gIH1cbn0pXG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8YnV0dG9uIEBjbGljaz1cInNlbmQoJ1RPR0dMRScpXCI+XG4gICAge3sgc3RhdGUubWF0Y2hlcyhcImluYWN0aXZlXCIpID8gXCJPZmZcIiA6IFwiT25cIiB9fVxuICA8L2J1dHRvbj5cbjwvdGVtcGxhdGU+IiwiaW1wb3J0LW1hcC5qc29uIjoie1xuICBcImltcG9ydHNcIjoge1xuICAgIFwidnVlXCI6IFwiaHR0cHM6Ly9zZmMudnVlanMub3JnL3Z1ZS5ydW50aW1lLmVzbS1icm93c2VyLmpzXCIsXG4gICAgXCJ4c3RhdGVcIjogXCJodHRwczovL3VucGtnLmNvbS94c3RhdGVANC4yNy4wL2VzL2luZGV4LmpzP21vZHVsZVwiXG4gIH1cbn0iLCJtYWNoaW5lLmpzIjoiaW1wb3J0IHsgY3JlYXRlTWFjaGluZSwgaW50ZXJwcmV0IH0gZnJvbSAneHN0YXRlJ1xuaW1wb3J0IHsgc2hhbGxvd1JlZiB9IGZyb20gJ3Z1ZSdcblxuZXhwb3J0IGZ1bmN0aW9uIHVzZU1hY2hpbmUob3B0aW9ucykge1xuICBjb25zdCBtYWNoaW5lID0gY3JlYXRlTWFjaGluZShvcHRpb25zKVxuICBjb25zdCBzdGF0ZSA9IHNoYWxsb3dSZWYobWFjaGluZS5pbml0aWFsU3RhdGUpXG4gIGNvbnN0IHNlcnZpY2UgPSBpbnRlcnByZXQobWFjaGluZSlcbiAgICAub25UcmFuc2l0aW9uKChuZXdTdGF0ZSkgPT4gKHN0YXRlLnZhbHVlID0gbmV3U3RhdGUpKVxuICAgIC5zdGFydCgpXG4gIGNvbnN0IHNlbmQgPSAoZXZlbnQpID0+IHNlcnZpY2Uuc2VuZChldmVudClcblxuICByZXR1cm4gW3N0YXRlLCBzZW5kXVxufSJ9">Try it in the Playground</a></p> <h3 id="rxjs"><span id="rxjs" class="anchor"></span>RxJS<a href="#rxjs" onclick="event.stopPropagation()" class="fa fa-anchor"></a></h3> <p><a href="https://rxjs.dev/">RxJS</a> is a library for working with asynchronous event streams. The <a href="https://vueuse.org/">VueUse</a> library provides the <a href="https://vueuse.org/rxjs/readme.html"><code class="hljs inline no-lang">@vueuse/rxjs</code></a> add-on for connecting RxJS streams with Vue's reactivity system.</p> <i id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true" class="fa fa-arrow-circle-up fa-lg d-print-none"></i></div> <nav id="page-nav" data-v-e8c82f88><div class="nav-component slim-scroll" data-v-e8c82f88></div> <!----></nav></div> <footer><div class="text-center"><small>[Generated by <a href="https://markbind.org/">MarkBind 4.0.2</a>]</small></div></footer></div>
+</body><script setup>
+import SpreadSheet from './demos/SpreadSheet.vue'
+</script><script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script>
+  MarkBind.setupWithSearch()
+</script>
+    <script>
+    function copyCodeBlock(element) {
+        const pre = element.parentElement.parentElement;
+        const codeElement = pre.querySelector('code');
+
+        // create dummy text element to select() the text field
+        const textElement = document.createElement('textarea');
+        textElement.value = codeElement.textContent;
+        document.body.appendChild(textElement);
+        textElement.select();
+
+        document.execCommand('copy');
+        document.body.removeChild(textElement);
+    }
+    </script>
+</html>
