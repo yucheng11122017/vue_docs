@@ -30,7 +30,8 @@
                 "docs/essentials/template-syntax.md",
                 "docs/typescript/*.md",
                 "docs/components/*.md",
-                "docs/built-ins/*.md"
+                "docs/built-ins/*.md",
+                "docs/best-practices/*.md"
               ]
     }
   ],

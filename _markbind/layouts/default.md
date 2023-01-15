@@ -26,6 +26,12 @@
       <li><a href="{{baseUrl}}/docs/built-ins/teleport.html" class="dropdown-item">Teleport</a></li>
       <li><a href="{{baseUrl}}/docs/built-ins/suspense.html" class="dropdown-item">Suspense</a></li>
     </dropdown>
+    <dropdown header="Best practises" class="nav-link">
+      <li><a href="{{baseUrl}}/docs/best-practices/production-deployment.html" class="dropdown-item">Production Deployment</a></li>
+      <li><a href="{{baseUrl}}/docs/best-practices/performance.html" class="dropdown-item">Performance</a></li>
+      <li><a href="{{baseUrl}}/docs/best-practices/accessibility.html" class="dropdown-item">Accessibility</a></li>
+      <li><a href="{{baseUrl}}/docs/best-practices/security.html" class="dropdown-item">Security</a></li>
+    </dropdown>
     <dropdown header="TypeScript" class="nav-link">
       <li><a href="{{baseUrl}}/docs/typescript/overview.html" class="dropdown-item">Overview</a></li>
       <li><a href="{{baseUrl}}/docs/typescript/composition-api.html" class="dropdown-item">TS with Composition API</a></li>
@@ -70,12 +76,15 @@
   * [Teleport]({{baseUrl}}/docs/built-ins/teleport.html)
   * [Suspense]({{baseUrl}}/docs/built-ins/suspense.html)
 * Scaling Up
-* Best Practices
+* Best Practices :expanded:
+  * [Production Deployment]({{baseUrl}}/docs/best-practices/production-deployment.html)
+  * [Performance]({{baseUrl}}/docs/best-practices/performance.html)
+  * [Accessibility]({{baseUrl}}/docs/best-practices/accessibility.html)
+  * [Security]({{baseUrl}}/docs/best-practices/security.html)
 * TypeScript :expanded:
   * [Overview]({{baseUrl}}/docs/typescript/overview.html)
   * [TS with Composition API]({{baseUrl}}/docs/typescript/composition-api.html)
   * [TS with Options API]({{baseUrl}}/docs/typescript/options-api.html)
-
 * Extra Topics
       </site-nav>
     </div>
