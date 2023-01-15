@@ -66,6 +66,7 @@
   * [Suspense]({{baseUrl}}/docs/built-ins/suspense.html)
 * Scaling Up
 * Best Practices
+  * [Accessibility]({{baseUrl}}/docs/best-practices/accessibility.html)
 * TypeScript
 * Extra Topics
       </site-nav>
