@@ -23,10 +23,22 @@
       "title": "Landing Page"
     },
     {
-      "glob": ["docs/quick-start.md", "docs/essentials/*.md"]
+      "glob": [
+                "docs/introduction.md",
+                "docs/quick-start.md",
+                "docs/essentials/*.md",
+                "docs/scaling-up/*.md",
+                "docs/typescript/*.md",
+                "docs/components/*.md",
+                "docs/built-ins/*.md",
+                "docs/best-practices/*.md"
+              ]
     }
   ],
   "deploy": {
     "message": "Site Update."
-  }
+  },
+  "plugins": [
+    "codeBlockCopyButtons"
+  ]
 }
