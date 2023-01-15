@@ -477,7 +477,7 @@ const { foo } = object
 
 Now the render result will be `2`.
 
-One thing to note is that a ref will also be unwrapped if it is the final evaluated value of a text interpolation (i.e. a <code v-pre>{{ '{{' }} }}</code> tag), so the following will render `1`:
+One thing to note is that a ref will also be unwrapped if it is the final evaluated value of a text interpolation (i.e. a <code v-pre>{{ '{{ }}' }}</code> tag), so the following will render `1`:
 
 ```vue-html
 {{ '{{' }} object.foo {{ '}}' }}

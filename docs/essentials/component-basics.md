@@ -192,7 +192,7 @@ export default {
 </script>
 
 <template>
-  <h4>{{ '{{' }} title }}</h4>
+  <h4>{{ '{{' }} title {{ '}}' }}</h4>
 </template>
 ```
 
