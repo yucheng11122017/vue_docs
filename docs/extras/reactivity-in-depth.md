@@ -98,9 +98,9 @@ function ref(value) {
 }
 ```
 
-:::tip
+<box type="tip">
 Code snippets here and below are meant to explain the core concepts in the simplest form possible, so many details are omitted, and edge cases ignored.
-:::
+</box>
 
 This explains a few [limitations of reactive objects](/guide/essentials/reactivity-fundamentals.html#limitations-of-reactive) that we have discussed in the fundamentals section:
 
@@ -267,9 +267,9 @@ export default {
 
 </div>
 
-:::tip
+<box type="tip">
 Component debug hooks only work in development mode.
-:::
+</box>
 
 The debug event objects have the following type:
 
@@ -319,9 +319,9 @@ console.log(plusOne.value)
 count.value++
 ```
 
-:::tip
+<box type="tip">
 `onTrack` and `onTrigger` computed options only work in development mode.
-:::
+</box>
 
 ### Watcher Debugging 
 
@@ -349,9 +349,9 @@ watchEffect(callback, {
 })
 ```
 
-:::tip
+<box type="tip">
 `onTrack` and `onTrigger` watcher options only work in development mode.
-:::
+</box>
 
 ## Integration with External State Systems 
 

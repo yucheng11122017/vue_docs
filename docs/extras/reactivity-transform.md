@@ -1,12 +1,14 @@
 # Reactivity Transform
 
-:::warning Experimental Feature
-Reactivity Transform is currently an experimental feature. It is disabled by default and requires [explicit opt-in](#explicit-opt-in). It may also change before being finalized. To stay up-to-date, keep an eye on its [proposal and discussion on GitHub](https://github.com/vuejs/rfcs/discussions/369).
-:::
+<box type="warning" header="Experimental Feature"> 
 
-:::tip Composition-API-specific
+Reactivity Transform is currently an experimental feature. It is disabled by default and requires [explicit opt-in](#explicit-opt-in). It may also change before being finalized. To stay up-to-date, keep an eye on its [proposal and discussion on GitHub](https://github.com/vuejs/rfcs/discussions/369).
+</box>
+
+<box type="tip" header ="Composition-API-specific">
+
 Reactivity Transform is a Composition-API-specific feature and requires a build step.
-:::
+</box>
 
 ## Refs vs. Reactive Variables 
 

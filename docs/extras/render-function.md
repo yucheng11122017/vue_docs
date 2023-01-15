@@ -72,9 +72,9 @@ vnode.children // []
 vnode.key // null
 ```
 
-:::warning Note
+<box type="warning" header="Note">
 The full `VNode` interface contains many other internal properties, but it is strongly recommended to avoid relying on any properties other than the ones listed here. This avoids unintended breakage in case the internal properties are changed.
-:::
+</box>
 
 ### Declaring Render Functions
 
@@ -125,9 +125,9 @@ export default {
 }
 ```
 
-:::tip
+<box type="tip">
 Make sure to return a function instead of directly returning values! The `setup()` function is called only once per component, while the returned render function will be called multiple times.
-:::
+</box>
 
 </div>
 <div class="options-api">
@@ -548,11 +548,6 @@ JSX equivalent:
 <MyComponent>{() => 'hello'}</MyComponent>
 
 // named
-<MyComponent>{{
-  default: () => 'default slot',
-  foo: () => <div>foo</div>,
-  bar: () => [<span>one</span>, <span>two</span>]
-}}</MyComponent>
 ```
 
 Passing slots as functions allows them to be invoked lazily by the child component. This leads to the slot's dependencies being tracked by the child instead of the parent, which results in more accurate and efficient updates.

@@ -4,9 +4,9 @@ outline: deep
 
 # Composition API FAQ 
 
-:::tip
+<box type="tip">
 This FAQ assumes prior experience with Vue - in particular, experience with Vue 2 while primarily using Options API.
-:::
+</box>
 
 ## What is Composition API? 
 

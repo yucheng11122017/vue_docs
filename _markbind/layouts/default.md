@@ -66,7 +66,14 @@
   * [Suspense]({{baseUrl}}/docs/built-ins/suspense.html)
 * Scaling Up
 * Best Practices
+  * [Production Deployment]({{baseUrl}}/docs/extras/ways-of-using-vue.html)
+  * [Composition API FAQ]({{baseUrl}}/docs/extras/composition-api-faq.html)
+  * [Reactivity in Depth]({{baseUrl}}/docs/extras/reactivity-in-depth.html)
+  * [Rendering Mechanism]({{baseUrl}}/docs/extras/rendering-mechanism.html)
+  * [Render Functions & JSX]({{baseUrl}}/docs/extras/render-function.html)
+  * [Vue and Web Components]({{baseUrl}}/docs/extras/web-components.html)
   * [Animation Techniques]({{baseUrl}}/docs/extras/animation.html)
+  * [Reactivity Transform]({{baseUrl}}/docs/extras/reactivity-transform.html)
 * TypeScript
 * Extra Topics
       </site-nav>
